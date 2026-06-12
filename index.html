@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja de Herramientas IA para MiPYME | UCR</title>
+
+    <!-- Security Meta Tags -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Caja de Herramientas de Inteligencia Artificial para la MiPYME. Un programa práctico de la UCR (CIOdD / DIPROVID) y AUGE para impulsar la adopción estratégica de la IA.">
+    <meta name="keywords" content="Inteligencia Artificial, Pymes, MiPYME, UCR, Universidad de Costa Rica, Auge, Innovación, Automatización, No-code, Prompt Engineering">
+    <link rel="canonical" href="https://agmelendez.github.io/cajaherramientaspymes/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agmelendez.github.io/cajaherramientaspymes/">
+    <meta property="og:title" content="Caja de Herramientas IA para MiPYME | UCR">
+    <meta property="og:description" content="Acelere su negocio con IA. Un programa práctico de la Universidad de Costa Rica y el Programa Auge para el desarrollo empresarial.">
+    <meta property="og:image" content="https://agmelendez.github.io/cajaherramientaspymes/logos/ucr.png">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://agmelendez.github.io/cajaherramientaspymes/">
+    <meta name="twitter:title" content="Caja de Herramientas IA para MiPYME | UCR">
+    <meta name="twitter:description" content="Acelere su negocio con IA. Un programa práctico de la Universidad de Costa Rica y el Programa Auge para el desarrollo empresarial.">
+    <meta name="twitter:image" content="https://agmelendez.github.io/cajaherramientaspymes/logos/ucr.png">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-box">
+                <img src="logos/ucr.png" alt="Logo Oficial de la Universidad de Costa Rica (UCR)" class="logo-img">
+                <div class="divider-vertical"></div>
+                <img src="logos/ciodd.png" alt="Logo del Centro de Investigación en Observación y Difusión Digital (CIOdD)" class="logo-img">
+                <div class="divider-vertical"></div>
+                <img src="logos/diprovid.png" alt="Logo de la Dirección de Promoción de la Vinculación para el Desarrollo (DIPROVID)" class="logo-img">
+            </div>
+            <div class="header-academic-tag" style="font-size: 0.8rem; color: #666; font-weight: 600; font-family: 'Montserrat', sans-serif; display: inline-block; margin-right: 15px;">
+                UCR | CIOdD - DIPROVID
+            </div>
+            <nav>
+                <a href="#contenidos" class="btn-nav">Ver Contenidos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-layout">
+        <!-- Barra lateral de navegación izquierda -->
+        <aside class="sidebar" id="sidebar">
+            <button class="sidebar-close-btn" id="sidebar-close-btn" aria-label="Cerrar navegación">&times;</button>
+            <h3 class="sidebar-title">Menú del Programa</h3>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item">
+                    <a href="#inicio" class="sidebar-link active"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#modulo0" class="sidebar-link"><i class="fas fa-compass"></i> Módulo 0: Diagnóstico</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#toolkit1" class="sidebar-link"><i class="fas fa-tools"></i> Toolkit 1: Pre-Operativo</a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#t1-s1" class="sidebar-sublink">Semana T1-S1: Tendencias</a></li>
+                        <li><a href="#t1-s2" class="sidebar-sublink">Semana T1-S2: Mercado</a></li>
+                        <li><a href="#t1-s3" class="sidebar-sublink">Semana T1-S3: Encuesta</a></li>
+                        <li><a href="#t1-s4" class="sidebar-sublink">Semana T1-S4: Canvas</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#modulo1" class="sidebar-link"><i class="fas fa-chart-line"></i> Módulo I: Diagnóstico IA</a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#m1-s1" class="sidebar-sublink">Semana 1: Configuración</a></li>
+                        <li><a href="#m1-s2" class="sidebar-sublink">Semana 2: Prompting</a></li>
+                        <li><a href="#m1-s3" class="sidebar-sublink">Semana 3: FODA</a></li>
+                        <li><a href="#m1-s4" class="sidebar-sublink">Semana 4: Plan de Acción</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#modulo2" class="sidebar-link"><i class="fas fa-cogs"></i> Módulo II: Automatización</a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#m2-s5" class="sidebar-sublink">Semana 5: No-Code</a></li>
+                        <li><a href="#m2-s6" class="sidebar-sublink">Semana 6: Chatbots</a></li>
+                        <li><a href="#m2-s7" class="sidebar-sublink">Semana 7: CRM y N8N</a></li>
+                        <li><a href="#m2-s8" class="sidebar-sublink">Semana 8: ROI e Integración</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#modulo3" class="sidebar-link"><i class="fas fa-bullhorn"></i> Módulo III: Comercialización</a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#m3-s9" class="sidebar-sublink">Semana 9: Identidad Visual</a></li>
+                        <li><a href="#m3-s10" class="sidebar-sublink">Semana 10: Audiovisual</a></li>
+                        <li><a href="#m3-s11" class="sidebar-sublink">Semana 11: Prefactibilidad</a></li>
+                        <li><a href="#m3-s12" class="sidebar-sublink">Semana 12: Campaña AIDA</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#credenciales" class="sidebar-link"><i class="fas fa-medal"></i> Credenciales</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#recursos" class="sidebar-link"><i class="fas fa-book"></i> Biblioteca de Recursos</a>
+                </li>
+            </ul>
+        </aside>
+        
+        <!-- Backdrop para móvil -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <main class="main-content">
+
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="ucr-banner-tag" style="background: rgba(255,255,255,0.15); display: inline-block; padding: 6px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; margin-bottom: 15px; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.25); font-family: 'Montserrat', sans-serif;">
+                        🎓 EJERCICIO ACADÉMICO COLECTIVO | CIOdD - DIPROVID - UCR
+                    </div>
+                    <h2>Caja de Herramientas de Inteligencia Artificial para la MiPYME</h2>
+                    <p>Un programa de formación autogestionada que sigue la regla 70/30: 
+                    70% práctica aplicada a su propio negocio y 30% fundamento teórico. 
+                    Aquí primero se aprende el proceso, después la IA lo acelera — 
+                    no al revés. Desarrollado con el rigor académico de la Universidad 
+                    de Costa Rica como un ejercicio conjunto del CIOdD y DIPROVID.</p>
+                    <a href="#modulo0" class="btn-hero">Empezar Ahora</a>
+                </div>
+            </section>
+
+            <div class="ucr-attribution-banner">
+                <i class="fas fa-info-circle"></i>
+                <div>
+                    <strong>Nota de Atribución Institucional:</strong> Este recurso formativo interactivo ha sido desarrollado en el marco del proyecto de acción social del <strong>Centro de Investigación Observatorio del Desarrollo (CIOdD)</strong> y la <strong>Dirección de Promoción del Vínculo con la Sociedad (DIPROVID)</strong> de la <strong>Universidad de Costa Rica (UCR)</strong>, en colaboración activa con el <strong>Programa Auge</strong>. Se presenta como un ejercicio práctico de transferencia tecnológica y de capacitación autogestionada para el sector microempresarial costarricense.
+                </div>
+            </div>
+
+    <!-- Nueva Sección: Metodología y Autogestión -->
+    <section class="methodology-section">
+        <div class="methodology-container">
+            <div class="methodology-text">
+                <h3>Modelo de Aprendizaje Autogestionado</h3>
+                <p>Este programa ha sido diseñado para adaptarse al ritmo de vida de las personas emprendedoras. Sin
+                    horarios fijos, sin dependencia de tutores, pero con una estructura pedagógica sólida avalada por la
+                    UCR.</p>
+
+                <div class="methodology-features">
+                    <div class="feature-item">
+                        <i class="fas fa-clock fa-2x"></i>
+                        <div>
+                            <h4>A su propio ritmo</h4>
+                            <p>Acceso 24/7 a todos los recursos. Usted decide cuándo y dónde aprender, gestionando su
+                                tiempo sin presiones externas.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-percentage fa-2x"></i>
+                        <div>
+                            <h4>Modelo 70/30</h4>
+                            <p><strong>70% Práctica:</strong> "Aprender haciendo" con ejercicios aplicables directamente
+                                a su negocio.<br>
+                                <strong>30% Teoría:</strong> Fundamentación académica para entender el "por qué" de cada
+                                herramienta.
+                            </p>
+                            <p class="nota-pedagogica">
+                                <strong>Principio central:</strong> cada herramienta se introduce 
+                                <em>después</em> de que el emprendedor comprende el proceso que 
+                                esa herramienta va a optimizar. La IA acelera lo que ya se entiende, 
+                                no reemplaza lo que aún no se ha aprendido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="frameworks">
+        <div class="section-header">
+            <h3>Nuestra Metodología</h3>
+            <p>No es solo un curso, es un modelo pedagógico diseñado para aplicar la IA en negocios reales.</p>
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-card">
+                <h4><i class="fas fa-robot"></i> Modelo CIFRCE</h4>
+                <p>Aprenda a estructurar sus peticiones a la IA con nuestro marco exclusivo: <strong>Contexto,
+                        Instrucción, Formato, Restricciones y Criterios de Éxito</strong>.</p>
+            </div>
+
+            <div class="concept-card">
+                <h4><i class="fas fa-sync-alt"></i> Ciclo RHEC</h4>
+                <p>Invertimos el aprendizaje tradicional. Primero el <strong>Reto</strong> y el <strong>Hacer</strong>,
+                    después <strong>Entender</strong> la teoría y finalmente <strong>Compartir</strong>.</p>
+            </div>
+
+            <div class="concept-card">
+                <h4><i class="fas fa-user-check"></i> Human-in-the-Loop</h4>
+                <p>La IA propone, usted dispone. Enseñamos a mantener el criterio humano y la ética empresarial en el
+                    centro de cada decisión tecnológica.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Sección: Ruta de Aprendizaje -->
+    <section class="learning-path" style="padding: 4rem 2rem; background-color: #f4f6f9;">
+        <div class="section-header">
+            <h3>🗺️ Ruta de Aprendizaje: Caja de Herramientas de IA</h3>
+            <p>La formación se divide en tres etapas incrementales, cada una compuesta por 4 semanas de trabajo bajo el
+                modelo <strong>70% práctico y 30% teórico</strong>.</p>
+        </div>
+
+        <div class="learning-path-container"
+            style="max-width: 1100px; margin: 0 auto; padding: 0 1rem; display: flex; flex-direction: column; align-items: center;">
+
+            <style>
+                :root {
+                    --infog-blue-light: #e3f2fd;
+                    --infog-blue-main: #5eb5e0;
+                    --infog-green-light: #e8f5e9;
+                    --infog-green-main: #8cc63f;
+                    --infog-orange-light: #fff3e0;
+                    --infog-orange-main: #fbb03b;
+                }
+
+                .infog-container {
+                    display: flex;
+                    gap: 20px;
+                    width: 100%;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 3rem;
+                }
+
+                .infog-module {
+                    flex: 1;
+                    min-width: 250px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                .infog-module-header {
+                    padding: 15px;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    border-radius: 8px;
+                    margin-bottom: 5px;
+                }
+
+                .infog-mod-1 .infog-module-header {
+                    background-color: var(--infog-blue-main);
+                    color: white;
+                }
+
+                .infog-mod-2 .infog-module-header {
+                    background-color: var(--infog-green-main);
+                    color: white;
+                }
+
+                .infog-mod-3 .infog-module-header {
+                    background-color: var(--infog-orange-main);
+                    color: white;
+                }
+
+                .infog-card {
+                    background-color: white;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    padding: 12px 15px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                    min-height: 70px;
+                }
+
+                .infog-mod-1 .infog-card {
+                    background-color: var(--infog-blue-light);
+                    border-color: #bbdefb;
+                }
+
+                .infog-mod-2 .infog-card {
+                    background-color: var(--infog-green-light);
+                    border-color: #c8e6c9;
+                }
+
+                .infog-mod-3 .infog-card {
+                    background-color: var(--infog-orange-light);
+                    border-color: #ffe0b2;
+                }
+
+                .infog-icon-circle {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    border: 2px solid rgba(0, 0, 0, 0.1);
+                    font-size: 1.2rem;
+                }
+
+                .infog-card-content {
+                    font-size: 0.9rem;
+                    line-height: 1.3;
+                    text-align: left;
+                }
+
+                .infog-card-content strong {
+                    display: block;
+                    margin-bottom: 3px;
+                }
+
+                /* Sección Inferior - Ciclo RHEC */
+                .rhec-section {
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .rhec-title {
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    margin-bottom: 20px;
+                    color: var(--ucr-blue);
+                }
+
+                .rhec-container {
+                    position: relative;
+                    width: 250px;
+                    height: 250px;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .rhec-step {
+                    position: absolute;
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 8px;
+                    color: white;
+                    font-size: 0.70rem;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+
+                /* Posicionamiento del Ciclo */
+                .step-reto {
+                    background-color: #4a90e2;
+                    top: 0;
+                    left: 0;
+                    border-radius: 100% 0 0 0;
+                    align-items: flex-end;
+                    padding-right: 15px;
+                }
+
+                .step-hacer {
+                    background-color: #7cb342;
+                    top: 0;
+                    right: 0;
+                    border-radius: 0 100% 0 0;
+                    align-items: flex-start;
+                    padding-left: 15px;
+                }
+
+                .step-compartir {
+                    background-color: #5eb5e0;
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 0 0 0 100%;
+                    align-items: flex-end;
+                    padding-right: 15px;
+                }
+
+                .step-entender {
+                    background-color: #f39c12;
+                    bottom: 0;
+                    right: 0;
+                    border-radius: 0 0 100% 0;
+                    align-items: flex-start;
+                    padding-left: 15px;
+                }
+
+                .rhec-center {
+                    width: 70px;
+                    height: 70px;
+                    background-color: white;
+                    border-radius: 50%;
+                    z-index: 10;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }
+
+                @media (max-width: 768px) {
+                    .infog-container {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .infog-module {
+                        width: 100%;
+                    }
+                }
+            </style>
+
+            <div class="infog-container">
+                <div class="infog-module infog-mod-1">
+                    <div class="infog-module-header">Módulo I: Diagnóstico con IA</div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">⚙️</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 1: Primer contacto</strong>
+                            Configuración de LLMs y seguridad.
+                        </div>
+                    </div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">💬</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 2: Prompting</strong>
+                            El arte de preguntar.
+                        </div>
+                    </div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">🔍</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 3: Diagnóstico</strong>
+                            FODA dinámico y perfil.
+                        </div>
+                    </div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">📋</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 4: Plan de Acción</strong>
+                            De los datos a la estrategia real.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infog-module infog-mod-2">
+                    <div class="infog-module-header">Módulo II: Automatización</div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">🔀</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 5: No-Code</strong>
+                            Su primer flujo automático.
+                        </div>
+                    </div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">🤖</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 6: Chatbots</strong>
+                            Automatización de atención.
+                        </div>
+                    </div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">🗄️</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 7: Sistematización</strong>
+                            CRM básico y bases de datos.
+                        </div>
+                    </div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">💰</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 8: Integración Final</strong>
+                            Cálculo del ROI.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infog-module infog-mod-3">
+                    <div class="infog-module-header">Módulo III: Comercialización</div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">🎨</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 9: Identidad Visual</strong>
+                            Diseño asistido por IA.
+                        </div>
+                    </div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">🎬</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 10: Producción</strong>
+                            Video, locución y avatares.
+                        </div>
+                    </div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">💡</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 11: Prefactibilidad</strong>
+                            Validación de ideas.
+                        </div>
+                    </div>
+                    <div class="infog-card">
+                        <div class="infog-icon-circle">📣</div>
+                        <div class="infog-card-content">
+                            <strong>Semana 12: Campaña</strong>
+                            Lanzamiento final (AIDA).
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rhec-section">
+                <div class="rhec-title"><i class="fas fa-sync-alt" style="margin-right: 0.5rem;"></i> El Ciclo Semanal
+                    (Metodología RHEC)</div>
+                <div class="rhec-container">
+                    <div class="rhec-step step-reto">
+                        <strong>1. RETO (5%)</strong>
+                        <span>Desafío real</span>
+                    </div>
+                    <div class="rhec-step step-hacer">
+                        <strong>2. HACER (65%)</strong>
+                        <span>Práctica pura</span>
+                    </div>
+                    <div class="rhec-step step-compartir">
+                        <strong>4. COMPARTIR (5%)</strong>
+                        <span>Reflexión</span>
+                    </div>
+                    <div class="rhec-step step-entender">
+                        <strong>3. ENTENDER (25%)</strong>
+                        <span>Teoría aplicada</span>
+                    </div>
+                    <div class="rhec-center">
+                        <span style="font-size: 1.5rem;"><i class="fas fa-sync-alt fa-spin"
+                                style="color: var(--ucr-blue);"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <details class="interactive-path-summary"
+                style="background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); overflow: hidden; width: 100%; max-width: 800px;">
+                <summary class="btn-hero"
+                    style="display: inline-flex; justify-content: center; align-items: center; gap: 0.5rem; margin: 0 auto 2rem auto; width: fit-content; cursor: pointer; list-style: none;">
+                    <i class="fas fa-plus-circle"></i> Ver detalle de los módulos y metodología
+                </summary>
+
+                <div class="path-details-content" style="padding: 2rem; text-align: left;">
+                    <div class="path-module" style="margin-bottom: 2rem;">
+                        <h4
+                            style="color: var(--ucr-blue); border-bottom: 2px solid var(--accent-yellow); padding-bottom: 0.5rem; margin-bottom: 1rem;">
+                            Módulo I: Diagnóstico con IA</h4>
+                        <p class="path-focus" style="font-size: 0.95rem; color: #555; margin-bottom: 1rem;"><em>Foco:
+                                Análisis estratégico y toma de decisiones.</em></p>
+                        <ul class="path-weeks" style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 1:</strong> Primer contacto, configuración de LLMs (ChatGPT, Claude,
+                                Gemini) y seguridad digital.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 2:</strong> Ingeniería de Prompts: El arte de preguntar con el modelo
+                                <strong>CIFRCE</strong>.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 3:</strong> Diagnóstico de Negocio: FODA dinámico, finanzas básicas y
+                                perfil de cliente.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 4:</strong> Síntesis y Plan de Acción: De los datos a la estrategia real.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="path-module" style="margin-bottom: 2rem;">
+                        <h4
+                            style="color: var(--ucr-blue); border-bottom: 2px solid var(--accent-yellow); padding-bottom: 0.5rem; margin-bottom: 1rem;">
+                            Módulo II: Automatización de Procesos</h4>
+                        <p class="path-focus" style="font-size: 0.95rem; color: #555; margin-bottom: 1rem;"><em>Foco:
+                                Eficiencia operativa y ahorro de tiempo.</em></p>
+                        <ul class="path-weeks" style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 5:</strong> Introducción al No-Code: Su primer flujo automático en
+                                <strong>Make</strong>.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 6:</strong> Chatbots y Mensajería: Automatización de la atención al
+                                cliente.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 7:</strong> Sistematización: Creación de un CRM básico y gestión de bases
+                                de datos.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 8:</strong> Integración Final: Cálculo del ROI de la automatización.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="path-module" style="margin-bottom: 2.5rem;">
+                        <h4
+                            style="color: var(--ucr-blue); border-bottom: 2px solid var(--accent-yellow); padding-bottom: 0.5rem; margin-bottom: 1rem;">
+                            Módulo III: Contenido y Comercialización</h4>
+                        <p class="path-focus" style="font-size: 0.95rem; color: #555; margin-bottom: 1rem;"><em>Foco:
+                                Visibilidad, ventas y marca digital.</em></p>
+                        <ul class="path-weeks" style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 9:</strong> Identidad Visual: Diseño asistido por IA con
+                                <strong>Canva</strong>.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 10:</strong> Producción Audiovisual: Video, locución y avatares (CapCut,
+                                Eleven Labs).
+                            </li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 11:</strong> Prefactibilidad: Uso de IA para validar nuevas ideas de
+                                inversión.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                                <i class="fas fa-check-circle"
+                                    style="position: absolute; left: 0; top: 3px; color: var(--accent-yellow);"></i>
+                                <strong>Semana 12:</strong> Campaña Integral: Lanzamiento final utilizando el framework
+                                AIDA.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr style="border: 0; height: 1px; background: #eee; margin: 2rem 0;">
+
+                    <div class="path-methodology"
+                        style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--ucr-blue);">
+                        <h4 style="color: var(--ucr-blue); margin-bottom: 1rem;"><i class="fas fa-sync-alt"
+                                style="margin-right: 0.5rem;"></i> El Ciclo Semanal (Metodología RHEC)</h4>
+                        <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Cada una de las 12 semanas anteriores
+                            sigue un motor de aprendizaje de 4 pasos para asegurar que el conocimiento se aplique de
+                            inmediato:</p>
+
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                            <div
+                                style="background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h5 style="color: #333; margin-bottom: 0.5rem;"><span
+                                        style="color: var(--accent-yellow); font-size: 1.2rem; font-weight: bold; margin-right: 0.3rem;">1.</span>
+                                    RETO</h5>
+                                <p style="font-size: 0.85rem; color: #666; margin: 0;">Un desafío concreto vinculado a
+                                    su negocio real.</p>
+                            </div>
+                            <div
+                                style="background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h5 style="color: #333; margin-bottom: 0.5rem;"><span
+                                        style="color: var(--accent-yellow); font-size: 1.2rem; font-weight: bold; margin-right: 0.3rem;">2.</span>
+                                    HACER</h5>
+                                <p style="font-size: 0.85rem; color: #666; margin: 0;">El núcleo del aprendizaje.
+                                    Video-tutoriales y ejercicios.</p>
+                            </div>
+                            <div
+                                style="background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h5 style="color: #333; margin-bottom: 0.5rem;"><span
+                                        style="color: var(--accent-yellow); font-size: 1.2rem; font-weight: bold; margin-right: 0.3rem;">3.</span>
+                                    ENTENDER</h5>
+                                <p style="font-size: 0.85rem; color: #666; margin: 0;">Microvídeos teóricos de la
+                                    ciencia detrás de la herramienta.</p>
+                            </div>
+                            <div
+                                style="background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                <h5 style="color: #333; margin-bottom: 0.5rem;"><span
+                                        style="color: var(--accent-yellow); font-size: 1.2rem; font-weight: bold; margin-right: 0.3rem;">4.</span>
+                                    COMPARTIR</h5>
+                                <p style="font-size: 0.85rem; color: #666; margin: 0;">Reflexión colectiva y
+                                    retroalimentación con empresarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <style>
+        .interactive-path-summary>summary {
+            list-style: none;
+            /* Hide default arrow */
+        }
+
+        .interactive-path-summary>summary::-webkit-details-marker {
+            display: none;
+            /* Hide arrow in WebKit */
+        }
+
+        .interactive-path-summary[open]>summary i {
+            transform: rotate(45deg);
+            transition: transform 0.3s ease;
+        }
+
+        .interactive-path-summary>summary i {
+            transition: transform 0.3s ease;
+        }
+
+        .path-details-content {
+            animation: fadeIn 0.5s ease-in-out;
+            border-top: none;
+            margin-top: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <section id="contenidos" class="syllabus">
+        <div class="section-header">
+            <h3>Estructura del Programa</h3>
+            <p>Tres módulos diseñados para transformar su negocio paso a paso. Haga clic para ver los detalles.</p>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <a href="https://iadocenciaed3698.my.canva.site/copia-de-aplicaci-n-interactiva-para-retos-semanales-de-ia-para-mipymes-ucr"
+                target="_blank" rel="noopener noreferrer" class="btn-hero"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+                <i class="fas fa-tasks"></i> Retos de la semana
+            </a>
+            <a href="https://www.youtube.com/playlist?list=PLnY61_1lJZUVMRrcDGhsQwC7XMUZPYk1M"
+                target="_blank" rel="noopener noreferrer" class="btn-hero"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; background-color: var(--accent-yellow); color: #333; margin-left: 10px;">
+                <i class="fab fa-youtube"></i> Autoformación
+            </a>
+        </div>
+
+        <div class="module-container">
+
+            <!-- MÓDULO 0: Diagnóstico de Entrada -->
+            <section id="modulo0" class="seccion-modulo modulo0 module-card">
+                <div class="module-header modulo-header modulo0-header">
+                    <div>
+                        <span class="modulo-icono" style="font-size: 1.2rem; margin-right: 0.5rem;">🧭</span>
+                        <span style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; opacity: 0.9;">Diagnóstico de Entrada</span>
+                        <h2 style="color: white; margin: 5px 0 0 0; font-size: 1.3rem;">Módulo 0: Diagnóstico de Entrada</h2>
+                        <p class="modulo-subtitulo" style="font-size: 0.9rem; opacity: 0.8; margin-top: 5px; font-weight: normal; color: white;">¿Por dónde empiezo? Encuentra tu ruta personalizada.</p>
+                    </div>
+                </div>
+                <div style="padding: 20px 25px;">
+                    <p class="modulo-intro" style="margin-top: 0; padding-top: 0;">
+                        Antes de explorar las herramientas, este diagnóstico te ayuda a 
+                        identificar en qué etapa se encuentra tu emprendimiento y qué 
+                        módulos son más relevantes para ti ahora mismo. No es un examen: 
+                        es una brújula.
+                    </p>
+                    
+                    <div class="diagnostico-secuencial">
+                        <!-- Pregunta 1 -->
+                        <div class="diag-pregunta" id="diag-q1">
+                            <p class="diag-label">1 de 3 — ¿En qué etapa está tu emprendimiento?</p>
+                            <div class="diag-opciones">
+                                <button class="diag-btn" data-eje="madurez" data-valor="idea">
+                                    🌱 Tengo una idea, aún no he vendido
+                                </button>
+                                <button class="diag-btn" data-eje="madurez" data-valor="prototipo">
+                                    🔧 Tengo un prototipo o modelo de negocio en desarrollo
+                                </button>
+                                <button class="diag-btn" data-eje="madurez" data-valor="ventas">
+                                    💰 Ya tengo ventas, aunque sean pocas
+                                </button>
+                                <button class="diag-btn" data-eje="madurez" data-valor="marcha">
+                                    🏢 Tengo un negocio funcionando con procesos definidos
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 2 -->
+                        <div class="diag-pregunta oculto" id="diag-q2">
+                            <p class="diag-label">2 de 3 — ¿Qué necesitás resolver con más urgencia?</p>
+                            <div class="diag-opciones">
+                                <button class="diag-btn" data-eje="herramienta" data-valor="investigacion">
+                                    🔍 Validar si mi idea o producto tiene demanda real
+                                </button>
+                                <button class="diag-btn" data-eje="herramienta" data-valor="financiero">
+                                    📊 Entender los números: costos, proyecciones, rentabilidad
+                                </button>
+                                <button class="diag-btn" data-eje="herramienta" data-valor="automatizacion">
+                                    ⚙️ Ahorrar tiempo automatizando tareas repetitivas
+                                </button>
+                                <button class="diag-btn" data-eje="herramienta" data-valor="contenido">
+                                    📣 Crear contenido y visibilidad para mi marca
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 3 -->
+                        <div class="diag-pregunta oculto" id="diag-q3">
+                            <p class="diag-label">3 de 3 — ¿Cómo usás la IA actualmente?</p>
+                            <div class="diag-opciones">
+                                <button class="diag-btn" data-eje="experiencia" data-valor="ninguna">
+                                    🚫 Nunca o casi nunca la he usado
+                                </button>
+                                <button class="diag-btn" data-eje="experiencia" data-valor="google">
+                                    🔎 La uso como buscador o para preguntas sueltas
+                                </button>
+                                <button class="diag-btn" data-eje="experiencia" data-valor="intermedia">
+                                    💬 Hago prompts con cierto criterio, sé lo que quiero pedirle
+                                </button>
+                                <button class="diag-btn" data-eje="experiencia" data-valor="avanzada">
+                                    🤖 La integro a flujos de trabajo o la personalizo
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Resultados -->
+                        <div class="diag-resultado oculto" id="diag-resultado">
+                            <h4 style="margin-bottom: 0.5rem; color: #1E8449;">🎯 Tu ruta recomendada</h4>
+                            <p id="diag-texto-resultado" style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;"></p>
+                            <a id="diag-btn-ir" href="#toolkit1" class="btn-ruta" style="margin-top: 0;">
+                                Ir a mi punto de partida →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="diag-reflexion" style="margin-top: 1.5rem; background: #fffdf5; border-left: 4px solid var(--accent-yellow); padding: 1rem; border-radius: 4px;">
+                        <h4 style="color: var(--ucr-dark); font-size: 0.95rem; margin-bottom: 0.5rem;"><i class="fas fa-lightbulb"></i> Reflexión del Módulo 0</h4>
+                        <p style="font-size: 0.88rem; color: #555; margin: 0;">
+                            Antes de iniciar tu formación, reflexiona: ¿Qué porcentaje de tus tareas diarias consideras que son repetitivas? ¿Cuál es tu mayor temor al interactuar con inteligencia artificial? Este autodiagnóstico no es una evaluación, es un espacio de toma de conciencia sobre el estado de madurez digital de tu negocio.
+                        </p>
+                    </div>
+
+                    <p class="diagnostico-link" style="margin-top: 1.5rem; border-top: 1px solid #eee; padding-top: 1rem;">
+                        ¿Querés un diagnóstico institucional más preciso? 
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeiE8EHerlYMG25Ln-t_yo2Ow_Lvdr14F0d51vIFOLs-7cmw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" style="color: var(--ucr-blue); font-weight: 600; text-decoration: underline;">
+                            Completa el diagnóstico completo (5 min) →
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+            <!-- TOOLKIT 1: Módulo Pre-Operativo -->
+            <section id="toolkit1" class="module-card toolkit1">
+                <div class="module-header" style="background: linear-gradient(135deg, #1E8449, #27AE60);">
+                    <div>
+                        <span style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; opacity: 0.9;">Módulo Pre-Operativo</span>
+                        <h3 style="color: white; margin: 0; font-size: 1.3rem;">Toolkit 1</h3>
+                    </div>
+                    <i class="fas fa-tools fa-2x"></i>
+                </div>
+
+                <p class="modulo-intro">
+                    Este módulo te guiará en la validación inicial de tu idea de negocio utilizando herramientas de inteligencia artificial. Aprenderás a analizar el mercado, definir a tu cliente y estructurar tus primeras encuestas y canvas de modelo de negocio.
+                </p>
+
+                <details id="t1-s1">
+                    <summary>Semana T1-S1: Validación de idea y tendencias de mercado</summary>
+                    <div class="week-content">
+                        <p>Analice tendencias y valide su idea de negocio usando herramientas de IA.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi primera validación de tendencia</h4>
+                                <div class="rhec-step-content">
+                                    <p>Identifique un sector de negocio en Costa Rica que le interese e investigue si el interés del público está subiendo o bajando.</p>
+                                    <p><strong>Entregable:</strong> Captura de pantalla de Google Trends y Exploding Topics comparando 3 términos del sector elegido.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Ingrese a <strong>Google Trends</strong> y busque 3 términos clave relacionados con su idea de negocio en la región de Costa Rica durante los últimos 12 meses.</li>
+                                        <li>Identifique patrones estacionales (ej. ¿se busca más en época lluviosa o en verano?).</li>
+                                        <li>Use <strong>Exploding Topics</strong> para buscar subsectores relacionados que estén explotando en popularidad.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>La validación inicial consiste en reducir la incertidumbre. Investigar la demanda en buscadores le permite entender si las personas realmente buscan su producto antes de invertir recursos en producción o inventarios.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Publique en el grupo de WhatsApp el término que tiene mayor tendencia de crecimiento y una reflexión de por qué considera que está al alza en el mercado local costarricense.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://trends.google.com" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Google Trends</a>
+                            <a href="https://explodingtopics.com" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Exploding Topics</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="t1-s2">
+                    <summary>Semana T1-S2: Análisis de mercado y perfil de cliente</summary>
+                    <div class="week-content">
+                        <p>Diseña el perfil detallado de tu cliente ideal utilizando metodologías de segmentación asistidas por IA.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi cliente ideal a fondo</h4>
+                                <div class="rhec-step-content">
+                                    <p>Cree una ficha detallada de Buyer Persona y un mapa de empatía utilizando un LLM como entrevistador.</p>
+                                    <p><strong>Entregable:</strong> Documento en PDF con la ficha del Buyer Persona y el Mapa de Empatía generado y verificado.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Abra ChatGPT o Claude y escriba el prompt: <em>"Actúa como un experto en mercadeo. Entrevístame haciendo 5 preguntas una a una para definir mi cliente ideal para [idea de negocio]."</em></li>
+                                        <li>Responda las preguntas de forma honesta basadas en su idea.</li>
+                                        <li>Pida al modelo: <em>"Con estas respuestas, estructura una ficha de Buyer Persona y un Mapa de Empatía (Qué ve, qué oye, qué piensa, qué frustraciones tiene)."</em></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>Un producto para todos es un producto para nadie. La segmentación permite enfocar los recursos de marketing de su pyme en los usuarios con mayor probabilidad de compra, resolviendo sus frustraciones reales.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Comparta el Buyer Persona generado. ¿Cuál es el mayor dolor o necesidad insatisfecha de ese cliente ideal?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="t1-s3">
+                    <summary>Semana T1-S3: Diseño y análisis de encuesta de validación primaria</summary>
+                    <div class="week-content">
+                        <p>Estructura encuestas efectivas y utiliza la IA para analizar las respuestas de tus clientes potenciales.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Escuchar al mercado real</h4>
+                                <div class="rhec-step-content">
+                                    <p>Diseñe un cuestionario de 5 preguntas orientadas al problema del cliente, aplíquelo a 10 personas, y use la IA para consolidar los aprendizajes.</p>
+                                    <p><strong>Entregable:</strong> Enlace al formulario y reporte sintético del análisis cualitativo generado por Claude.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Cree un formulario en <strong>Google Forms</strong> con 5 preguntas que investiguen los hábitos y problemas de su cliente ideal (evite preguntas sesgadas como "¿Te gusta mi idea?").</li>
+                                        <li>Envíe la encuesta a al menos 10 clientes potenciales.</li>
+                                        <li>Descargue las respuestas en texto, péguelas en Claude y pida: <em>"Clasifica estas respuestas cualitativas en 3 temas clave e identifica cuál es el problema más común."</em></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>El sesgo del fundador nos hace creer que nuestra idea no tiene fallas. La investigación primaria cualitativa nos obliga a confrontar los supuestos iniciales con datos crudos y opiniones reales del mercado.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Mencione un cambio o ajuste que descubrió que debe hacer en su idea de negocio tras leer las respuestas de los encuestados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="t1-s4">
+                    <summary>Semana T1-S4: Estructura básica de modelo de negocio</summary>
+                    <div class="week-content">
+                        <p>Crea tu primer Business Model Canvas interactuando con la IA en modo de consultoría socrática.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi negocio en un solo lienzo</h4>
+                                <div class="rhec-step-content">
+                                    <p>Desarrolle los 9 bloques de su Business Model Canvas con el apoyo de la IA en rol de consultor crítico.</p>
+                                    <p><strong>Entregable:</strong> Documento del Business Model Canvas preliminar estructurado.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Use un LLM con el prompt: <em>"Actúa como un mentor de negocios socrático. Ayúdame a construir mi Business Model Canvas para [idea]. Hazme una pregunta a la vez para cada uno de los 9 bloques. Analiza mi respuesta y reta mis supuestos."</em></li>
+                                        <li>Responda uno a uno los bloques del Canvas (Propuesta de valor, Segmentos, Canales, Relación con clientes, Fuentes de ingresos, Recursos clave, Actividades clave, Socios clave, Estructura de costos).</li>
+                                        <li>Solicite a la IA compilar el canvas definitivo en una tabla limpia.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>El Business Model Canvas es una herramienta dinámica y visual que reemplaza a los pesados planes de negocios tradicionales en etapas iniciales. Su propósito es ver de un vistazo cómo se interconectan el valor, el mercado, la infraestructura y la viabilidad financiera.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Escriba su Propuesta de Valor única de 2 líneas y cuál será su canal principal de distribución.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <p class="nota-institucional">
+                    ⚠️ El Toolkit 1 está diseñado como una fase de pre-incubación. 
+                    Proyecto conjunto: Auge – Observatorio del Desarrollo (CIOdD-UCR) y DIPROVID.
+                </p>
+            </section>
+
+            <!-- MÓDULO I: Diagnóstico Empresarial con IA -->
+            <div class="module-card" id="modulo1">
+                <div class="module-header">
+                    <div>
+                        <span>Módulo I</span>
+                        <h3>Diagnóstico Empresarial con IA</h3>
+                        <div style="margin-top: 15px;">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeiE8EHerlYMG25Ln-t_yo2Ow_Lvdr14F0d51vIFOLs-7cmw/viewform?usp=dialog"
+                                target="_blank" class="btn-hero"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.5rem 1rem; font-size: 0.9rem;" rel="noopener noreferrer">
+                                <i class="fas fa-clipboard-list"></i>
+                                Autodiagnóstico
+                            </a>
+                        </div>
+                    </div>
+                    <i class="fas fa-chart-line fa-2x"></i>
+                </div>
+
+                <p class="modulo-intro">
+                    Este módulo te equipa con las herramientas conceptuales y prácticas 
+                    para diagnosticar tu negocio con apoyo de IA generativa. En cuatro 
+                    semanas, pasarás de la configuración básica de las plataformas hasta 
+                    producir un plan de acción estratégico fundamentado en datos. 
+                    Enfoque: análisis, no automatización.
+                </p>
+
+                <details id="m1-s1">
+                    <summary>Semana 1: Configuración y Primer Contacto</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 1. Historia de la IA.png" alt="Infografía Semana 1: Historia y evolución de la Inteligencia Artificial"
+                            class="infographic-thumb" title="Clic para ampliar">
+                        <p>Configure su ecosistema de herramientas de forma segura y realice sus primeras consultas.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi primera conversación productiva</h4>
+                                <div class="rhec-step-content">
+                                    <p>Abra ChatGPT (o Claude, o Gemini) y mantenga una conversación sobre su negocio. Pida al modelo que le ayude a describir qué hace su empresa, quiénes son sus clientes y cuál es su principal desafío actual. Guarde la conversación completa.</p>
+                                    <p><strong>Entregable:</strong> Captura de pantalla de la conversación con el LLM resumiendo estructuradamente su negocio.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Cree sus cuentas en ChatGPT (chatgpt.com), Claude (claude.ai) y Gemini (gemini.google.com).</li>
+                                        <li>Asegure sus cuentas activando la <strong>Autenticación de dos factores (2FA)</strong> en los menús de configuración de seguridad de cada herramienta.</li>
+                                        <li>En Data Controls de ChatGPT, revise y decida apagar el entrenamiento del modelo si va a usar datos sensibles.</li>
+                                        <li>Escriba una descripción de su pyme (tipo de negocio, cantidad de trabajadores, ventas aproximadas, canal de ventas principal) a la IA y pregunte: <em>"Con base en esto, ¿cuáles son los 3 problemas operativos que ves?"</em></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>La IA no es magia, es programación avanzada. La IA generativa o LLM (Large Language Model) predice la palabra estadísticamente más probable a partir del texto ingresado. Esto significa que puede inventar hechos ("alucinaciones").</p>
+                                    <p><strong>Seguridad Digital:</strong> Nunca ingrese datos privados de clientes, secretos industriales ni cuentas bancarias reales en las versiones gratuitas de las IAs.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Publique en el foro del curso una captura de su conversación. Responda: ¿Qué le sorprendió de la respuesta? ¿Qué habría querido que el modelo respondiera diferente?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://gemini.google.com/share/93280f9e37b4" target="_blank"
+                                class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> ¿Qué es la IA?</a>
+                            <a href="https://gemini.google.com/share/8e00aa29a4c6" target="_blank"
+                                class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> IA Generativa</a>
+                            <a href="https://youtu.be/Ijgaubyqioc" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Principios Éticos</a>
+                            <a href="https://youtu.be/I1TqHfRUn3w" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Tendencias de IA</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="m1-s2">
+                    <summary>Semana 2: Ingeniería de Prompts (CIFRCE)</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 2. Guía Maestra de Prompt Engineering.png"
+                            alt="Infografía Semana 2: Guía Maestra de Ingeniería de Prompts (CIFRCE)" class="infographic-thumb" title="Clic para ampliar">
+                        <p>Domine el arte de "hablar" con la IA para obtener resultados empresariales útiles.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> De prompt mediocre a prompt poderoso</h4>
+                                <div class="rhec-step-content">
+                                    <p>Tome el prompt informal de la semana pasada y reescríbalo aplicando el modelo estructural CIFRCE completo.</p>
+                                    <p><strong>Entregable:</strong> Documento con 5 prompts optimizados para su negocio bajo la estructura CIFRCE, mostrando la directiva y la respuesta obtenida.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <p>Escriba un prompt redactando explícitamente sus 5 partes:</p>
+                                    <ul>
+                                        <li><strong>C (Contexto):</strong> Quién es usted y qué hace su negocio (ej: soda en Heredia).</li>
+                                        <li><strong>I (Instrucción):</strong> Qué debe hacer el modelo (ej: listar 5 ideas de promociones).</li>
+                                        <li><strong>F (Formato):</strong> Cómo quiere la salida (ej: tabla con columnas Idea y Costo).</li>
+                                        <li><strong>R (Restricciones):</strong> Lo que NO debe hacer (ej: sin usar redes de pago).</li>
+                                        <li><strong>CE (Criterio de Éxito):</strong> El estándar de calidad (ej: que cueste menos de ₡10.000).</li>
+                                    </ul>
+                                    <p>Aplique <strong>Few-shot prompting</strong> dando 2 ejemplos del formato esperado y <strong>Chain-of-thought</strong> pidiendo que el modelo "razone paso a paso".</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>La ingeniería de prompts no es truco lingüístico, es reducir la dispersión de probabilidad estadística del LLM. Dar contexto y restricciones limita las respuestas genéricas o inútiles. La técnica de "role-play" (ej: <em>"Actúa como consultor de costos..."</em>) activa la red de patrones profesionales del entrenamiento del modelo.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Publique en el foro su prompt CIFRCE más exitoso de la semana y por qué cree que el formato y las restricciones cambiaron radicalmente la respuesta.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://gemini.google.com/share/9189e1c05cd1" target="_blank"
+                                class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Recurso: Prompting</a>
+                            <a href="https://youtu.be/7b3EdBVsV58" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Peticiones</a>
+                            <a href="https://youtu.be/49Yv4qNovyo" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Alucinaciones</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="m1-s3">
+                    <summary>Semana 3: Diagnóstico y FODA Dinámico</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 3. Tendencias IA.png" alt="Infografía Semana 3: Tendencias tecnológicas de Inteligencia Artificial para Pymes"
+                            class="infographic-thumb" title="Clic para ampliar">
+                        <p>Utilice la IA para radiografiar su empresa y analizar a la competencia.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> La radiografía de mi negocio</h4>
+                                <div class="rhec-step-content">
+                                    <p>Complete un análisis diagnóstico estratégico de su negocio que incluya FODA dinámico estructurado, estado financiero simplificado, y mapa de sus principales competidores.</p>
+                                    <p><strong>Entregable:</strong> Borrador del diagnóstico en las plantillas provistas con el FODA interactivo priorizado y punto de equilibrio calculado.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Escriba un prompt pidiendo a la IA: <em>"Actúa como consultor de pymes en Costa Rica. Hazme un análisis FODA dinámico. No me des respuestas fijas. Hazme 3 preguntas difíciles de mi operación antes de armar la matriz."</em> Responda honestamente.</li>
+                                        <li>Describa sus costos fijos y variables en lenguaje natural a la IA y solicite un Estado de Resultados simplificado y el cálculo de su Punto de Equilibrio mensual.</li>
+                                        <li>Use Gemini para buscar qué están cobrando o publicando al menos 3 competidores en su zona y haga una tabla comparativa.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>Un diagnóstico es el espejo del negocio. El FODA socrático evita las debilidades genéricas y las finanzas básicas introducen 3 números indispensables:</p>
+                                    <ul>
+                                        <li><strong>Margen Bruto:</strong> Ingresos menos costos directos.</li>
+                                        <li><strong>Margen Neto:</strong> Ganancia real quitando alquileres, salarios e impuestos.</li>
+                                        <li><strong>Punto de Equilibrio:</strong> Ventas mínimas para no perder dinero.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>¿Qué debilidad u oportunidad financiera reveló la IA al organizar sus datos en el estado de resultados que usted no había mapeado con claridad?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://youtu.be/5Y_WAYQnO3c" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> La IA al Negocio</a>
+                            <a href="https://youtu.be/Hzm54zyMkTs" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Tendencias IA -IA Impact Summit-</a>
+                            <a href="https://youtu.be/ir0d0bFBkJU" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Mitigar peligros</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="m1-s4">
+                    <summary>Semana 4: Plan de Acción Estratégico</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 4. Plan de Acción.png" alt="Infografía Semana 4: Plan de Acción Estratégico para Integración de IA"
+                            class="infographic-thumb" title="Clic para ampliar">
+                        <p>Integre todo lo aprendido en un plan de acción real para su MiPYME.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi plan de acción de 90 días</h4>
+                                <div class="rhec-step-content">
+                                    <p>Compile todo su diagnóstico y proponga un plan de implementación a 3 meses priorizando un máximo de 3 herramientas de IA en las áreas críticas encontradas.</p>
+                                    <p><strong>Entregable:</strong> Documento final del Módulo I: "Informe de Diagnóstico Empresarial y Plan de Acción IA" en PDF (5-8 páginas).</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Copie sus matrices de FODA y análisis financiero, y pida a la IA: <em>"Escribe un resumen ejecutivo formal de 300 palabras dirigido a un evaluador de proyectos que resuma los riesgos y el plan de mi negocio."</em></li>
+                                        <li>Clasifique sus ideas de mejora usando la <strong>Matriz de Priorización IVU</strong> (Impacto, Viabilidad, Urgencia).</li>
+                                        <li>Establezca metas trimestrales con cronograma y asigne métricas claras de éxito.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>Estrategia no es hacer una lista gigante de cosas. Estrategia es decidir qué NO hacer. La matriz IVU filtra las acciones de alto esfuerzo y bajo retorno. El plan debe centrarse en 3 acciones de alto impacto y alta viabilidad.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>¿Qué 3 herramientas priorizó en su matriz y qué meta concreta espera alcanzar con ellas en los próximos 90 días?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://youtu.be/SPNNtEQE808" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Perder miedo</a>
+                        </div>
+                    </div>
+                </details>
+
+                <div class="checklist-modulo">
+                    <h4>✅ Lista de chequeo — Módulo I</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Componente</th>
+                                <th>Herramienta</th>
+                                <th>Entregable</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Primer contacto con IA</td><td>ChatGPT, Claude, Gemini</td><td>Cuenta configurada</td></tr>
+                            <tr><td>Ingeniería de prompts</td><td>Modelo CIFRCE</td><td>5 prompts propios</td></tr>
+                            <tr><td>Diagnóstico FODA</td><td>ChatGPT (modo socrático)</td><td>FODA dinámico</td></tr>
+                            <tr><td>Plan de acción</td><td>IA generativa</td><td>Informe de diagnóstico</td></tr>
+                            <tr class="fila-autoevaluacion">
+                                <td colspan="3">
+                                    <strong>Autoevaluación rápida:</strong><br>
+                                    Antes de pasar al Módulo II, ¿podés hacer esto sin ayuda?<br>
+                                    ✅ Configurar ChatGPT/Claude/Gemini con un propósito específico<br>
+                                    ✅ Escribir un prompt con el modelo CIFRCE completo<br>
+                                    ✅ Generar un FODA dinámico de tu negocio<br>
+                                    ✅ Tener un plan de acción de al menos 3 acciones concretas<br>
+                                    <small style="display: block; margin-top: 5px; color: #666;">
+                                        Si respondiste ✅ a todas: estás listo para el Módulo II.<br>
+                                        Si no: repasá la semana que te generó más dudas antes de continuar.
+                                    </small>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="checklist-next">▶ Siguiente: <a href="#modulo2">Módulo II — Automatización</a></p>
+                </div>
+            </div>
+
+            <!-- MÓDULO II: Automatización de Procesos -->
+            <div class="module-card" id="modulo2">
+                <div class="module-header module-automation">
+                    <div>
+                        <span>Módulo II</span>
+                        <h3>Automatización de Procesos</h3>
+                    </div>
+                    <i class="fas fa-cogs fa-2x"></i>
+                </div>
+
+                <p class="modulo-intro">
+                    La automatización tiene sentido solo cuando ya sabes qué proceso 
+                    quieres optimizar. Este módulo te enseña a construir flujos 
+                    automáticos sin programar, integrar un CRM básico y calcular el 
+                    retorno real de cada herramienta implementada.
+                </p>
+
+                <details id="m2-s5">
+                    <summary>Semana 5: Automatización No-code</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 5. Automatización de procesos .png" alt="Infografía Semana 5: Automatización de procesos y optimización empresarial"
+                            class="infographic-thumb" title="Clic para ampliar">
+                        <p>Conecte aplicaciones y automatice tareas sin saber programar.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi primer flujo automático</h4>
+                                <div class="rhec-step-content">
+                                    <p>Cree un escenario que automatice una tarea de comunicación: cuando alguien llena un Google Form, el sistema debe enviarle un correo automático personalizado por Gmail.</p>
+                                    <p><strong>Entregable:</strong> Captura de pantalla de su escenario de Make ejecutado con éxito y marcando sus esferas verdes de operación sin errores.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Regístrese en Make.com. Cree un nuevo escenario.</li>
+                                        <li>Agregue el disparador (<strong>Trigger</strong>): módulo de Google Sheets "Watch New Rows". Conecte su cuenta de Google y su hoja de respuestas del formulario.</li>
+                                        <li>Agregue la acción: módulo de Gmail "Send an Email". Conecte su cuenta.</li>
+                                        <li>Mapee los campos arrastrando las variables del formulario (correo del cliente, nombre) al cuerpo y destinatario del correo.</li>
+                                        <li>Haga clic derecho en el módulo de Gmail y elija <strong>"Add error handler"</strong> para configurar un correo de aviso a usted mismo si falla.</li>
+                                        <li>Ejecute "Run Once" y pruebe con datos de ejemplo.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>Automatizar es hacer que la información fluya sin intervención manual. La lógica no-code se basa en:</p>
+                                    <ul>
+                                        <li><strong>Trigger:</strong> El evento iniciador (ej. nueva respuesta en Excel).</li>
+                                        <li><strong>Acción:</strong> Lo que se realiza en respuesta (ej. enviar correo).</li>
+                                        <li><strong>Operaciones de Make:</strong> El plan gratuito le da 1.000 operaciones mensuales. Reduzca la frecuencia de chequeo (de 5 minutos a 1 hora) para optimizar su plan.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Sube tu captura de pantalla. Responda: ¿qué error o dificultad encontraste al mapear las variables en Gmail y cómo lo solucionaste?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://youtu.be/ElsjejoXNoA" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Automatización pymes</a>
+                            <a href="https://youtu.be/ElhJ5GFQDgE" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Automatización con Make</a>
+                            <a href="https://youtu.be/xPMt25CZRTk" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Automatiza tu negocio parte 1</a>
+                            <a href="https://youtu.be/VWwglL0L0Mw" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Automatiza tu negocio parte 2</a>
+                            <a href="https://youtu.be/08jm_ojPL0U" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Automatiza con n8n</a>
+                            <a href="https://youtu.be/kR7Sa15RM2s" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Problemas con IA</a>
+                            <a href="https://youtu.be/DsoHiwfA_Ls" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Automatizar con Whastapp</a>
+                            <a href="https://youtu.be/2cYBIfUvS74" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Automatizar procesos</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="m2-s6">
+                    <summary>Semana 6: Chatbots y Atención al Cliente</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 6. Guía de Asistentes Virtuales Inteligentes.png"
+                            alt="Infografía Semana 6: Guía de Asistentes Virtuales Inteligentes en la Empresa" class="infographic-thumb" title="Clic para ampliar">
+                        <p>Cree asistentes virtuales para responder WhatsApp y correos.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi chatbot de respuestas frecuentes</h4>
+                                <div class="rhec-step-content">
+                                    <p>Identifique las 10 dudas principales de sus clientes. Diseñe e implemente un árbol de decisiones automatizado para responder al menos 5 de ellas.</p>
+                                    <p><strong>Entregable:</strong> Diagrama de su árbol de decisión y enlace de prueba de su chatbot funcionando.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Diseñe el diagrama de flujo en papel o en Canva (ej: Opción 1: Horario → bot responde horario. Opción 2: Precios → bot responde precios).</li>
+                                        <li>Use Make para configurar un bot que reciba mensajes por Telegram/WhatsApp.</li>
+                                        <li>Cree un filtro en Make: si el mensaje contiene "precio", se activa la respuesta con el catálogo de precios.</li>
+                                        <li>Configure la <strong>escalación humana</strong>: si el mensaje no cumple las condiciones del bot, Make le envía una alerta a su WhatsApp personal con el contacto del cliente para que usted responda.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>El valor de un bot reside en liberar tiempo. Responder preguntas de "dónde están ubicados" consume horas operativas valiosas. El principio clave es el balance humano-bot: la IA gestiona el volumen inicial repetitivo y el humano atiende los cierres de venta complejos.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>¿Qué protocolo diseñó para que el cliente sepa que está hablando con un bot sin perder la empatía ni el tono de su marca?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://gemini.google.com/share/43bc6db51c13" target="_blank"
+                                class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Manual para automatizar
+                                whatsapp con n8n o make</a>
+                            <a href="https://youtu.be/P06Vcw35-5s" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Uso de IA Grok</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="m2-s7">
+                    <summary>Semana 7: CRM y Sistematización</summary>
+                    <div class="week-content">
+                        <div style="margin-bottom: 15px;">
+                            <img src="Infografias/Semana 7. CRM y Automatización.png" alt="Infografía Semana 7: CRM y automatización de relaciones con clientes"
+                                class="infographic-thumb" title="Clic para ampliar"
+                                style="display:inline-block; margin-right: 15px; max-width: 48%;">
+                            <img src="Infografias/Semana 7. SandBox Regulatorios.png" alt="Infografía Semana 7: Sandboxes regulatorios y aspectos legales en IA"
+                                class="infographic-thumb" title="Clic para ampliar" style="display:inline-block; max-width: 48%;">
+                        </div>
+                        <p>Organice sus clientes y seguimientos de forma automática.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi mini-CRM automático</h4>
+                                <div class="rhec-step-content">
+                                    <p>Configure una base de datos de leads conectada a su flujo. Cada nuevo prospecto debe caer clasificado automáticamente según su potencial o prioridad de compra.</p>
+                                    <p><strong>Entregable:</strong> Captura de pantalla de su pipeline de ventas en Google Sheets llenado automáticamente por su automatización.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Cree un Excel o Google Sheet con columnas: Nombre, Correo, Consulta, Estado (Nuevo, Cotizado, Cerrado) e IA-Clasificación.</li>
+                                        <li>En Make, inserte un módulo intermedio con la API de OpenAI o Gemini entre el disparador y el registro del Excel.</li>
+                                        <li>Use el prompt del módulo de IA en Make: <em>"Analiza la consulta del cliente: '[Consulta]'. Clasifica su intención en: ALTA, MEDIA o BAJA prioridad de compra y devuélveme solo la palabra."</em></li>
+                                        <li>Mapee la salida de la IA a la columna 'IA-Clasificación' del Excel.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p><strong>CRM (Customer Relationship Management):</strong> Es el corazón de las ventas. La automatización evita la pérdida de datos y permite dar seguimiento oportuno. Incorporar IA en el flujo de automatización (como N8N o Make) para analizar textos cualitativos nos permite pre-calificar prospectos antes de que un agente los atienda.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>¿Qué criterios de clasificación de IA le resultaron más útiles para priorizar el tiempo de atención diaria en su negocio?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://youtu.be/AjG0NghxXzQ" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Sandbox Regulatorios para Pymes</a>
+                            <a href="https://youtu.be/qZQqBWZ8n90" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> CRM y automatización</a>
+                            <a href="https://gemini.google.com/share/acec911d240f" target="_blank"
+                                class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Guía de
+                                automatización</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="m2-s8">
+                    <summary>Semana 8: ROI de la Automatización</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 8. Valor de la automatización empresarial.png"
+                            alt="Infografía Semana 8: El valor de la automatización de procesos de negocio" class="infographic-thumb" title="Clic para ampliar">
+                        <p>Calcule cuánto dinero y tiempo ahorra con sus implementaciones.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi automatización en producción</h4>
+                                <div class="rhec-step-content">
+                                    <p>Pruebe exhaustivamente el flujo construido, documéntelo y calcule el ROI financiero real de su automatización.</p>
+                                    <p><strong>Entregable:</strong> Documento del proyecto del Módulo II: Flujo en producción documentado con diagrama, control de errores y análisis de ROI.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Realice al menos 5 pruebas de ejecución forzando datos erróneos (ej: correo incompleto) para verificar que el sistema maneja el error correctamente sin detenerse.</li>
+                                        <li>Cree una ficha técnica del flujo explicando qué hace cada nodo para que un tercero pueda mantenerlo.</li>
+                                        <li>Use la calculadora de ROI: <em>ROI = ((Horas mensuales ahorradas * Costo/hora personal) - Costo herramientas)</em>.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>La automatización debe justificarse económicamente. Si el desarrollo y mantenimiento del flujo consume más horas del propietario que el beneficio, debe rediseñarse. El cálculo del ROI demuestra que invertir $9/mes en licencias de automatización se paga solo al ahorrar un par de horas semanales.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Comparta el ROI resultante de su proyecto. ¿Cuántas horas semanales estimadas le devuelve esta automatización?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://chat.qwen.ai/s/deploy/t_5cf0fca5-193a-427d-9bcf-ceaa2968d0fa"
+                                target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Retorno
+                                del ROI</a>
+                            <a href="https://youtu.be/OIFytSp36hM" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Ventajas de pagar</a>
+                        </div>
+                    </div>
+                </details>
+
+                <div class="checklist-modulo">
+                    <h4>✅ Lista de chequeo — Módulo II</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Componente</th>
+                                <th>Herramienta</th>
+                                <th>Entregable</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Automatización No-code</td><td>Make / n8n</td><td>Primer flujo automático</td></tr>
+                            <tr><td>Chatbots de atención</td><td>Make / n8n / Grok</td><td>Asistente virtual de atención</td></tr>
+                            <tr><td>Sistematización y CRM</td><td>Airtable / CRM básico</td><td>CRM configurado</td></tr>
+                            <tr><td>Evaluación económica</td><td>Planilla de ROI</td><td>Cálculo de retorno de inversión</td></tr>
+                            <tr class="fila-autoevaluacion">
+                                <td colspan="3">
+                                    <strong>Autoevaluación rápida:</strong><br>
+                                    Antes de pasar al Módulo III, ¿podés hacer esto sin ayuda?<br>
+                                    ✅ Explicar qué es un trigger, una acción y un router en Make<br>
+                                    ✅ Diseñar y probar un flujo de automatización básico sin código<br>
+                                    ✅ Configurar un chatbot o asistente de atención al cliente<br>
+                                    ✅ Estructurar y gestionar un CRM básico en Airtable/hoja de cálculo<br>
+                                    <small style="display: block; margin-top: 5px; color: #666;">
+                                        Si respondiste ✅ a todas: estás listo para el Módulo III.<br>
+                                        Si no: repasá las semanas de automatización antes de avanzar.
+                                    </small>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="checklist-next">▶ Siguiente: <a href="#modulo3">Módulo III — Comercialización</a></p>
+                </div>
+            </div>
+
+            <!-- MÓDULO III: Contenido y Comercialización -->
+            <div class="module-card" id="modulo3">
+                <div class="module-header module-content">
+                    <div>
+                        <span>Módulo III</span>
+                        <h3>Contenido y Comercialización</h3>
+                    </div>
+                    <i class="fas fa-bullhorn fa-2x"></i>
+                </div>
+
+                <p class="modulo-intro">
+                    La visibilidad digital diferencia a los negocios que subsisten de 
+                    los que crecen. Aquí usarás IA para construir tu identidad visual, 
+                    producir contenido audiovisual profesional y lanzar tu primera 
+                    campaña integral con el framework AIDA.
+                </p>
+
+                <details id="m3-s9">
+                    <summary>Semana 9: Identidad Visual y Diseño</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 9. Canva para PYMES.png" alt="Infografía Semana 9: Canva para PYMES e Identidad Visual"
+                            class="infographic-thumb" title="Clic para ampliar">
+                        <p>Cree la imagen de su marca usando IA generativa de imágenes.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi kit visual de marca</h4>
+                                <div class="rhec-step-content">
+                                    <p>Defina la paleta de colores y tipografía de su negocio y diseñe un set de 5 plantillas para redes sociales aplicando su identidad de marca en Canva.</p>
+                                    <p><strong>Entregable:</strong> Enlace al Brand Kit de Canva + set de 5 plantillas personalizadas listas para publicar.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Use ChatGPT con el prompt: <em>"Sugiere una paleta de colores hexadecimales y tipografías para una [soda/tienda] que quiere transmitir [valores como familiaridad, frescura]."</em></li>
+                                        <li>Configure estas pautas en el <strong>Brand Hub de Canva</strong>.</li>
+                                        <li>Use la función <strong>Canva Magic Design</strong> subiendo una foto de sus productos. Deje que la IA proponga 5 piezas para redes y edítelas con sus colores y tipografía corporativos.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>Consistencia visual es confianza. Un negocio que publica con colores tipografías desordenadas genera desconfianza. La paleta de colores activa emociones subconscientes (ej: azul = confianza; verde = orgánico; amarillo = rapidez). La IA acelera la maquetación inicial, pero su control de calidad final asegura la coherencia.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Comparta una imagen de su paleta y explíquenos por qué esos colores representan el valor principal que ofrece su pyme.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://youtu.be/-nmNBOtHNig" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Canva para emprendedores</a>
+                            <a href="https://youtu.be/D6GVQEElphE" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Usar Canva</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="m3-s10">
+                    <summary>Semana 10: Producción Audiovisual</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 10. Creación Videos y avatares.png" alt="Infografía Semana 10: Creación de contenidos audiovisuales y avatares con IA"
+                            class="infographic-thumb" title="Clic para ampliar">
+                        <p>Generación de video, voz y avatares para marketing.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi primer video promocional con IA</h4>
+                                <div class="rhec-step-content">
+                                    <p>Produzca un video de 30-60 segundos para su negocio usando CapCut, con subtítulos automáticos y edición asistida por IA.</p>
+                                    <p><strong>Entregable:</strong> Archivo o enlace del video publicable de su producto o servicio.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Use un LLM para escribir el guion de 40 segundos del video con base en la estructura AIDA (Atención, Interés, Deseo, Acción).</li>
+                                        <li>Use la voz sintética de <strong>Eleven Labs</strong> para generar el audio de la narración a partir del guion.</li>
+                                        <li>Cargue el audio y las tomas de video en <strong>CapCut</strong>. Use los subtítulos automáticos y sincronice el ritmo del video.</li>
+                                        <li>(Opcional) Integre un avatar virtual con Synthesia o HeyGen si requiere un presentador digital.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p><strong>Ética de IA en contenidos:</strong> El video generado con avatares o voces sintéticas debe ser transparente. Es de buena praxis declarar si un presentador es virtual. Además, respete los derechos de imagen y propiedad intelectual al utilizar contenidos de terceros.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Comparta el video creado y reflexione: ¿cuál es la mayor limitación que encontró al generar audio sintético o avatares?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://youtu.be/ReHGaWrwBfw" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Generación de video y audio</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="m3-s11">
+                    <summary>Semana 11: Estudios de Prefactibilidad</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 11. Guía de Viabilidad de IA.png" alt="Infografía Semana 11: Guía de Viabilidad y Prefactibilidad Técnica de Proyectos de IA"
+                            class="infographic-thumb" title="Clic para ampliar">
+                        <p>Analice la viabilidad de nuevos productos antes de invertir.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> ¿Vale la pena invertir?</h4>
+                                <div class="rhec-step-content">
+                                    <p>Analice la viabilidad de un nuevo producto, servicio o canal comercial para su negocio mediante simulación de costos y proyección financiera con IA.</p>
+                                    <p><strong>Entregable:</strong> Documento de Prefactibilidad de 2-3 páginas con cálculo de retorno, punto de equilibrio y decisión justificada de ir/no-ir.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Use Gemini para investigar estimaciones de mercado de su nuevo sector y recopile los precios cobrados por la competencia.</li>
+                                        <li>Proporcione los datos a un LLM y pida: <em>"Proyecta un flujo de caja simple a 6 meses para este nuevo producto, considerando costos iniciales y ventas estimadas. Piensa paso a paso."</em></li>
+                                        <li>Calcule el punto de equilibrio y evalúe la conveniencia del canal (redes vs web propia).</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p><strong>Prefactibilidad:</strong> Es el filtro crítico previo a quemar capital. Analizar la viabilidad técnica, comercial y económica le ayuda a cometer errores rápidos sobre el papel, en lugar de sufrir pérdidas financieras de difícil recuperación en su operación.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>¿Qué decisión tomó tras modelar los flujos de su nueva idea? ¿Decidió implementarla, cambiarla o desecharla y por qué?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://youtu.be/ZJqs8XXVNJk" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Estudios de prefactibilidad</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details id="m3-s12">
+                    <summary>Semana 12: Campaña de Lanzamiento</summary>
+                    <div class="week-content">
+                        <img src="Infografias/Semana 12. Estrategia IA para Pequeños Empresarios.png"
+                            alt="Infografía Semana 12: Estrategia de IA integrada para Pequeños Empresarios (AIDA)" class="infographic-thumb" title="Clic para ampliar">
+                        <p>Proyecto final integrador: Lanzamiento de producto con IA.</p>
+                        
+                        <div class="rhec-week-wrapper">
+                            <div class="rhec-step-box reto">
+                                <span class="rhec-badge">Reto (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-bullseye"></i> Mi campaña de lanzamiento completa</h4>
+                                <div class="rhec-step-content">
+                                    <p>Diseñe y ensamble la campaña completa para su producto combinando el kit de marca, el video editado, el plan de prefactibilidad y una automatización de captación.</p>
+                                    <p><strong>Entregable:</strong> Proyecto final del Módulo III: Plan de campaña AIDA documentado más enlaces a los activos digitales multimedia producidos.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box hacer">
+                                <span class="rhec-badge">Hacer (65%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-tools"></i> Práctica Guiada</h4>
+                                <div class="rhec-step-content">
+                                    <ol>
+                                        <li>Redacte la secuencia de copys publicitarios y correos siguiendo el framework <strong>AIDA</strong> (Atención: gancho inicial, Interés: problema, Deseo: propuesta de valor, Acción: enlace de compra).</li>
+                                        <li>Defina la ruta: anuncio en redes sociales → Google Forms → registro automático en CRM → correo de bienvenida.</li>
+                                        <li>Cree el plan de lanzamiento de 7 días indicando qué publicar cada día y defina las metas clave de ventas y leads.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box entender">
+                                <span class="rhec-badge">Entender (25%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-graduation-cap"></i> Conceptos Clave</h4>
+                                <div class="rhec-step-content">
+                                    <p>El embudo AIDA es el camino psicológico que recorre el cliente. La IA ayuda a redactar y estructurar, pero es la correcta integración de la campaña (mensajería automatizada, visuales consistentes, precio precalculado) lo que asegura la efectividad del embudo comercial.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="rhec-step-box compartir">
+                                <span class="rhec-badge">Compartir (5%)</span>
+                                <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
+                                <div class="rhec-step-content">
+                                    <p>Publique su pitch comercial final de 5 minutos en el foro y retroalimente la campaña de al menos uno de sus compañeros.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="https://youtu.be/Bg6eHTM8VTs" target="_blank" class="resource-link" rel="noopener noreferrer"><i
+                                    class="fab fa-youtube" style="color: red;"></i> Como gestionar mis productos con IA
+                                y mi campaña de lanzamiento</a>
+                        </div>
+                    </div>
+                </details>
+
+                <div class="checklist-modulo">
+                    <h4>✅ Lista de chequeo — Módulo III</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Componente</th>
+                                <th>Herramienta</th>
+                                <th>Entregable</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Identidad Visual</td><td>Canva / Generadores de imágenes</td><td>Diseño de marca y logos</td></tr>
+                            <tr><td>Producción Audiovisual</td><td>CapCut / Eleven Labs</td><td>Video y locución promocional</td></tr>
+                            <tr><td>Prefactibilidad comercial</td><td>IA Generativa</td><td>Estudio de viabilidad comercial</td></tr>
+                            <tr><td>Campaña de Lanzamiento</td><td>Framework AIDA</td><td>Campaña de marketing completa</td></tr>
+                            <tr class="fila-autoevaluacion">
+                                <td colspan="3">
+                                    <strong>Autoevaluación rápida:</strong><br>
+                                    Antes de finalizar el programa completo, ¿podés hacer esto sin ayuda?<br>
+                                    ✅ Diseñar la identidad visual y marca de tu negocio usando Canva/IA<br>
+                                    ✅ Producir un video profesional con avatares o locución generada por IA<br>
+                                    ✅ Evaluar la viabilidad comercial y prefactibilidad de una nueva idea con IA<br>
+                                    ✅ Diseñar una campaña de marketing completa utilizando el framework AIDA<br>
+                                    <small style="display: block; margin-top: 5px; color: #666;">
+                                        ¡Felicidades por completar todos los módulos! Estás listo para solicitar tu credencial.<br>
+                                        Si algún punto requiere repaso, recordá que tenés acceso 24/7 a las guías.
+                                    </small>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="checklist-next">🎉 ¡Programa Completado!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credenciales y Valor Agregado -->
+    <section id="credenciales" class="seccion-credenciales">
+        <h2>🏅 Credenciales y Valor Agregado</h2>
+        <p class="seccion-intro" style="max-width: 800px; margin: 0 auto 1.5rem auto; text-align: center; color: #666;">
+            Completar el Programa no es solo aprender — es demostrarlo. 
+            Al finalizar cada kit, recibís una credencial que podés 
+            compartir profesionalmente.
+        </p>
+        <div class="cred-grid" style="max-width: 900px; margin: 0 auto; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+            <div class="cred-card">
+                <div class="cred-icon">🆓</div>
+                <h3>Toolkit 1 — Gratuito</h3>
+                <p style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #333;">Al completar las 4 semanas y la autoevaluación final:</p>
+                <ul>
+                    <li>Insignia digital (Open Badge) verificable</li>
+                    <li>Publicable en LinkedIn y portafolios digitales</li>
+                    <li>Emitida por: UCR / CIOdD – DIPROVID / Auge</li>
+                </ul>
+                <p class="cred-estado">⏳ Próximamente disponible — Agosto 2025</p>
+            </div>
+            <div class="cred-card cred-pago">
+                <div class="cred-icon">💎</div>
+                <h3>Toolkit 2 — Certificación</h3>
+                <p style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #333;">Programa avanzado para negocios en marcha:</p>
+                <ul>
+                    <li>Certificado formal UCR con evaluación estructurada</li>
+                    <li>Acceso a plataforma Moodle con contenidos extendidos</li>
+                    <li>Módulos de automatización, análisis financiero y comercialización</li>
+                </ul>
+                <p class="cred-estado cred-pago-tag">💰 De pago — Detalles en desarrollo</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="resources">
+        <div class="section-header">
+            <h3>Biblioteca de Recursos</h3>
+            <p>Acceso directo a las herramientas y guías prácticas.</p>
+        </div>
+
+        <div class="subsection-header" style="text-align: center; margin-top: 1rem; margin-bottom: 2rem;">
+            <h4 style="color: var(--ucr-blue); font-size: 1.3rem;"><i class="fas fa-robot"></i> Asistentes Virtuales Institucionales</h4>
+            <p style="color: #666; font-size: 0.95rem;">Asistentes virtuales entrenados para tareas específicas.</p>
+        </div>
+
+        <p class="asistentes-nota">
+            Los siguientes asistentes son recursos de apoyo del Programa. 
+            Algunos se encuentran en proceso de migración a cuentas 
+            institucionales UCR/Auge. Ante dudas sobre el respaldo 
+            institucional de cada recurso, consulte a DIPROVID.
+        </p>
+
+        <div class="resources-grid" style="margin-bottom: 3rem;">
+            <a href="https://gemini.google.com/gem/1SYY-glUOgfcmQ7J5L2l8uTIbTfuNFSVa?usp=sharing" target="_blank"
+                class="res-card highlight" rel="noopener noreferrer">
+                <i class="fas fa-star" style="color: var(--accent-yellow);"></i>
+                <h4 style="color: #333;">GPT Emprendedores V2</h4>
+                <p style="font-size: 0.9rem; color: #666;">Asistente personalizado.</p>
+            </a>
+
+            <a href="https://chatgpt.com/g/g-UKpcQkwMI-omipymes-uned-asistente-virtual-territorial-cr" target="_blank"
+                rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
+                <i class="fas fa-map-marker-alt" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">OMIPYMES UNED: Territorial<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Análisis estadístico y territorial CR.</p>
+            </a>
+
+            <a href="https://chatgpt.com/g/g-uCgjrweCI-omipymes-uned-analista-territorial-costarricense" target="_blank"
+                rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
+                <i class="fas fa-chart-area" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">OMIPYMES UNED: Analista<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Desarrollo regional y análisis territorial.</p>
+            </a>
+
+            <a href="https://chatgpt.com/g/g-6995f7453f4c81919de7943fd29117af-guesssy-omipymes-uned-cr" target="_blank"
+                rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
+                <i class="fas fa-graduation-cap" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">GUESSSY<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Investigación sobre salud y espíritu emprendedor.</p>
+            </a>
+
+            <a href="https://chatgpt.com/g/g-6986602037008191be3605b0e10acf12-guia-de-costeo-omipymes" target="_blank"
+                rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
+                <i class="fas fa-calculator" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Guía de Costeo<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Apoyo para costear productos con OMIPYMEs.</p>
+            </a>
+
+            <a href="https://chatgpt.com/g/g-6986563cb3288191b9fe112b950ccdb5-guia-omipymes-marketing-digital"
+                target="_blank" rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
+                <i class="fas fa-bullhorn" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Marketing Digital<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Guía y diagnóstico en redes sociales y ventas.</p>
+            </a>
+
+            <a href="https://chatgpt.com/g/g-68efdd82332881918682590097e2a322-obi" target="_blank"
+                rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
+                <i class="fas fa-route" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">OBI<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Asistente de trámites para emprender en Costa Rica.</p>
+            </a>
+        </div>
+
+        <div class="subsection-header" style="text-align: center; margin-bottom: 2rem;">
+            <h4 style="color: var(--ucr-blue); font-size: 1.3rem;"><i class="fas fa-book"></i> Referencias y Guías
+                Prácticas</h4>
+        </div>
+
+        <div class="resources-grid">
+
+            <a href="https://gemini.google.com/share/10ffd72f38b4" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-shield-alt" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Seguridad Digital</h4>
+                <p style="font-size: 0.9rem; color: #666;">Lo mínimo que debe saber.</p>
+            </a>
+
+            <a href="https://gemini.google.com/share/59daea6ee92a" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-list-ol" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Técnica Few-Shot</h4>
+                <p style="font-size: 0.9rem; color: #666;">Guía de prompting avanzado.</p>
+            </a>
+
+            <a href="https://gemini.google.com/share/86c585d9bec3" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-lightbulb" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Ejemplos Reales</h4>
+                <p style="font-size: 0.9rem; color: #666;">Casos de uso aplicados.</p>
+            </a>
+
+            <a href="https://www.youtube.com/playlist?list=PLnY61_1lJZUVjJeu6J0EbmBu-LTIkehPK" target="_blank"
+                class="res-card youtube" rel="noopener noreferrer">
+                <i class="fab fa-youtube" style="color: red;"></i>
+                <h4 style="color: #333;">Canal de Video</h4>
+                <p style="font-size: 0.9rem; color: #666;">Lista de reproducción oficial.</p>
+            </a>
+        </div>
+    </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <h4>Universidad de Costa Rica</h4>
+            <p style="opacity: 0.8;">Centro de Investigación Observatorio del Desarrollo (CIOdD) | DIPROVID</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://ciodd.ucr.ac.cr" target="_blank" rel="noopener noreferrer">Web CIOdD</a> |
+            <a href="https://diprovid.ucr.ac.cr/" target="_blank" rel="noopener noreferrer">Web DIPROVID</a> |
+            <a href="https://www.ucr.ac.cr" target="_blank" rel="noopener noreferrer">Web UCR</a> |
+            <a href="https://auge.ucr.ac.cr" target="_blank" rel="noopener noreferrer">Web Auge</a>
+        </div>
+
+        <div class="copyright">
+            © 2025 Universidad de Costa Rica | CIOdD – DIPROVID | Colaboración: Programa Auge (UCR)<br>Proyecto de Acción Social ED-3698
+        </div>
+    </footer>
+
+    <!-- Lightbox for Infographics -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span id="lightbox-close" class="lightbox-close">&times;</span>
+            <img id="lightbox-img" class="lightbox-img" src="" alt="Infografía Completa">
+            <div class="lightbox-controls">
+                <a id="lightbox-download" class="lightbox-download" href="" download>
+                    <i class="fas fa-download"></i> Descargar Infografía
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón flotante hamburguesa para móviles -->
+    <button class="sidebar-toggle-btn" id="sidebar-toggle-btn" aria-label="Abrir menú de navegación">
+        <i class="fas fa-bars"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+
+</html>
