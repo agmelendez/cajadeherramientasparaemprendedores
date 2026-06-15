@@ -1353,3 +1353,133 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* --- NUEVOS CAMBIOS JUNIO 2026 --- */
+
+/* C-01 & C-02 styling for list/subtitles in concept cards */
+.concept-card .concept-subtitle {
+  font-weight: bold;
+  color: var(--ucr-blue);
+  margin-top: -5px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+.concept-card p {
+  margin-bottom: 10px;
+}
+.concept-card ul, .concept-card ol {
+  margin: 10px 0 15px 0;
+  padding-left: 0;
+}
+.concept-card li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 0.92rem;
+}
+.concept-card li strong {
+  color: var(--ucr-dark);
+}
+.concept-card li br + small, .concept-card li small {
+  display: block;
+  margin-top: 2px;
+  color: #666;
+  font-style: italic;
+}
+
+/* C-04 Toolkit Pre-Operativo Intro Box */
+.nota-dorada {
+  font-size: 0.95rem;
+  background: #fffdf5;
+  border-left: 4px solid #C6A642;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 6px 6px 0;
+  color: #333;
+}
+.nota-dorada h4 {
+  color: #C6A642;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+.nota-dorada p {
+  margin-bottom: 10px;
+}
+.nota-dorada ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  list-style-type: none;
+}
+.nota-dorada li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* C-08 Prerrequisito Callout */
+.prerrequisito-box {
+  background: #FFF8E6;
+  border-left: 4px solid #C67800;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #855b00;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.prerrequisito-box i {
+  color: #C67800;
+  margin-top: 3px;
+  font-size: 1rem;
+}
+
+/* C-10 Academic Accordion & Table */
+.academico-accordion {
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.academico-accordion summary {
+  font-weight: 600;
+  color: var(--ucr-blue);
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.academico-accordion summary::-webkit-details-marker {
+  color: var(--ucr-celeste);
+}
+.academico-content {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+.academic-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.88rem;
+}
+.academic-table th {
+  background: var(--ucr-blue);
+  color: white;
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+.academic-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  line-height: 1.4;
+  vertical-align: top;
+}
+.academic-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
