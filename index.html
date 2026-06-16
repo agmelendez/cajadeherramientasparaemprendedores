@@ -41,8 +41,9 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
-    <header>
+    <header role="banner">
         <div class="nav-container">
             <div class="logo-box">
                 <img src="logos/ucr.png" alt="Logo Oficial de la Universidad de Costa Rica (UCR)" class="logo-img">
@@ -54,7 +55,7 @@
             <div class="header-academic-tag" style="font-size: 0.8rem; color: #666; font-weight: 600; font-family: 'Montserrat', sans-serif; display: inline-block; margin-right: 15px;">
                 UCR | CIOdD - DIPROVID
             </div>
-            <nav>
+            <nav aria-label="Enlaces rápidos">
                 <a href="#contenidos" class="btn-nav">Ver Contenidos</a>
             </nav>
         </div>
@@ -62,7 +63,7 @@
 
     <div class="page-layout">
         <!-- Barra lateral de navegación izquierda -->
-        <aside class="sidebar" id="sidebar">
+        <aside class="sidebar" id="sidebar" role="navigation" aria-label="Menú de navegación del programa">
             <button class="sidebar-close-btn" id="sidebar-close-btn" aria-label="Cerrar navegación">&times;</button>
             <h3 class="sidebar-title">Menú del Programa</h3>
             <ul class="sidebar-menu">
@@ -120,7 +121,7 @@
         <!-- Backdrop para móvil -->
         <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-        <main class="main-content">
+        <main class="main-content" id="main-content">
 
             <section class="hero">
                 <div class="hero-content">
@@ -144,7 +145,69 @@
                 </div>
             </div>
 
-    <!-- Nueva Sección: Metodología y Autogestión -->
+            <!-- Cómo usar este curso -->
+            <section id="como-usar-curso" class="course-section" style="max-width: 1000px; margin: 3rem auto; padding: 0 20px;">
+                <h2 style="text-align: center; margin-bottom: 1.5rem;">Cómo usar este curso</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem auto; color: #555;">
+                    Esta caja de herramientas está diseñada para personas emprendedoras que necesitan aplicar la inteligencia artificial a problemas reales de su negocio, sin depender de horarios fijos ni de acompañamiento permanente.
+                </p>
+
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;"><i class="fas fa-route" style="color: var(--ucr-blue); margin-right: 8px;"></i>1. Iniciá con el diagnóstico</h3>
+                        <p style="font-size: 0.92rem; color: #666;">
+                            Antes de usar herramientas, completá el diagnóstico de entrada. Este paso te ayuda a decidir si debés comenzar en el Toolkit Pre-Operativo o avanzar directamente al Módulo I.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;"><i class="fas fa-file-invoice" style="color: var(--ucr-blue); margin-right: 8px;"></i>2. Producí evidencias</h3>
+                        <p style="font-size: 0.92rem; color: #666;">
+                            Cada semana termina con un entregable. No se trata solo de leer o ver videos: debés producir una evidencia útil para tu negocio.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;"><i class="fas fa-user-check" style="color: var(--ucr-blue); margin-right: 8px;"></i>3. Verificá antes de implementar</h3>
+                        <p style="font-size: 0.92rem; color: #666;">
+                            La IA puede sugerir, ordenar y acelerar, pero las decisiones finales deben revisarse con tu criterio empresarial, tus datos reales y tu conocimiento del cliente.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;"><i class="fas fa-user-shield" style="color: var(--ucr-blue); margin-right: 8px;"></i>4. Cuidá los datos</h3>
+                        <p style="font-size: 0.92rem; color: #666;">
+                            No ingresés nombres, teléfonos, correos, direcciones, datos bancarios, números de identificación ni información sensible de clientes en herramientas de IA abiertas o gratuitas.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Objetivos de aprendizaje -->
+            <section id="objetivos-aprendizaje" class="course-section" style="max-width: 1000px; margin: 3rem auto; padding: 0 20px;">
+                <h2 style="text-align: center; margin-bottom: 1.5rem;">Objetivos de aprendizaje</h2>
+
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem auto; color: #555;">
+                    Al finalizar esta caja de herramientas, la persona participante será capaz de utilizar inteligencia artificial de manera crítica, segura y aplicada para diagnosticar, automatizar y fortalecer procesos básicos de una MiPYME.
+                </p>
+
+                <div class="learning-objectives" style="border-left: 6px solid var(--ucr-blue);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--ucr-blue);">Objetivos específicos</h3>
+                    <ul style="padding-left: 20px; list-style-type: disc;">
+                        <li style="margin-bottom: 8px;">Diagnosticar el estado de madurez digital y empresarial de un emprendimiento o MiPYME.</li>
+                        <li style="margin-bottom: 8px;">Construir prompts empresariales usando contexto, instrucción, formato, restricciones y criterios de éxito.</li>
+                        <li style="margin-bottom: 8px;">Validar una idea de negocio mediante tendencias, entrevistas, encuestas y evidencia primaria.</li>
+                        <li style="margin-bottom: 8px;">Elaborar un FODA dinámico, un plan de acción y una matriz de priorización IVU.</li>
+                        <li style="margin-bottom: 8px;">Diseñar automatizaciones simples para reducir tareas repetitivas sin perder control humano del proceso.</li>
+                        <li style="margin-bottom: 8px;">Construir un CRM básico y un flujo de atención inicial cuidando la privacidad de los datos.</li>
+                        <li style="margin-bottom: 8px;">Crear piezas de comunicación comercial con IA respetando transparencia, derechos de autor y autenticidad de marca.</li>
+                        <li style="margin-bottom: 8px;">Evaluar la prefactibilidad de una idea mediante supuestos, costos, punto de equilibrio y criterios de decisión.</li>
+                        <li style="margin-bottom: 8px;">Documentar evidencias de aprendizaje y justificar decisiones empresariales con criterio propio.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Nueva Sección: Metodología y Autogestión -->
     <section class="methodology-section">
         <div class="methodology-container">
             <div class="methodology-text">
@@ -827,6 +890,66 @@
         }
     </style>
 
+    <!-- Matriz de alineación pedagógica -->
+    <section id="matriz-alineacion" class="course-section" style="max-width: 1000px; margin: 3rem auto; padding: 0 20px;">
+        <h2 style="text-align: center; margin-bottom: 1.5rem;">Matriz de alineación pedagógica</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem auto; color: #555;">
+            Cada módulo vincula objetivos, actividades, herramientas, evidencias y criterios de revisión. Esta alineación permite verificar que el aprendizaje no dependa de respuestas automáticas de IA, sino de productos aplicados y revisados por la persona emprendedora.
+        </p>
+
+        <div class="table-responsive">
+            <table>
+                <caption>Matriz global de alineación pedagógica del programa</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Módulo</th>
+                        <th scope="col">Objetivo observable</th>
+                        <th scope="col">Actividad central</th>
+                        <th scope="col">Evidencia</th>
+                        <th scope="col">Criterio de logro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Módulo 0: Diagnóstico</strong></td>
+                        <td>Identificar el punto de partida del emprendimiento y la ruta recomendada.</td>
+                        <td>Autodiagnóstico de madurez, urgencia y adopción de IA.</td>
+                        <td>Resultado de ruta personalizada y reflexión inicial.</td>
+                        <td>La persona justifica por qué inicia en una ruta específica.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Toolkit 1: Pre-Operativo</strong></td>
+                        <td>Validar una idea de negocio antes de invertir recursos significativos.</td>
+                        <td>Tendencias, buyer persona, encuesta y canvas.</td>
+                        <td>Carpeta con 4 artefactos de validación.</td>
+                        <td>Las decisiones se basan en evidencia, no solo en intuición.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Módulo I: Diagnóstico con IA</strong></td>
+                        <td>Diagnosticar el negocio y priorizar acciones con apoyo de IA.</td>
+                        <td>Configuración segura, prompting, FODA, matriz IVU y plan de acción.</td>
+                        <td>Informe breve de diagnóstico y plan priorizado.</td>
+                        <td>El plan muestra revisión humana y criterios de priorización explícitos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Módulo II: Automatización</strong></td>
+                        <td>Automatizar tareas repetitivas sin delegar decisiones críticas.</td>
+                        <td>Flujo no-code, chatbot, CRM básico y cálculo de ROI.</td>
+                        <td>Capturas, flujo funcional, base de datos de prueba y cálculo de retorno.</td>
+                        <td>La automatización resuelve un proceso comprendido y medido.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Módulo III: Comercialización</strong></td>
+                        <td>Crear contenido y campañas con IA de forma ética y verificable.</td>
+                        <td>Identidad visual, video, prefactibilidad y campaña AIDA.</td>
+                        <td>Kit de comunicación, video, prefactibilidad y calendario de campaña.</td>
+                        <td>La propuesta comunica valor, respeta transparencia y se basa en datos verificables.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
     <section id="contenidos" class="syllabus">
         <div class="section-header">
             <h3>Estructura del Programa</h3>
@@ -1001,6 +1124,16 @@
                 <details id="t1-s1">
                     <summary>Semana T1-S1: Validación de idea y tendencias de mercado</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de comparar señales básicas de interés de mercado usando Google Trends, Exploding Topics u otras fuentes abiertas, y explicar si su idea muestra señales iniciales de oportunidad o alerta.</p>
+                        </div>
+
+                        <div class="critical-note">
+                            <h4>Interpretación crítica</h4>
+                            <p>Una tendencia de búsqueda no demuestra por sí sola que exista demanda suficiente para un negocio. Usala como señal inicial y combinala con entrevistas, encuestas y observación del mercado local.</p>
+                        </div>
+
                         <p>Analice tendencias y valide su idea de negocio usando herramientas de IA.</p>
                         
                         <div class="rhec-week-wrapper">
@@ -1037,14 +1170,57 @@
                                 <span class="rhec-badge">Compartir (5%)</span>
                                 <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
                                 <div class="rhec-step-content">
-                                    <p>Publique en el grupo de WhatsApp el término que tiene mayor tendencia de crecimiento y una reflexión de por qué considera que está al alza en el mercado local costarricense.</p>
+                                    <p>Comparta en el espacio definido por la coordinación del programa una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
 
                         <div class="resources-links" style="margin-top: 15px;">
                             <a href="https://trends.google.com" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Google Trends</a>
                             <a href="https://explodingtopics.com" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Exploding Topics</a>
+                            <a href="rubricas/rubrica-toolkit-preoperativo.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Toolkit</a>
                         </div>
                     </div>
                 </details>
@@ -1052,6 +1228,16 @@
                 <details id="t1-s2">
                     <summary>Semana T1-S2: Análisis de mercado y perfil de cliente</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de construir una ficha de buyer persona y un mapa de empatía, verificando que sus supuestos estén conectados con problemas reales de clientes potenciales.</p>
+                        </div>
+
+                        <div class="critical-note">
+                            <h4>Evitar buyer personas inventados</h4>
+                            <p>La IA puede ayudarte a estructurar un perfil, pero no debe inventar al cliente. Marcá cuáles datos vienen de tu experiencia, cuáles son supuestos y cuáles deben validarse con personas reales.</p>
+                        </div>
+
                         <p>Diseña el perfil detallado de tu cliente ideal utilizando metodologías de segmentación asistidas por IA.</p>
                         
                         <div class="rhec-week-wrapper">
@@ -1088,9 +1274,56 @@
                                 <span class="rhec-badge">Compartir (5%)</span>
                                 <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
                                 <div class="rhec-step-content">
-                                    <p>Comparta el Buyer Persona generado. ¿Cuál es el mayor dolor o necesidad insatisfecha de ese cliente ideal?</p>
+                                    <p>Comparta una versión resumida y anonimizada del Buyer Persona. No incluya nombres reales, teléfonos, correos, ubicaciones exactas ni información que permita identificar a una persona.</p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="templates/plantilla-buyer-persona.md" target="_blank" class="resource-link"><i class="fas fa-file-download"></i> Descargar Plantilla Buyer Persona y Mapa de Empatía</a>
+                            <a href="rubricas/rubrica-toolkit-preoperativo.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Toolkit</a>
                         </div>
                     </div>
                 </details>
@@ -1098,6 +1331,16 @@
                 <details id="t1-s3">
                     <summary>Semana T1-S3: Diseño y análisis de encuesta de validación primaria</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de diseñar, aplicar y analizar una encuesta de validación primaria, anonimizando las respuestas antes de procesarlas con IA.</p>
+                        </div>
+
+                        <div class="privacy-warning">
+                            <h4>Anonimizá antes de analizar</h4>
+                            <p>Antes de copiar respuestas en Claude, ChatGPT, Gemini u otra herramienta, eliminá nombres, teléfonos, correos, direcciones y cualquier dato que permita identificar a las personas encuestadas. Usá nuestro protocolo de privacidad.</p>
+                        </div>
+
                         <p>Estructura encuestas efectivas y utiliza la IA para analizar las respuestas de tus clientes potenciales.</p>
                         
                         <div class="rhec-week-wrapper">
@@ -1117,7 +1360,7 @@
                                     <ol>
                                         <li>Cree un formulario en <strong>Google Forms</strong> con 5 preguntas que investiguen los hábitos y problemas de su cliente ideal (evite preguntas sesgadas como "¿Te gusta mi idea?").</li>
                                         <li>Envíe la encuesta a al menos 10 clientes potenciales.</li>
-                                        <li>Descargue las respuestas en texto, péguelas en Claude y pida: <em>"Clasifica estas respuestas cualitativas en 3 temas clave e identifica cuál es el problema más común."</em></li>
+                                        <li>Descargue las respuestas, elimine cualquier dato identificable y luego pida al modelo: “Clasificá estas respuestas anonimizadas en 3 temas clave, identificá el problema más común y señalá qué datos serían insuficientes para tomar una decisión”.</li>
                                     </ol>
                                 </div>
                             </div>
@@ -1134,9 +1377,57 @@
                                 <span class="rhec-badge">Compartir (5%)</span>
                                 <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
                                 <div class="rhec-step-content">
-                                    <p>Mencione un cambio o ajuste que descubrió que debe hacer en su idea de negocio tras leer las respuestas de los encuestados.</p>
+                                    <p>Comparta en el espacio definido por la coordinación del programa una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="politicas/protocolo-privacidad-datos.md" target="_blank" class="resource-link"><i class="fas fa-user-lock"></i> Protocolo de Privacidad y Anonimización</a>
+                            <a href="templates/plantilla-consentimiento-clientes.md" target="_blank" class="resource-link"><i class="fas fa-file-download"></i> Plantilla de Consentimiento de Clientes</a>
+                            <a href="rubricas/rubrica-toolkit-preoperativo.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Toolkit</a>
                         </div>
                     </div>
                 </details>
@@ -1144,6 +1435,16 @@
                 <details id="t1-s4">
                     <summary>Semana T1-S4: Estructura básica de modelo de negocio</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de estructurar un Business Model Canvas preliminar y justificar los principales supuestos de valor, cliente, ingresos y costos.</p>
+                        </div>
+
+                        <div class="critical-note">
+                            <h4>Supuestos del Canvas</h4>
+                            <p>Cada bloque del Canvas debe marcarse como dato validado, supuesto razonable o hipótesis pendiente. No tratés como hecho una afirmación generada por IA.</p>
+                        </div>
+
                         <p>Crea tu primer Business Model Canvas interactuando con la IA en modo de consultoría socrática.</p>
                         
                         <div class="rhec-week-wrapper">
@@ -1180,9 +1481,56 @@
                                 <span class="rhec-badge">Compartir (5%)</span>
                                 <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
                                 <div class="rhec-step-content">
-                                    <p>Escriba su Propuesta de Valor única de 2 líneas y cuál será su canal principal de distribución.</p>
+                                    <p>Comparta en el espacio definido por la coordinación del programa una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="resources-links" style="margin-top: 15px;">
+                            <a href="templates/plantilla-business-model-canvas.md" target="_blank" class="resource-link"><i class="fas fa-file-download"></i> Descargar Plantilla Business Model Canvas</a>
+                            <a href="rubricas/rubrica-toolkit-preoperativo.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Toolkit</a>
                         </div>
                     </div>
                 </details>
@@ -1222,9 +1570,24 @@
                 <details id="m1-s1">
                     <summary>Semana 1: Configuración y Primer Contacto</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de configurar una herramienta de IA generativa con medidas básicas de seguridad, control de datos y criterios de uso responsable.</p>
+                        </div>
+
                         <img src="Infografias/Semana 1. Historia de la IA.png" alt="Infografía Semana 1: Historia y evolución de la Inteligencia Artificial"
                             class="infographic-thumb" title="Clic para ampliar">
                         <p>Configure su ecosistema de herramientas de forma segura y realice sus primeras consultas.</p>
+
+                        <div class="ethics-box">
+                            <h4>Checklist de Seguridad Inicial</h4>
+                            <ul class="checklist">
+                                <li>Activé autenticación de dos factores cuando la herramienta lo permite.</li>
+                                <li>Revisé configuración de historial, entrenamiento o uso de datos.</li>
+                                <li>No subí archivos con información privada de clientes.</li>
+                                <li>Identifiqué qué versión de la herramienta estoy usando: gratuita, educativa, empresarial o de pago.</li>
+                            </ul>
+                        </div>
                         
                         <div class="rhec-week-wrapper">
                             <div class="rhec-step-box reto">
@@ -1271,9 +1634,51 @@
                                 <span class="rhec-badge">Compartir (5%)</span>
                                 <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
                                 <div class="rhec-step-content">
-                                    <p>Publique en el foro del curso una captura de su conversación. Responda: ¿Qué le sorprendió de la respuesta? ¿Qué habría querido que el modelo respondiera diferente?</p>
+                                    <p>Comparta en el espacio definido por la coordinación del programa una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
 
                         <div class="resources-links" style="margin-top: 15px;">
@@ -1282,9 +1687,10 @@
                             <a href="https://gemini.google.com/share/8e00aa29a4c6" target="_blank"
                                 class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> IA Generativa</a>
                             <a href="https://youtu.be/Ijgaubyqioc" target="_blank" class="resource-link" rel="noopener noreferrer"><i
-                                    class="fab fa-youtube" style="color: red;"></i> Principios Éticos</a>
+                                     class="fab fa-youtube" style="color: red;"></i> Principios Éticos</a>
                             <a href="https://youtu.be/I1TqHfRUn3w" target="_blank" class="resource-link" rel="noopener noreferrer"><i
-                                    class="fab fa-youtube" style="color: red;"></i> Tendencias de IA</a>
+                                     class="fab fa-youtube" style="color: red;"></i> Tendencias de IA</a>
+                            <a href="rubricas/rubrica-modulo-diagnostico.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -1292,6 +1698,16 @@
                 <details id="m1-s2">
                     <summary>Semana 2: Ingeniería de Prompts (CIFRCE)</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de redactar prompts empresariales usando el modelo CIFRCE y evaluar la utilidad de las respuestas mediante criterios verificables.</p>
+                        </div>
+
+                        <div class="prompt-quality-box">
+                            <h4>Salida verificable recomendada</h4>
+                            <p>Cuando usés IA para decisiones empresariales, pedí siempre: supuestos, datos faltantes, riesgos de error, criterios usados y una tabla final revisable.</p>
+                        </div>
+
                         <img src="Infografias/Semana 2. Guía Maestra de Prompt Engineering.png"
                             alt="Infografía Semana 2: Guía Maestra de Ingeniería de Prompts (CIFRCE)" class="infographic-thumb" title="Clic para ampliar">
                         <p>Domine el arte de "hablar" con la IA para obtener resultados empresariales útiles.</p>
@@ -1318,7 +1734,7 @@
                                         <li><strong>R (Restricciones):</strong> Lo que NO debe hacer (ej: sin usar redes de pago).</li>
                                         <li><strong>CE (Criterio de Éxito):</strong> El estándar de calidad (ej: que cueste menos de ₡10.000).</li>
                                     </ul>
-                                    <p>Aplique <strong>Few-shot prompting</strong> dando 2 ejemplos del formato esperado y <strong>Chain-of-thought</strong> pidiendo que el modelo "razone paso a paso".</p>
+                                    <p>Aplique <strong>Few-shot prompting</strong> dando 2 ejemplos del formato esperado. Luego pedí al modelo que entregue: supuestos utilizados, criterios de decisión, riesgos de error, datos faltantes y una versión final verificable. No aceptés la respuesta sin contrastarla con tu conocimiento del negocio.</p>
                                 </div>
                             </div>
                             
@@ -1342,9 +1758,51 @@
                                 <span class="rhec-badge">Compartir (5%)</span>
                                 <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
                                 <div class="rhec-step-content">
-                                    <p>Publique en el foro su prompt CIFRCE más exitoso de la semana y por qué cree que el formato y las restricciones cambiaron radicalmente la respuesta.</p>
+                                    <p>Comparta en el espacio definido por la coordinación del programa una versión breve de su prompt CIFRCE más exitoso de la semana, sin datos sensibles ni información identificable de clientes.</p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
 
                         <div class="resources-links" style="margin-top: 15px;">
@@ -1354,6 +1812,7 @@
                                     class="fab fa-youtube" style="color: red;"></i> Peticiones</a>
                             <a href="https://youtu.be/49Yv4qNovyo" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Alucinaciones</a>
+                            <a href="rubricas/rubrica-modulo-diagnostico.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -1361,6 +1820,16 @@
                 <details id="m1-s3">
                     <summary>Semana 3: Diagnóstico y FODA Dinámico</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de elaborar un FODA dinámico con apoyo de IA, diferenciando hechos, supuestos y recomendaciones accionables.</p>
+                        </div>
+
+                        <div class="critical-note">
+                            <h4>Dato, supuesto o recomendación</h4>
+                            <p>En el FODA, clasificá cada elemento como dato observado, supuesto del negocio o recomendación de IA. Esta separación evita tomar decisiones estratégicas con base en afirmaciones no verificadas.</p>
+                        </div>
+
                         <img src="Infografias/Semana 3. Tendencias IA.png" alt="Infografía Semana 3: Tendencias tecnológicas de Inteligencia Artificial para Pymes"
                             class="infographic-thumb" title="Clic para ampliar">
                         <p>Utilice la IA para radiografiar su empresa y analizar a la competencia.</p>
@@ -1414,18 +1883,62 @@
                                 <span class="rhec-badge">Compartir (5%)</span>
                                 <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
                                 <div class="rhec-step-content">
-                                    <p>¿Qué debilidad u oportunidad financiera reveló la IA al organizar sus datos en el estado de resultados que usted no había mapeado con claridad?</p>
+                                    <p>Comparta en el espacio definido por la coordinación del programa una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="resources-links" style="margin-top: 15px;">
+                            <a href="templates/plantilla-foda.md" target="_blank" class="resource-link"><i class="fas fa-file-download"></i> Descargar Plantilla FODA Dinámico</a>
                             <a href="https://youtu.be/5Y_WAYQnO3c" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> La IA al Negocio</a>
                             <a href="https://youtu.be/Hzm54zyMkTs" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Tendencias IA -IA Impact Summit-</a>
                             <a href="https://youtu.be/ir0d0bFBkJU" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Mitigar peligros</a>
+                            <a href="rubricas/rubrica-modulo-diagnostico.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -1433,6 +1946,11 @@
                 <details id="m1-s4">
                     <summary>Semana 4: Plan de Acción Estratégico</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de priorizar al menos tres iniciativas de mejora mediante una matriz de impacto, viabilidad y urgencia.</p>
+                        </div>
+
                         <img src="Infografias/Semana 4. Plan de Acción.png" alt="Infografía Semana 4: Plan de Acción Estratégico para Integración de IA"
                             class="infographic-thumb" title="Clic para ampliar">
                         <p>Integre todo lo aprendido en un plan de acción real para su MiPYME.</p>
@@ -1480,14 +1998,58 @@
                                 <span class="rhec-badge">Compartir (5%)</span>
                                 <h4 class="rhec-step-title"><i class="fas fa-comments"></i> Compartir y Reflexionar</h4>
                                 <div class="rhec-step-content">
-                                    <p>¿Qué 3 herramientas priorizó en su matriz y qué meta concreta espera alcanzar con ellas en los próximos 90 días?</p>
+                                    <p>Comparta en el espacio definido por la coordinación del programa una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="resources-links" style="margin-top: 15px;">
+                            <a href="templates/plantilla-ivu.md" target="_blank" class="resource-link"><i class="fas fa-file-download"></i> Descargar Plantilla Matriz IVU</a>
                             <a href="https://youtu.be/SPNNtEQE808" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Perder miedo</a>
+                            <a href="rubricas/rubrica-modulo-diagnostico.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -1495,11 +2057,12 @@
                 <div class="checklist-modulo">
                     <h4>✅ Lista de chequeo — Módulo I</h4>
                     <table>
+                        <caption>Lista de chequeo y autoevaluación final del Módulo I</caption>
                         <thead>
                             <tr>
-                                <th>Componente</th>
-                                <th>Herramienta</th>
-                                <th>Entregable</th>
+                                <th scope="col">Componente</th>
+                                <th scope="col">Herramienta</th>
+                                <th scope="col">Entregable</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1513,7 +2076,7 @@
                                     Antes de pasar al Módulo II, ¿podés hacer esto sin ayuda?<br>
                                     ✅ Configurar ChatGPT, Claude o Gemini con autenticación de dos factores (2FA) activada y con el control de datos sensibles revisado.<br>
                                     ✅ Escribir un prompt completo usando los 5 componentes CIFRCE: Contexto + Instrucción + Formato + Restricciones + Criterios de Éxito.<br>
-                                    ✅ Aplicar las técnicas few-shot prompting y chain-of-thought en al menos un prompt real de tu negocio.<br>
+                                    ✅ Aplicar few-shot prompting y solicitar salidas verificables con supuestos, criterios de decisión, riesgos de error y datos faltantes en al menos un prompt real de tu negocio.<br>
                                     ✅ Generar un FODA dinámico socrático (no el FODA estático tradicional) a partir de preguntas difíciles respondidas con datos reales del negocio.<br>
                                     ✅ Calcular el punto de equilibrio mensual de tu negocio.<br>
                                     ✅ Tener un plan de acción con al menos 3 iniciativas priorizadas mediante la Matriz IVU (Impacto, Viabilidad, Urgencia).<br>
@@ -1549,6 +2112,16 @@
                 <details id="m2-s5">
                     <summary>Semana 5: Automatización No-code</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de diseñar y configurar un escenario de automatización básico sin código en Make.com que conecte dos aplicaciones y maneje posibles errores operacionales de forma lógica.</p>
+                        </div>
+
+                        <div class="automation-safety">
+                            <h4>Automatizá solo procesos comprendidos</h4>
+                            <p>Antes de automatizar, escribí manualmente el proceso en 5 pasos. Si no podés explicarlo sin la herramienta, todavía no está listo para automatizarse.</p>
+                        </div>
+
                         <img src="Infografias/Semana 5. Automatización de procesos .png" alt="Infografía Semana 5: Automatización de procesos y optimización empresarial"
                             class="infographic-thumb" title="Clic para ampliar">
                         <p>Conecte aplicaciones y automatice tareas sin saber programar.</p>
@@ -1563,7 +2136,7 @@
                                         <span><strong>Prerrequisito operacional:</strong> antes de construir este flujo, identificá en tu Plan de Acción del Módulo I al menos un proceso repetitivo que valga la pena automatizar. Si no tenés ese plan, completá primero la Semana 4 antes de continuar.</span>
                                     </div>
                                     <p>Cree un escenario que automatice una tarea de comunicación: cuando alguien llena un Google Form, el sistema debe enviarle un correo automático personalizado por Gmail.</p>
-                                    <p><strong>Entregable:</strong> Captura de pantalla de su escenario de Make ejecutado con éxito y marcando sus esferas verdes de operación sin errores.</p>
+                                    <p><strong>Entregable:</strong> Captura de pantalla de su escenario de Make ejecutado con éxito y marcando sus esferas verdes de operation sin errores.</p>
                                 </div>
                             </div>
                             
@@ -1604,6 +2177,48 @@
                             </div>
                         </div>
 
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="resources-links" style="margin-top: 15px;">
                             <a href="https://youtu.be/ElsjejoXNoA" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Automatización pymes</a>
@@ -1621,6 +2236,7 @@
                                     class="fab fa-youtube" style="color: red;"></i> Automatizar con Whastapp</a>
                             <a href="https://youtu.be/2cYBIfUvS74" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Automatizar procesos</a>
+                            <a href="rubricas/rubrica-modulo-automatizacion.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -1628,6 +2244,21 @@
                 <details id="m2-s6">
                     <summary>Semana 6: Chatbots y Atención al Cliente</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de diseñar un chatbot de atención al cliente básico que guíe al usuario a través de un árbol de decisión y establezca un protocolo claro de escalación a un agente humano.</p>
+                        </div>
+
+                        <div class="privacy-warning">
+                            <h4>Reglas éticas de interacción automatizada</h4>
+                            <ul class="checklist">
+                                <li>El chatbot indica claramente que es una asistencia automatizada.</li>
+                                <li>El chatbot no promete precios, crédito, disponibilidad o condiciones no verificadas.</li>
+                                <li>El chatbot ofrece derivación a una persona cuando la consulta es compleja.</li>
+                                <li>El chatbot no solicita datos sensibles innecesarios.</li>
+                            </ul>
+                        </div>
+
                         <img src="Infografias/Semana 6. Guía de Asistentes Virtuales Inteligentes.png"
                             alt="Infografía Semana 6: Guía de Asistentes Virtuales Inteligentes en la Empresa" class="infographic-thumb" title="Clic para ampliar">
                         <p>Cree asistentes virtuales para responder WhatsApp y correos.</p>
@@ -1676,12 +2307,55 @@
                             </div>
                         </div>
 
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="resources-links" style="margin-top: 15px;">
                             <a href="https://gemini.google.com/share/43bc6db51c13" target="_blank"
                                 class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Manual para automatizar
                                 whatsapp con n8n o make</a>
                             <a href="https://youtu.be/P06Vcw35-5s" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Uso de IA Grok</a>
+                            <a href="rubricas/rubrica-modulo-automatizacion.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -1689,6 +2363,16 @@
                 <details id="m2-s7">
                     <summary>Semana 7: CRM y Sistematización</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de estructurar un CRM básico y configurar una automatización que clasifique y registre leads de manera ordenada y segura, resguardando la privacidad de los clientes.</p>
+                        </div>
+
+                        <div class="privacy-warning">
+                            <h4>CRM de práctica</h4>
+                            <p>Para esta actividad usá datos ficticios o anonimizados. No construyás la práctica con una base real de clientes si no tenés consentimiento y medidas de protección adecuadas.</p>
+                        </div>
+
                         <div style="margin-bottom: 15px;">
                             <img src="Infografias/Semana 7. CRM y Automatización.png" alt="Infografía Semana 7: CRM y automatización de relaciones con clientes"
                                 class="infographic-thumb" title="Clic para ampliar"
@@ -1742,7 +2426,50 @@
                             </div>
                         </div>
 
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="resources-links" style="margin-top: 15px;">
+                            <a href="templates/plantilla-crm-basico.md" target="_blank" class="resource-link"><i class="fas fa-file-download"></i> Descargar Plantilla CRM Básico</a>
                             <a href="https://youtu.be/AjG0NghxXzQ" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Sandbox Regulatorios para Pymes</a>
                             <a href="https://youtu.be/qZQqBWZ8n90" target="_blank" class="resource-link" rel="noopener noreferrer"><i
@@ -1750,6 +2477,7 @@
                             <a href="https://gemini.google.com/share/acec911d240f" target="_blank"
                                 class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Guía de
                                 automatización</a>
+                            <a href="rubricas/rubrica-modulo-automatizacion.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -1757,6 +2485,17 @@
                 <details id="m2-s8">
                     <summary>Semana 8: ROI de la Automatización</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de calcular el retorno de inversión (ROI) estimado de sus automatizaciones y documentar el flujo técnico con un control de errores funcional.</p>
+                        </div>
+
+                        <div class="formula-box">
+                            <h4>Fórmula de Retorno de Inversión (ROI)</h4>
+                            <p><strong>ROI estimado = ((beneficio mensual esperado - costo mensual de la herramienta) / costo mensual de la herramienta) × 100</strong></p>
+                            <p>Incluí también tiempo ahorrado, costo de aprendizaje, riesgo de error y dependencia tecnológica.</p>
+                        </div>
+
                         <img src="Infografias/Semana 8. Valor de la automatización empresarial.png"
                             alt="Infografía Semana 8: El valor de la automatización de procesos de negocio" class="infographic-thumb" title="Clic para ampliar">
                         <p>Calcule cuánto dinero y tiempo ahorra con sus implementaciones.</p>
@@ -1804,12 +2543,55 @@
                             </div>
                         </div>
 
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="resources-links" style="margin-top: 15px;">
                             <a href="https://chat.qwen.ai/s/deploy/t_5cf0fca5-193a-427d-9bcf-ceaa2968d0fa"
                                 target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Retorno
                                 del ROI</a>
                             <a href="https://youtu.be/OIFytSp36hM" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Ventajas de pagar</a>
+                            <a href="rubricas/rubrica-modulo-automatizacion.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -1871,6 +2653,16 @@
                 <details id="m3-s9">
                     <summary>Semana 9: Identidad Visual y Diseño</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de definir el Brand Kit (paleta de colores, tipografías y tono de comunicación) de su negocio en Canva y diseñar un set de 5 plantillas para redes sociales aplicando directrices de consistencia e identidad visual de marca.</p>
+                        </div>
+
+                        <div class="ethics-box">
+                            <h4>Derechos de uso</h4>
+                            <p>Verificá la licencia de imágenes, música, tipografías y plantillas. No usés recursos de terceros sin permiso o sin una licencia compatible con uso comercial.</p>
+                        </div>
+
                         <img src="Infografias/Semana 9. Canva para PYMES.png" alt="Infografía Semana 9: Canva para PYMES e Identidad Visual"
                             class="infographic-thumb" title="Clic para ampliar">
                         <p>Cree la imagen de su marca usando IA generativa de imágenes.</p>
@@ -1914,11 +2706,54 @@
                             </div>
                         </div>
 
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="resources-links" style="margin-top: 15px;">
                             <a href="https://youtu.be/-nmNBOtHNig" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Canva para emprendedores</a>
                             <a href="https://youtu.be/D6GVQEElphE" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Usar Canva</a>
+                            <a href="rubricas/rubrica-modulo-comercializacion.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -1926,6 +2761,16 @@
                 <details id="m3-s10">
                     <summary>Semana 10: Producción Audiovisual</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de redactar un guion publicitario de 30-60 segundos estructurado con el modelo AIDA, generar locución de audio sintético y editar un video promocional en CapCut integrando subtítulos automáticos y marcas de transparencia.</p>
+                        </div>
+
+                        <div class="transparency-template">
+                            <h4>Declaración sugerida de transparencia</h4>
+                            <p>“Este contenido fue producido con apoyo de herramientas de inteligencia artificial. La voz, imagen o avatar utilizados son sintéticos. La información comercial fue revisada por la persona responsable del emprendimiento.”</p>
+                        </div>
+
                         <img src="Infografias/Semana 10. Creación Videos y avatares.png" alt="Infografía Semana 10: Creación de contenidos audiovisuales y avatares con IA"
                             class="infographic-thumb" title="Clic para ampliar">
                         <p>Generación de video, voz y avatares para marketing.</p>
@@ -1977,9 +2822,52 @@
                             </div>
                         </div>
 
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="resources-links" style="margin-top: 15px;">
                             <a href="https://youtu.be/ReHGaWrwBfw" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Generación de video y audio</a>
+                            <a href="rubricas/rubrica-modulo-comercializacion.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -1987,6 +2875,16 @@
                 <details id="m3-s11">
                     <summary>Semana 11: Estudios de Prefactibilidad</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de realizar un análisis de prefactibilidad para un nuevo producto, canal comercial o servicio de su negocio, simulando flujos de caja y determinando puntos de equilibrio financiero con asistencia crítica de IA.</p>
+                        </div>
+
+                        <div class="financial-warning">
+                            <h4>Advertencia financiera</h4>
+                            <p>Las proyecciones generadas con IA son estimaciones. No sustituyen asesoría contable, tributaria, financiera ni legal. Validá precios, costos, impuestos, tasas y normativa aplicable antes de invertir.</p>
+                        </div>
+
                         <img src="Infografias/Semana 11. Guía de Viabilidad de IA.png" alt="Infografía Semana 11: Guía de Viabilidad y Prefactibilidad Técnica de Proyectos de IA"
                             class="infographic-thumb" title="Clic para ampliar">
                         <p>Analice la viabilidad de nuevos productos antes de invertir.</p>
@@ -2007,7 +2905,7 @@
                                 <div class="rhec-step-content">
                                     <ol>
                                         <li>Use Gemini para investigar estimaciones de mercado de su nuevo sector y recopile los precios cobrados por la competencia.</li>
-                                        <li>Proporcione los datos a un LLM y pida: <em>"Proyecta un flujo de caja simple a 6 meses para este nuevo producto, considerando costos iniciales y ventas estimadas. Piensa paso a paso."</em></li>
+                                        <li>Proporcione los datos a un LLM y pida: <em>"Proyecta un flujo de caja simple a 6 meses para este nuevo producto, detallando por separado los supuestos utilizados, los riesgos de error, los criterios de decisión clave y los datos faltantes en una tabla final revisable."</em></li>
                                         <li>Calcule el punto de equilibrio y evalúe la conveniencia del canal (redes vs web propia).</li>
                                     </ol>
                                 </div>
@@ -2037,9 +2935,53 @@
                             </div>
                         </div>
 
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="resources-links" style="margin-top: 15px;">
+                            <a href="templates/plantilla-prefactibilidad.md" target="_blank" class="resource-link"><i class="fas fa-file-download"></i> Descargar Plantilla de Prefactibilidad Financiera</a>
                             <a href="https://youtu.be/ZJqs8XXVNJk" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Estudios de prefactibilidad</a>
+                            <a href="rubricas/rubrica-modulo-comercializacion.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -2047,6 +2989,24 @@
                 <details id="m3-s12">
                     <summary>Semana 12: Campaña de Lanzamiento</summary>
                     <div class="week-content">
+                        <div class="learning-objectives">
+                            <h4>Objetivo de aprendizaje de la semana</h4>
+                            <p>Al finalizar esta semana, la persona participante será capaz de integrar los insumos del módulo (identidad visual, video y análisis financiero) en una campaña publicitaria de lanzamiento comercial estructurada bajo el framework AIDA, definiendo indicadores mínimos de desempeño antes de su publicación.</p>
+                        </div>
+
+                        <div class="measurement-box">
+                            <h4>Indicadores mínimos de campaña</h4>
+                            <p>Asegurate de definir y documentar estos elementos en tu campaña antes de realizar cualquier publicación:</p>
+                            <ul class="checklist">
+                                <li>Canal principal.</li>
+                                <li>Público objetivo.</li>
+                                <li>Mensaje central.</li>
+                                <li>Fecha de publicación.</li>
+                                <li>Indicador de respuesta: clics, de mensajes, de llamadas, de ventas o de formularios.</li>
+                                <li>Criterio de éxito definido antes de publicar.</li>
+                            </ul>
+                        </div>
+
                         <img src="Infografias/Semana 12. Estrategia IA para Pequeños Empresarios.png"
                             alt="Infografía Semana 12: Estrategia de IA integrada para Pequeños Empresarios (AIDA)" class="infographic-thumb" title="Clic para ampliar">
                         <p>Proyecto final integrador: Lanzamiento de producto con IA.</p>
@@ -2090,10 +3050,54 @@
                             </div>
                         </div>
 
+                        <div class="rubric-box">
+                            <h4>Rúbrica rápida del entregable</h4>
+                            <p>Antes de avanzar, revisá tu evidencia con estos criterios:</p>
+                            <table>
+                                <caption>Rúbrica de evaluación rápida del entregable semanal</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterio</th>
+                                        <th scope="col">Inicial</th>
+                                        <th scope="col">Adecuado</th>
+                                        <th scope="col">Sólido</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pertinencia empresarial</td>
+                                        <td>El entregable es genérico o no se conecta claramente con el negocio.</td>
+                                        <td>El entregable se conecta con una necesidad real del negocio.</td>
+                                        <td>El entregable permite tomar una decisión o mejorar un proceso concreto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uso crítico de IA</td>
+                                        <td>Se acepta la respuesta de IA sin revisión.</td>
+                                        <td>Se revisa la respuesta y se ajusta parcialmente.</td>
+                                        <td>Se contrastan supuestos, datos y recomendaciones antes de implementar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evidencia verificable</td>
+                                        <td>No hay datos, capturas, cálculos o fuentes que respalden el resultado.</td>
+                                        <td>Hay alguna evidencia, pero incompleta.</td>
+                                        <td>La evidencia permite verificar cómo se llegó al resultado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Privacidad y ética</td>
+                                        <td>Incluye datos personales o contenido sin permiso.</td>
+                                        <td>Reduce algunos datos sensibles, pero requiere revisión.</td>
+                                        <td>Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="resources-links" style="margin-top: 15px;">
+                            <a href="templates/plantilla-campana-aida.md" target="_blank" class="resource-link"><i class="fas fa-file-download"></i> Descargar Plantilla de Campaña AIDA</a>
                             <a href="https://youtu.be/Bg6eHTM8VTs" target="_blank" class="resource-link" rel="noopener noreferrer"><i
                                     class="fab fa-youtube" style="color: red;"></i> Como gestionar mis productos con IA
                                 y mi campaña de lanzamiento</a>
+                            <a href="rubricas/rubrica-modulo-comercializacion.md" target="_blank" class="resource-link" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Ver Rúbrica Completa del Módulo</a>
                         </div>
                     </div>
                 </details>
@@ -2137,36 +3141,100 @@
         </div>
     </section>
 
+    <!-- Portafolio de evidencias -->
+    <section id="portafolio-evidencias" class="course-section" style="max-width: 1000px; margin: 3rem auto; padding: 0 20px;">
+        <h2>Portafolio de evidencias</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem auto; color: #555;">
+            Para demostrar el aprendizaje, cada persona participante debe construir un portafolio con los productos generados durante el programa. Este portafolio permite revisar el avance, comparar decisiones y verificar que el uso de IA fue crítico y responsable.
+        </p>
+
+        <div class="table-responsive">
+            <table>
+                <caption>Resumen de evidencias mínimas por bloque formativo</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Bloque</th>
+                        <th scope="col">Evidencias mínimas</th>
+                        <th scope="col">Formato recomendado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Toolkit 1</strong></td>
+                        <td>Tendencias, buyer persona, encuesta anonimizada, canvas.</td>
+                        <td>PDF o carpeta digital.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Módulo I</strong></td>
+                        <td>Prompts CIFRCE, FODA dinámico, matriz IVU, plan de acción.</td>
+                        <td>Documento breve con anexos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Módulo II</strong></td>
+                        <td>Flujo no-code, diseño de chatbot, CRM de prueba, cálculo ROI.</td>
+                        <td>Capturas, enlaces y hoja de cálculo.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Módulo III</strong></td>
+                        <td>Pieza visual, video, prefactibilidad, campaña AIDA.</td>
+                        <td>Carpeta de campaña y reporte final.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Comunidad y retroalimentación -->
+    <section id="comunidad-aprendizaje" class="course-section" style="max-width: 1000px; margin: 3rem auto; padding: 0 20px;">
+        <h2>Comunidad y retroalimentación</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem auto; color: #555;">
+            La fase Compartir permite aprender de otras personas emprendedoras. Sin embargo, compartir no significa exponer información sensible del negocio ni datos personales de clientes.
+        </p>
+
+        <div class="critical-note" style="border-left: 6px solid var(--ucr-blue);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--ucr-blue);">Reglas mínimas para compartir</h3>
+            <ul style="padding-left: 20px; list-style-type: disc;">
+                <li style="margin-bottom: 6px;">No publicar nombres, teléfonos, correos ni datos privados de clientes.</li>
+                <li style="margin-bottom: 6px;">No compartir capturas con información sensible del negocio.</li>
+                <li style="margin-bottom: 6px;">Explicar qué decisión se tomó y con qué evidencia.</li>
+                <li style="margin-bottom: 6px;">Dar retroalimentación respetuosa, concreta y orientada a la mejora.</li>
+                <li style="margin-bottom: 6px;">Distinguir entre opinión, dato, supuesto y recomendación de la IA.</li>
+            </ul>
+        </div>
+
+        <p style="text-align: center; margin-top: 1.5rem; font-size: 0.95rem; color: #666; font-style: italic;">
+            El canal oficial de comunidad será definido por la coordinación del programa. Mientras no exista un canal institucional activo, las actividades de Compartir deben realizarse como reflexión individual o en espacios autorizados por la coordinación.
+        </p>
+    </section>
+
     <!-- Credenciales y Valor Agregado -->
     <section id="credenciales" class="seccion-credenciales">
-        <h2>🏅 Credenciales y Valor Agregado</h2>
+        <h2>🏅 Credenciales y evidencias de aprendizaje</h2>
         <p class="seccion-intro" style="max-width: 800px; margin: 0 auto 1.5rem auto; text-align: center; color: #666;">
-            Completar el Programa no es solo aprender — es demostrarlo. 
-            Al finalizar cada kit, recibís una credencial que podés 
-            compartir profesionalmente.
+            Completar este programa no significa solo recorrer contenidos: significa construir evidencias aplicadas al negocio. Las credenciales asociadas al programa se encuentran en fase de diseño y validación institucional.
         </p>
         <div class="cred-grid" style="max-width: 900px; margin: 0 auto; display: flex; gap: 1.5rem; flex-wrap: wrap;">
             <div class="cred-card">
                 <div class="cred-icon">🆓</div>
-                <h3>Toolkit 1 — Gratuito</h3>
-                <p style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #333;">Al completar las 4 semanas y la autoevaluación final:</p>
+                <h3>Toolkit 1 — Ruta gratuita de validación inicial</h3>
+                <p style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #333;">Al completar las cuatro semanas del Toolkit Pre-Operativo, la persona participante podrá organizar un portafolio básico con:</p>
                 <ul>
-                    <li>Insignia digital (Open Badge) verificable</li>
-                    <li>Publicable en LinkedIn y portafolios digitales</li>
-                    <li>Emitida por: UCR / CIOdD – DIPROVID / Auge</li>
+                    <li>Análisis de tendencias.</li>
+                    <li>Buyer Persona y Mapa de Empatía.</li>
+                    <li>Reporte de validación primaria con datos anonimizados.</li>
+                    <li>Business Model Canvas preliminar.</li>
                 </ul>
-                <p class="cred-estado">⏳ En desarrollo — fecha de lanzamiento por confirmar</p>
+                <p class="status-note" style="margin-top: 10px; font-size: 0.88rem; color: #b7791f;">
+                    ⚠️ Estado: credencial digital en fase de diseño. Su emisión estará sujeta a validación de evidencias, rúbrica de desempeño y aprobación de las instancias institucionales correspondientes.
+                </p>
             </div>
             <div class="cred-card cred-pago">
                 <div class="cred-icon">💎</div>
-                <h3>Toolkit 2 — Certificación</h3>
-                <p style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #333;">Programa avanzado para negocios en marcha:</p>
-                <ul>
-                    <li>Certificado formal UCR con evaluación estructurada</li>
-                    <li>Acceso a plataforma Moodle con contenidos extendidos</li>
-                    <li>Módulos de automatización, análisis financiero y comercialización</li>
-                </ul>
-                <p class="cred-estado cred-pago-tag">💰 De pago — Detalles en desarrollo</p>
+                <h3>Toolkit 2 — Ruta avanzada</h3>
+                <p style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #333;">La ruta avanzada para negocios en marcha se encuentra en diseño. Podrá incluir evaluación estructurada, contenidos extendidos y acompañamiento institucional, según disponibilidad y aprobación formal.</p>
+                <p class="status-note" style="margin-top: 10px; font-size: 0.88rem; color: #b7791f;">
+                    ⚠️ Estado: detalles académicos, financieros y administrativos en desarrollo.
+                </p>
             </div>
         </div>
     </section>
@@ -2174,102 +3242,167 @@
     <section id="recursos" class="resources">
         <div class="section-header">
             <h3>Biblioteca de Recursos</h3>
-            <p>Acceso directo a las herramientas y guías prácticas.</p>
+            <p>Acceso centralizado a las herramientas, documentos de soporte y asistentes del programa.</p>
         </div>
 
-        <div class="subsection-header" style="text-align: center; margin-top: 1rem; margin-bottom: 2rem;">
-            <h4 style="color: var(--ucr-blue); font-size: 1.3rem;"><i class="fas fa-robot"></i> Asistentes Virtuales Institucionales</h4>
-            <p style="color: #666; font-size: 0.95rem;">Asistentes virtuales entrenados para tareas específicas.</p>
+        <!-- Categoría 1: Recursos Oficiales -->
+        <div class="subsection-header" style="text-align: center; margin-top: 2rem; margin-bottom: 1.5rem;">
+            <h4 style="color: var(--ucr-blue); font-size: 1.3rem;"><i class="fas fa-certificate"></i> Recursos Oficiales del Programa</h4>
+            <p style="color: #666; font-size: 0.95rem; max-width: 600px; margin: 0.5rem auto;">Recursos y políticas validados por la coordinación académica para apoyar las actividades formativas.</p>
         </div>
 
-        <p class="asistentes-nota">
-            Los siguientes asistentes son recursos de apoyo del Programa. 
-            Algunos se encuentran en proceso de migración a cuentas 
-            institucionales UCR/Auge. Ante dudas sobre el respaldo 
-            institucional de cada recurso, consulte a DIPROVID.
+        <div class="resources-grid" style="margin-bottom: 3rem;">
+            <a href="https://gemini.google.com/share/10ffd72f38b4" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-shield-alt" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Guía: Seguridad Digital</h4>
+                <p style="font-size: 0.9rem; color: #666;">Medidas esenciales de protección digital para Pymes.</p>
+            </a>
+
+            <a href="https://gemini.google.com/share/59daea6ee92a" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-list-ol" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Guía: Técnica Few-Shot</h4>
+                <p style="font-size: 0.9rem; color: #666;">Estrategias avanzadas de prompting empresarial.</p>
+            </a>
+
+            <a href="https://gemini.google.com/share/86c585d9bec3" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-lightbulb" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Ejemplos Reales de Prompts</h4>
+                <p style="font-size: 0.9rem; color: #666;">Casos aplicados a microempresas costarricenses.</p>
+            </a>
+
+            <a href="https://www.youtube.com/playlist?list=PLnY61_1lJZUVjJeu6J0EbmBu-LTIkehPK" target="_blank" class="res-card youtube" rel="noopener noreferrer">
+                <i class="fab fa-youtube" style="color: red;"></i>
+                <h4 style="color: #333;">Canal de Video Oficial</h4>
+                <p style="font-size: 0.9rem; color: #666;">Colección de tutoriales paso a paso.</p>
+            </a>
+
+            <a href="politicas/protocolo-privacidad-datos.md" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-user-lock" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Protocolo de Privacidad</h4>
+                <p style="font-size: 0.9rem; color: #666;">Reglas de anonimización y uso ético de datos.</p>
+            </a>
+
+            <a href="politicas/politica-uso-ia.md" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-balance-scale" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Política de Uso de IA</h4>
+                <p style="font-size: 0.9rem; color: #666;">Límites recomendados: qué delegar y qué no.</p>
+            </a>
+
+            <a href="templates/plantilla-consentimiento-clientes.md" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-file-signature" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Consentimiento Informado</h4>
+                <p style="font-size: 0.9rem; color: #666;">Plantilla para entrevistas y encuestas de clientes.</p>
+            </a>
+
+            <a href="politicas/declaracion-accesibilidad.md" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-universal-access" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Accesibilidad Web</h4>
+                <p style="font-size: 0.9rem; color: #666;">Declaración de compromiso con WCAG 2.2 AA.</p>
+            </a>
+
+            <a href="politicas/gobernanza-recursos.md" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-gavel" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Gobernanza de Recursos</h4>
+                <p style="font-size: 0.9rem; color: #666;">Políticas de curaduría y clasificación de herramientas.</p>
+            </a>
+
+            <a href="rubricas/rubrica-general-entregables.md" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-tasks" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Rúbrica General</h4>
+                <p style="font-size: 0.9rem; color: #666;">Criterios de evaluación transversales para entregables.</p>
+            </a>
+        </div>
+
+        <!-- Categoría 2: Recursos Experimentales -->
+        <div class="subsection-header" style="text-align: center; margin-bottom: 1.5rem;">
+            <h4 style="color: var(--ucr-blue); font-size: 1.3rem;"><i class="fas fa-flask"></i> Asistentes Virtuales Experimentales</h4>
+            <p style="color: #666; font-size: 0.95rem; max-width: 600px; margin: 0.5rem auto;">Herramientas personalizadas en proceso de validación. Su uso es opcional y no implica respaldo definitivo.</p>
+        </div>
+
+        <p class="asistentes-nota" style="max-width: 900px; margin: 0 auto 1.5rem auto;">
+            ⚠️ <strong>Aviso de Gobernanza:</strong> Los siguientes asistentes personalizados se encuentran en proceso de migración o validación por parte del equipo técnico. Si tiene dudas sobre su soporte, consulte directamente a DIPROVID.
         </p>
 
         <div class="resources-grid" style="margin-bottom: 3rem;">
             <a href="https://gemini.google.com/gem/1SYY-glUOgfcmQ7J5L2l8uTIbTfuNFSVa?usp=sharing" target="_blank"
                 class="res-card highlight" rel="noopener noreferrer">
-                <i class="fas fa-star" style="color: var(--accent-yellow);"></i>
+                <i class="fas fa-robot" style="color: var(--accent-yellow);"></i>
                 <h4 style="color: #333;">GPT Emprendedores V2</h4>
-                <p style="font-size: 0.9rem; color: #666;">Asistente personalizado.</p>
+                <p style="font-size: 0.9rem; color: #666;">Asistente de tutoría en validación.</p>
             </a>
 
             <a href="https://chatgpt.com/g/g-UKpcQkwMI-omipymes-uned-asistente-virtual-territorial-cr" target="_blank"
                 rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
                 <i class="fas fa-map-marker-alt" style="color: var(--ucr-blue);"></i>
-                <h4 style="color: #333;">OMIPYMES UNED: Territorial<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
-                <p style="font-size: 0.9rem; color: #666;">Análisis estadístico y territorial CR.</p>
+                <h4 style="color: #333;">OMIPYMES: Territorial <span class="badge-migracion">⚠️ Validación</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Análisis estadístico regional de Costa Rica.</p>
             </a>
 
             <a href="https://chatgpt.com/g/g-uCgjrweCI-omipymes-uned-analista-territorial-costarricense" target="_blank"
                 rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
                 <i class="fas fa-chart-area" style="color: var(--ucr-blue);"></i>
-                <h4 style="color: #333;">OMIPYMES UNED: Analista<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
-                <p style="font-size: 0.9rem; color: #666;">Desarrollo regional y análisis territorial.</p>
+                <h4 style="color: #333;">OMIPYMES: Analista <span class="badge-migracion">⚠️ Validación</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Análisis territorial y desarrollo comercial regional.</p>
             </a>
 
             <a href="https://chatgpt.com/g/g-6995f7453f4c81919de7943fd29117af-guesssy-omipymes-uned-cr" target="_blank"
                 rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
                 <i class="fas fa-graduation-cap" style="color: var(--ucr-blue);"></i>
-                <h4 style="color: #333;">GUESSSY<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
-                <p style="font-size: 0.9rem; color: #666;">Investigación sobre salud y espíritu emprendedor.</p>
+                <h4 style="color: #333;">GUESSSY <span class="badge-migracion">⚠️ Validación</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Investigación de salud en ecosistema emprendedor.</p>
             </a>
 
             <a href="https://chatgpt.com/g/g-6986602037008191be3605b0e10acf12-guia-de-costeo-omipymes" target="_blank"
                 rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
                 <i class="fas fa-calculator" style="color: var(--ucr-blue);"></i>
-                <h4 style="color: #333;">Guía de Costeo<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
-                <p style="font-size: 0.9rem; color: #666;">Apoyo para costear productos con OMIPYMEs.</p>
+                <h4 style="color: #333;">Guía de Costeo <span class="badge-migracion">⚠️ Validación</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Asistente interactivo para costeo comercial.</p>
             </a>
 
             <a href="https://chatgpt.com/g/g-6986563cb3288191b9fe112b950ccdb5-guia-omipymes-marketing-digital"
                 target="_blank" rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
                 <i class="fas fa-bullhorn" style="color: var(--ucr-blue);"></i>
-                <h4 style="color: #333;">Marketing Digital<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
-                <p style="font-size: 0.9rem; color: #666;">Guía y diagnóstico en redes sociales y ventas.</p>
+                <h4 style="color: #333;">Marketing Digital <span class="badge-migracion">⚠️ Validación</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Asistente de ventas y diagnóstico en redes.</p>
             </a>
 
             <a href="https://chatgpt.com/g/g-68efdd82332881918682590097e2a322-obi" target="_blank"
                 rel="noopener noreferrer" class="res-card highlight" data-estado="migracion-pendiente">
                 <i class="fas fa-route" style="color: var(--ucr-blue);"></i>
-                <h4 style="color: #333;">OBI<span class="badge-migracion">⚠️ Migración pendiente</span></h4>
-                <p style="font-size: 0.9rem; color: #666;">Asistente de trámites para emprender en Costa Rica.</p>
+                <h4 style="color: #333;">OBI <span class="badge-migracion">⚠️ Validación</span></h4>
+                <p style="font-size: 0.9rem; color: #666;">Asistencia para trámites de formalización CR.</p>
             </a>
         </div>
 
-        <div class="subsection-header" style="text-align: center; margin-bottom: 2rem;">
-            <h4 style="color: var(--ucr-blue); font-size: 1.3rem;"><i class="fas fa-book"></i> Referencias y Guías
-                Prácticas</h4>
+        <!-- Categoría 3: Recursos Externos -->
+        <div class="subsection-header" style="text-align: center; margin-bottom: 1.5rem;">
+            <h4 style="color: var(--ucr-blue); font-size: 1.3rem;"><i class="fas fa-external-link-alt"></i> Recursos Externos Recomendados</h4>
+            <p style="color: #666; font-size: 0.95rem; max-width: 600px; margin: 0.5rem auto;">Herramientas externas independientes recomendadas para los retos. Cada usuario debe revisar sus propios términos.</p>
         </div>
 
         <div class="resources-grid">
-
-            <a href="https://gemini.google.com/share/10ffd72f38b4" target="_blank" class="res-card" rel="noopener noreferrer">
-                <i class="fas fa-shield-alt" style="color: var(--ucr-blue);"></i>
-                <h4 style="color: #333;">Seguridad Digital</h4>
-                <p style="font-size: 0.9rem; color: #666;">Lo mínimo que debe saber.</p>
+            <a href="https://trends.google.com" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-chart-line" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Google Trends</h4>
+                <p style="font-size: 0.9rem; color: #666;">Medición de interés y búsquedas en la web.</p>
             </a>
 
-            <a href="https://gemini.google.com/share/59daea6ee92a" target="_blank" class="res-card" rel="noopener noreferrer">
-                <i class="fas fa-list-ol" style="color: var(--ucr-blue);"></i>
-                <h4 style="color: #333;">Técnica Few-Shot</h4>
-                <p style="font-size: 0.9rem; color: #666;">Guía de prompting avanzado.</p>
+            <a href="https://explodingtopics.com" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-bolt" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Exploding Topics</h4>
+                <p style="font-size: 0.9rem; color: #666;">Búsqueda y detección de tendencias emergentes.</p>
             </a>
 
-            <a href="https://gemini.google.com/share/86c585d9bec3" target="_blank" class="res-card" rel="noopener noreferrer">
-                <i class="fas fa-lightbulb" style="color: var(--ucr-blue);"></i>
-                <h4 style="color: #333;">Ejemplos Reales</h4>
-                <p style="font-size: 0.9rem; color: #666;">Casos de uso aplicados.</p>
+            <a href="https://www.canva.com" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-palette" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">Canva</h4>
+                <p style="font-size: 0.9rem; color: #666;">Plataforma de diseño gráfico y Brand Hub.</p>
             </a>
 
-            <a href="https://www.youtube.com/playlist?list=PLnY61_1lJZUVjJeu6J0EbmBu-LTIkehPK" target="_blank"
-                class="res-card youtube" rel="noopener noreferrer">
-                <i class="fab fa-youtube" style="color: red;"></i>
-                <h4 style="color: #333;">Canal de Video</h4>
-                <p style="font-size: 0.9rem; color: #666;">Lista de reproducción oficial.</p>
+            <a href="https://www.capcut.com" target="_blank" class="res-card" rel="noopener noreferrer">
+                <i class="fas fa-video" style="color: var(--ucr-blue);"></i>
+                <h4 style="color: #333;">CapCut</h4>
+                <p style="font-size: 0.9rem; color: #666;">Editor de video con generación de subtítulos.</p>
             </a>
         </div>
     </section>

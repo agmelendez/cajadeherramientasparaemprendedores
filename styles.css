@@ -1483,3 +1483,136 @@ footer {
 .academic-table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+
+/* --- NUEVOS COMPONENTES PEDAGÓGICOS, ÉTICOS Y ACCESIBLES --- */
+.course-section {
+  scroll-margin-top: 6rem;
+  margin-block: 3rem;
+}
+
+.info-grid,
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.info-card,
+.policy-card,
+.credential-card,
+.learning-objectives,
+.rubric-box,
+.privacy-warning,
+.critical-note,
+.ethics-box,
+.financial-warning,
+.formula-box,
+.measurement-box,
+.prompt-quality-box,
+.automation-safety,
+.transparency-template {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-block: 1rem;
+  background: #fff;
+}
+
+.privacy-warning {
+  border-left: 6px solid #8b0000;
+}
+
+.critical-note {
+  border-left: 6px solid #005da4;
+}
+
+.learning-objectives {
+  border-left: 6px solid #2e7d32;
+}
+
+.rubric-box {
+  overflow-x: auto;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.rubric-box table,
+.table-responsive table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: 0.5rem;
+}
+
+.rubric-box th,
+.rubric-box td,
+.table-responsive th,
+.table-responsive td {
+  padding: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  vertical-align: top;
+  font-size: 0.9rem;
+}
+
+.rubric-box th,
+.table-responsive th {
+  text-align: left;
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.status-note {
+  font-weight: 600;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checklist li::before {
+  content: "☐";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Accesibilidad y navegación */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 10px;
+  background: #005da4;
+  color: #fff;
+  padding: 8px 12px;
+  z-index: 2000;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+:focus-visible {
+  outline: 3px solid #ffbf47 !important;
+  outline-offset: 3px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}

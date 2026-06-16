@@ -60,9 +60,18 @@ Como parte de una auditoría de seguridad integral a nivel de código frontend, 
 ├── styles.css              # Sistema de diseño, adaptabilidad móvil y estilos
 ├── Infografias/            # PNGs de las infografías del programa por semana
 ├── logos/                  # Logos oficiales protegidos (UCR, CIOdD, DIPROVID)
+├── templates/              # Plantillas prácticas descargables (Markdown)
+├── rubricas/               # Rúbricas detalladas por módulo (Markdown)
+├── politicas/              # Documentos de gobernanza, privacidad y accesibilidad
 ├── README.md               # Documentación general (este archivo)
 └── CLAUDE.md               # Guía de desarrollo y restricciones técnicas
 ```
+
+---
+
+## 🔒 Privacidad, Ética y Accesibilidad (WCAG 2.2 AA)
+
+El programa se rige bajo estrictos estándares de privacidad (Ley N° 8968 de Costa Rica), promoviendo la anonimización de datos y el consentimiento informado. Además, el sitio web busca cumplir progresivamente con los criterios de accesibilidad WCAG 2.2 nivel AA, ofreciendo navegación completa por teclado, focos visibles estructurados y soporte para lectores de pantalla.
 
 ---
 
@@ -84,3 +93,5 @@ Para publicar o actualizar el sitio utilizando **GitHub Pages**:
 ## 📄 Licencia y Derechos de Autor
 
 © Universidad de Costa Rica - Centro de Investigación en Observación y Difusión Digital (CIOdD) / Dirección de Promoción de la Vinculación para el Desarrollo (DIPROVID). Todos los derechos reservados.
+
+La licencia definitiva de reutilización del repositorio está pendiente de definición institucional por parte de la Universidad de Costa Rica (UCR). Se recomienda evaluar licencias del tipo Creative Commons (CC BY-NC-SA 4.0) para potenciar su carácter de recurso educativo abierto.
