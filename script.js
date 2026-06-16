@@ -543,8 +543,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // 4. MÓDULO 0: DIAGNÓSTICO DE ENTRADA Y ENRUTAMIENTO PERSONALIZADO
 document.addEventListener('DOMContentLoaded', () => {
     const respuestas = {};
-    const preguntas = ['diag-q1', 'diag-q2', 'diag-q3'];
-    let paso = 0;
 
     const diagBtns = document.querySelectorAll('.diag-btn');
     if (diagBtns.length === 0) return; // Exit if diagnostic section is not present
@@ -562,19 +560,72 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             this.classList.add('seleccionado');
 
-            // Avanzar al siguiente paso
-            paso++;
-            setTimeout(() => {
-                if (paso < preguntas.length) {
-                    const siguientePregunta = document.getElementById(preguntas[paso]);
+            // Determinar la pregunta actual
+            const preguntaActual = this.closest('.diag-pregunta');
+            if (!preguntaActual) return;
+            const idActual = preguntaActual.id;
+
+            let siguientePreguntaId = null;
+
+            // Limpieza de estados posteriores en caso de cambio de respuesta previa
+            if (idActual === 'diag-q1') {
+                // Si cambia la etapa de madurez, reseteamos todo lo demás
+                const q2 = document.getElementById('diag-q2');
+                const q2Pre = document.getElementById('diag-q2-pre');
+                const q3 = document.getElementById('diag-q3');
+                const res = document.getElementById('diag-resultado');
+
+                if (q2) q2.classList.add('oculto');
+                if (q2Pre) q2Pre.classList.add('oculto');
+                if (q3) q3.classList.add('oculto');
+                if (res) res.classList.add('oculto');
+
+                // Desmarcar selecciones posteriores
+                const followUps = ['diag-q2', 'diag-q2-pre', 'diag-q3'];
+                followUps.forEach(fId => {
+                    const el = document.getElementById(fId);
+                    if (el) {
+                        el.querySelectorAll('.diag-btn').forEach(b => b.classList.remove('seleccionado'));
+                    }
+                });
+                
+                // Limpiar valores en el objeto de respuestas
+                delete respuestas.herramienta;
+                delete respuestas.experiencia;
+
+                // Determinar cuál Pregunta 2 mostrar
+                if (valor === 'idea' || valor === 'prototipo') {
+                    siguientePreguntaId = 'diag-q2-pre';
+                } else {
+                    siguientePreguntaId = 'diag-q2';
+                }
+            } else if (idActual === 'diag-q2' || idActual === 'diag-q2-pre') {
+                // Si cambia la necesidad urgente, reseteamos la pregunta 3 y resultado
+                const q3 = document.getElementById('diag-q3');
+                const res = document.getElementById('diag-resultado');
+                
+                if (q3) q3.classList.add('oculto');
+                if (res) res.classList.add('oculto');
+
+                if (q3) {
+                    q3.querySelectorAll('.diag-btn').forEach(b => b.classList.remove('seleccionado'));
+                }
+                delete respuestas.experiencia;
+
+                siguientePreguntaId = 'diag-q3';
+            } else if (idActual === 'diag-q3') {
+                mostrarResultado();
+            }
+
+            if (siguientePreguntaId) {
+                setTimeout(() => {
+                    const siguientePregunta = document.getElementById(siguientePreguntaId);
                     if (siguientePregunta) {
                         siguientePregunta.classList.remove('oculto');
                         siguientePregunta.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }
-                } else {
-                    mostrarResultado();
-                }
-            }, 300);
+                }, 300);
+            }
         });
     });
 
@@ -585,37 +636,81 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (!resultado || !texto || !btnIr) return;
 
-        // Lógica de enrutamiento
-        let ruta = '#toolkit1';
+        let ruta = '#modulo1';
         let mensaje = '';
+        let consejoIA = '';
 
+        // Determinar recomendación basada en la madurez y necesidades específicas
         if (respuestas.madurez === 'idea' || respuestas.madurez === 'prototipo') {
-            ruta = '#toolkit1';
-            mensaje = 'Comenzá por el <strong>Toolkit 1 (pre-operativo)</strong>: ' +
-                      'validación de ideas, análisis de mercado y modelo de negocio básico. ' +
-                      'Los Módulos I–III estarán disponibles cuando tu negocio esté en marcha.';
-        } else if (respuestas.herramienta === 'investigacion') {
-            ruta = '#modulo1';
-            mensaje = 'El <strong>Módulo I — Diagnóstico con IA</strong> es tu punto de entrada: ' +
-                      'FODA dinámico, perfil de cliente y plan de acción estratégico.';
-        } else if (respuestas.herramienta === 'automatizacion') {
-            ruta = '#modulo2';
-            mensaje = 'Si ya dominás el Módulo I, podés ir directo al ' +
-                      '<strong>Módulo II — Automatización</strong>: flujos no-code, ' +
-                      'chatbots y CRM básico.';
-        } else if (respuestas.herramienta === 'contenido') {
-            ruta = '#modulo3';
-            mensaje = 'El <strong>Módulo III — Contenido y Comercialización</strong> ' +
-                      'cubre identidad visual, producción audiovisual y campaña de lanzamiento.';
+            // RUTA PRE-OPERATIVA (Toolkit 1)
+            switch (respuestas.herramienta) {
+                case 'trends':
+                    ruta = '#t1-s1';
+                    mensaje = 'Te recomendamos iniciar en la <strong>Semana T1-S1: Validación de idea y tendencias de mercado</strong> del <strong>Toolkit 1 (Pre-Operativo)</strong>, donde aprenderás a usar Google Trends y Exploding Topics para analizar la demanda inicial de tu idea.';
+                    break;
+                case 'client':
+                    ruta = '#t1-s2';
+                    mensaje = 'Te recomendamos iniciar en la <strong>Semana T1-S2: Análisis de mercado y perfil de cliente</strong> del <strong>Toolkit 1 (Pre-Operativo)</strong>, ideal para diseñar tu Buyer Persona y Mapa de Empatía usando la IA como entrevistador.';
+                    break;
+                case 'survey':
+                    ruta = '#t1-s3';
+                    mensaje = 'Te recomendamos iniciar en la <strong>Semana T1-S3: Validación y recopilación de datos de clientes</strong> del <strong>Toolkit 1 (Pre-Operativo)</strong>, que te guiará para estructurar encuestas sin sesgos y procesar opiniones de clientes reales.';
+                    break;
+                case 'canvas':
+                    ruta = '#t1-s4';
+                    mensaje = 'Te recomendamos iniciar en la <strong>Semana T1-S4: Business Model Canvas preliminar</strong> del <strong>Toolkit 1 (Pre-Operativo)</strong>, ideal para estructurar tu propuesta de valor, canales, fuentes de ingresos y costos.';
+                    break;
+                default:
+                    ruta = '#toolkit1';
+                    mensaje = 'Comenzá por el <strong>Toolkit 1 (Pre-Operativo)</strong>: validación de ideas, análisis de mercado y modelo de negocio básico. Los Módulos I–III estarán disponibles cuando tu negocio esté en marcha.';
+            }
         } else {
-            ruta = '#modulo1';
-            mensaje = 'Te recomendamos comenzar por el <strong>Módulo I</strong> ' +
-                      'para tener una base sólida antes de avanzar.';
+            // RUTA OPERATIVA (Módulos I, II y III)
+            switch (respuestas.herramienta) {
+                case 'investigacion':
+                    ruta = '#modulo1';
+                    mensaje = 'Te recomendamos iniciar en el <strong>Módulo I — Diagnóstico con IA</strong>. Te ayudará a estructurar el FODA dinámico de tu negocio, definir a tu cliente ideal y trazar un plan estratégico de acción real.';
+                    break;
+                case 'financiero':
+                    ruta = '#m1-s3'; // Link directo a Semana 3 (FODA y finanzas básicas)
+                    mensaje = 'Tu punto de partida ideal es la <strong>Semana 3: Diagnóstico de Negocio (FODA y Finanzas Básicas)</strong> del <strong>Módulo I</strong>, donde aprenderás a estructurar estados de resultados simplificados y calcular tu punto de equilibrio con asistencia crítica de IA.';
+                    break;
+                case 'automatizacion':
+                    ruta = '#modulo2';
+                    mensaje = 'Tu ruta recomendada es el <strong>Módulo II — Automatización de Procesos</strong>, diseñado para que conectes aplicaciones con Make, configures respuestas automáticas y crees chatbots de atención sin saber programar.';
+                    break;
+                case 'contenido':
+                    ruta = '#modulo3';
+                    mensaje = 'Te recomendamos comenzar en el <strong>Módulo III — Comercialización con IA</strong>, donde estructurarás tu identidad visual en Canva, crearás videos cortos con avatares y diseñarás campañas comerciales bajo el framework AIDA.';
+                    break;
+                default:
+                    ruta = '#modulo1';
+                    mensaje = 'Te recomendamos comenzar por el <strong>Módulo I</strong> para tener una base sólida de diagnóstico y prompting antes de avanzar.';
+            }
         }
 
-        texto.innerHTML = mensaje;
+        // Agregar consejo basado en la experiencia previa con IA
+        switch (respuestas.experiencia) {
+            case 'ninguna':
+                consejoIA = '💡 <strong>Consejo de IA:</strong> Como estás dando tus primeros pasos con IA, te recomendamos revisar detenidamente las <strong>Semanas 1 y 2 del Módulo I</strong> para aprender a interactuar de forma segura y evitar compartir datos sensibles de tu negocio.';
+                break;
+            case 'google':
+                consejoIA = '💡 <strong>Consejo de IA:</strong> Ya usás la IA como buscador; ahora aprenderás a conversar con ella de forma interactiva. Prestá especial atención a la técnica de prompts <strong>CIFRCE</strong> en la Semana 2 del Módulo I para evitar respuestas genéricas.';
+                break;
+            case 'intermedia':
+                consejoIA = '💡 <strong>Consejo de IA:</strong> Con tu nivel creando prompts, podrás formular instrucciones muy estructuradas para modelar tu negocio. Recordá mantener siempre el criterio humano (Human-in-the-Loop) para validar los supuestos sugeridos.';
+                break;
+            case 'avanzada':
+                consejoIA = '💡 <strong>Consejo de IA:</strong> Tu experiencia previa te permitirá actuar como copiloto crítico de la IA, retando sus supuestos o pidiéndole que actúe en roles profesionales específicos para evaluar a fondo las propuestas generadas.';
+                break;
+        }
+
+        texto.innerHTML = `${mensaje}<br><br>${consejoIA}`;
         btnIr.href = ruta;
         resultado.classList.remove('oculto');
-        resultado.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        
+        setTimeout(() => {
+            resultado.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
     }
 });
