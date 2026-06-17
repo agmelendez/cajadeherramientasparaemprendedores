@@ -1792,3 +1792,16 @@ footer {
     border-radius: 12px;
   }
 }
+
+/* Highlight for Padlet links in weekly steps */
+.padlet-link-highlight {
+  color: var(--ucr-blue) !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: underline !important;
+  transition: color 0.2s ease;
+}
+
+.padlet-link-highlight:hover {
+  color: var(--ucr-celeste) !important;
+}
