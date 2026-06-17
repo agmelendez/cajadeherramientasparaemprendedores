@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rúbrica del Toolkit 1: Pre-Operativo (Validación de Idea) - Caja de Herramientas IA</title>
+    <link rel="stylesheet" href="../document-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-navbar">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Volver al Inicio
+        </a>
+        <div class="navbar-brand">
+            <i class="fas fa-graduation-cap"></i> UCR | Caja de Herramientas de IA para MiPYMES
+        </div>
+    </nav>
+
+    <div class="doc-wrapper">
+        <div class="doc-card">
+            <h1>Rúbrica del Toolkit 1: Pre-Operativo (Validación de Idea)</h1>
+<p>Esta rúbrica específica evalúa las evidencias y el portafolio desarrollado durante las 4 semanas del Toolkit Pre-Operativo.</p>
+<div class="table-responsive"><table class="rubric-table">
+<thead><tr>
+<th scope="col">Criterio</th>
+<th scope="col">Inicial</th>
+<th scope="col">Adecuado</th>
+<th scope="col">Sólido</th>
+</tr></thead><tbody>
+<tr>
+<td class="rubric-criterion"><strong>Tendencias</strong></td>
+<td class="rubric-cell">Compara términos en Google Trends sin justificar la selección ni interpretar las tendencias.</td>
+<td class="rubric-cell">Compara al menos 3 términos clave y describe el comportamiento general de la tendencia.</td>
+<td class="rubric-cell">Interpreta de forma crítica los patrones de búsqueda, la estacionalidad, los riesgos de demanda y las implicaciones para su mercado local.</td>
+</tr>
+<tr>
+<td class="rubric-criterion"><strong>Cliente ideal</strong></td>
+<td class="rubric-cell">Presenta un Buyer Persona genérico o inventado completamente por la IA sin contrastarlo con observaciones.</td>
+<td class="rubric-cell">Diseña un Buyer Persona con información de dolores y datos demográficos básicos del mercado objetivo.</td>
+<td class="rubric-cell">Estructura un Buyer Persona y un Mapa de Empatía detallados, diferenciando qué datos son reales (validados) de cuáles son hipótesis.</td>
+</tr>
+<tr>
+<td class="rubric-criterion"><strong>Encuesta</strong></td>
+<td class="rubric-cell">Las preguntas son sesgadas, de baja calidad o no tienen aplicación real para validar la idea de negocio.</td>
+<td class="rubric-cell">La encuesta fue diseñada y aplicada a al menos 10 personas del segmento objetivo del negocio.</td>
+<td class="rubric-cell">Presenta preguntas no sesgadas, respuestas anonimizadas correctamente en el análisis y hallazgos clave accionables para refinar la oferta.</td>
+</tr>
+<tr>
+<td class="rubric-criterion"><strong>Canvas</strong></td>
+<td class="rubric-cell">El Business Model Canvas está incompleto, es contradictorio o fue copiado directamente del chat de IA.</td>
+<td class="rubric-cell">El Canvas está completo con los 9 bloques desarrollados y adaptados a la idea de negocio.</td>
+<td class="rubric-cell">Presenta un Canvas revisado de forma crítica, identificando los supuestos más riesgosos y las acciones para validarlos en la realidad.</td>
+</tr>
+</tbody></table></div>
+        </div>
+    </div>
+
+    <div class="action-panel">
+        
+        <button id="print-btn" class="btn btn-primary"><i class="fas fa-print"></i> Guardar / Imprimir PDF</button>
+        <button id="reset-btn" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Limpiar Respuestas</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const docId = window.location.pathname.split('/').pop().replace('.html', '');
+            
+            // Auto-grow textareas
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach(ta => {
+                const autoGrow = () => {
+                    ta.style.height = 'auto';
+                    ta.style.height = ta.scrollHeight + 'px';
+                };
+                ta.addEventListener('input', autoGrow);
+                // Initial size adjustment
+                setTimeout(autoGrow, 100);
+            });
+
+            // Load/Save inputs from LocalStorage
+            const inputs = document.querySelectorAll('.interactive-input, .inline-input, input[type="checkbox"]');
+            inputs.forEach((input, index) => {
+                const key = `ucr-caja-${docId}-input-${index}`;
+                const saved = localStorage.getItem(key);
+                if (saved !== null) {
+                    if (input.type === 'checkbox') {
+                        input.checked = saved === 'true';
+                    } else {
+                        input.value = saved;
+                        // Trigger input event to resize textarea
+                        if (input.tagName === 'TEXTAREA') {
+                            setTimeout(() => {
+                                input.style.height = 'auto';
+                                input.style.height = input.scrollHeight + 'px';
+                            }, 100);
+                        }
+                    }
+                }
+                
+                input.addEventListener('input', () => {
+                    const val = input.type === 'checkbox' ? input.checked : input.value;
+                    localStorage.setItem(key, val);
+                });
+            });
+
+            // Interactive Rubrics Selection
+            const rubricCells = document.querySelectorAll('.rubric-table td.rubric-cell');
+            rubricCells.forEach(cell => {
+                const rowIdx = cell.parentElement.rowIndex;
+                const key = `ucr-caja-${docId}-rubric-row-${rowIdx}`;
+                
+                // Load saved selection
+                const savedCol = localStorage.getItem(key);
+                if (savedCol !== null && parseInt(savedCol) === cell.cellIndex) {
+                    cell.classList.add('selected-level');
+                }
+
+                cell.addEventListener('click', () => {
+                    cell.parentElement.querySelectorAll('td.rubric-cell').forEach(c => {
+                        c.classList.remove('selected-level');
+                    });
+                    cell.classList.add('selected-level');
+                    localStorage.setItem(key, cell.cellIndex);
+                });
+            });
+
+            // Print Action
+            document.getElementById('print-btn').addEventListener('click', () => {
+                window.print();
+            });
+
+            // Reset Action
+            document.getElementById('reset-btn').addEventListener('click', () => {
+                if (confirm('¿Está seguro de que desea limpiar todas sus respuestas en este documento?')) {
+                    inputs.forEach((input, index) => {
+                        const key = `ucr-caja-${docId}-input-${index}`;
+                        localStorage.removeItem(key);
+                        if (input.type === 'checkbox') {
+                            input.checked = false;
+                        } else {
+                            input.value = '';
+                        }
+                        if (input.tagName === 'TEXTAREA') {
+                            input.style.height = 'auto';
+                        }
+                    });
+                    
+                    rubricCells.forEach(cell => {
+                        cell.classList.remove('selected-level');
+                    });
+                    const rowCount = document.querySelectorAll('.rubric-table tr').length;
+                    for(let i=0; i<rowCount; i++) {
+                        localStorage.removeItem(`ucr-caja-${docId}-rubric-row-${i}`);
+                    }
+                }
+            });
+
+            // Export to Markdown Action
+            const exportBtn = document.getElementById('export-btn');
+            if (exportBtn) {
+                exportBtn.addEventListener('click', () => {
+                    let title = document.querySelector('h1').innerText;
+                    let mdText = `# Trabajo Completado: ${title}\n\n`;
+                    
+                    // Simple export logic based on document type
+                    if (document.querySelector('.bmc-grid')) {
+                        // BMC Export
+                        const cells = document.querySelectorAll('.bmc-cell');
+                        cells.forEach(c => {
+                            const header = c.querySelector('h3').innerText;
+                            const val = c.querySelector('textarea').value || '(Vacío)';
+                            mdText += `## ${header}\n${val}\n\n`;
+                        });
+                    } else if (document.querySelector('.swot-grid')) {
+                        // SWOT Export
+                        const quadrants = document.querySelectorAll('.swot-quadrant');
+                        quadrants.forEach(q => {
+                            const header = q.querySelector('h3').innerText;
+                            const val = q.querySelector('textarea').value || '(Vacío)';
+                            mdText += `## ${header}\n${val}\n\n`;
+                        });
+                    } else {
+                        // General Template Export
+                        const elements = document.querySelectorAll('.doc-card > *');
+                        elements.forEach(el => {
+                            if (el.tagName === 'H2') {
+                                mdText += `## ${el.innerText}\n\n`;
+                            } else if (el.tagName === 'H3') {
+                                mdText += `### ${el.innerText}\n\n`;
+                            } else if (el.tagName === 'P') {
+                                // If paragraph contains inline inputs
+                                let text = el.innerHTML;
+                                const inputsInP = el.querySelectorAll('input, textarea');
+                                if (inputsInP.length > 0) {
+                                    inputsInP.forEach(inp => {
+                                        text = text.replace(inp.outerHTML, `**${inp.value || '___'}**`);
+                                    });
+                                    // Remove html tags
+                                    text = text.replace(/<[^>]*>/g, '');
+                                    mdText += `${text}\n\n`;
+                                } else {
+                                    mdText += `${el.innerText}\n\n`;
+                                }
+                            } else if (el.tagName === 'UL' || el.tagName === 'OL') {
+                                el.querySelectorAll('li').forEach(li => {
+                                    let text = li.innerHTML;
+                                    const inp = li.querySelector('input, textarea');
+                                    if (inp) {
+                                        if (inp.type === 'checkbox') {
+                                            text = text.replace(inp.outerHTML, inp.checked ? '[x]' : '[ ]');
+                                        } else {
+                                            text = text.replace(inp.outerHTML, `**${inp.value || '___'}**`);
+                                        }
+                                    }
+                                    text = text.replace(/<[^>]*>/g, '');
+                                    mdText += `* ${text}\n`;
+                                });
+                                mdText += '\n';
+                            }
+                        });
+                    }
+                    
+                    const blob = new Blob([mdText], { type: 'text/markdown;charset=utf-8;' });
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.setAttribute('download', `${docId}-completado.md`);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

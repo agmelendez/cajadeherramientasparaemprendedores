@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo de Privacidad y Uso de Datos en Actividades con IA - Caja de Herramientas IA</title>
+    <link rel="stylesheet" href="../document-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-navbar">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Volver al Inicio
+        </a>
+        <div class="navbar-brand">
+            <i class="fas fa-graduation-cap"></i> UCR | Caja de Herramientas de IA para MiPYMES
+        </div>
+    </nav>
+
+    <div class="doc-wrapper">
+        <div class="doc-card">
+            <h1>Protocolo de Privacidad y Uso de Datos en Actividades con IA</h1>
+<p>Este protocolo establece las medidas operativas obligatorias para asegurar la privacidad de la información comercial y la protección de datos personales de terceros (clientes, proveedores, colaboradores), de conformidad con la Ley N° 8968 (Ley de Protección de la Persona frente al tratamiento de sus datos personales) de Costa Rica.</p>
+<hr>
+<h2>1. Regla General No Negociable</h2>
+<p>La persona participante del programa <strong>no debe ingresar datos personales identificables</strong> en herramientas de inteligencia artificial generativa abiertas o gratuitas (como ChatGPT, Gemini, Claude, etc.).</p>
+<hr>
+<h2>2. Tipos de Datos que Deben Eliminarse o Anonimizarse</h2>
+<p>Antes de copiar, subir o procesar cualquier texto o archivo en una herramienta de IA, debes asegurarte de eliminar por completo:</p>
+<ul>
+<li>Nombres y apellidos completos.</li>
+<li>Números de identificación física o jurídica (cédulas, pasaportes).</li>
+<li>Números telefónicos.</li>
+<li>Direcciones de correo electrónico.</li>
+<li>Direcciones físicas detalladas de viviendas.</li>
+<li>Detalles de cuentas bancarias, tarjetas o información crediticia individual.</li>
+<li>Fotografías, retratos o videos donde se identifique el rostro de personas.</li>
+<li>Información médica o de salud.</li>
+<li>Datos de menores de edad.</li>
+<li>Conversaciones privadas completas de chats (ej. capturas de pantalla de chats con clientes sin anonimizar).</li>
+</ul>
+<hr>
+<h2>3. Guía Práctica de Anonimización</h2>
+<p>Reemplaza los datos reales por etiquetas genéricas que mantengan la lógica de la información sin revelar identidades:</p>
+<ul>
+<li>*Dato Real:* "María Fernández, teléfono 8888-0000, vecina de Cartago, se quejó de que el pedido llegó frío."</li>
+<li>*Dato Anonimizado:* "Cliente A, mujer adulta, zona urbana, reporta inconveniente con la temperatura de entrega del producto."</li>
+</ul>
+<p>*</p>
+<ul>
+<li>*Dato Real:* "La empresa Agropecuaria XYZ S.A. nos debe ₡500.000 desde abril."</li>
+<li>*Dato Anonimizado:* "Cliente corporativo del sector agrícola registra una cuenta por cobrar vencida de rango medio."</li>
+</ul>
+<hr>
+<h2>4. Consentimiento Informado para Actividades Prácticas</h2>
+<p>Cuando las actividades del programa requieran entrevistar a clientes potenciales, recolectar respuestas a encuestas o documentar testimonios reales, el emprendedor debe:</p>
+<ol>
+<li>Explicar claramente la finalidad de la recolección de datos.</li>
+<li>Garantizar que la información se analizará de forma agregada o anónima.</li>
+<li>Obtener la firma o aceptación explícita de la persona participante utilizando la <a href="file:///Users/agustingomez/Downloads/0%20CajaPymes/templates/plantilla-consentimiento-clientes.md" target="_blank" rel="noopener noreferrer">Plantilla de Consentimiento</a> oficial del programa.</li>
+</ol>
+<hr>
+<h2>5. Uso de Datos Ficticios (Datos de Prueba)</h2>
+<p>Para todas las prácticas de configuración de CRM, chatbots, flujos automatizados de mensajería o simulaciones financieras, se debe hacer uso exclusivo de datos de prueba ficticios. Una vez que la persona participante valide el correcto funcionamiento técnico de la automatización, podrá trasladar el sistema a producción utilizando bases de datos reales en entornos locales cerrados que cumplan con medidas de ciberseguridad.</p>
+        </div>
+    </div>
+
+    <div class="action-panel">
+        
+        <button id="print-btn" class="btn btn-primary"><i class="fas fa-print"></i> Guardar / Imprimir PDF</button>
+        <button id="reset-btn" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Limpiar Respuestas</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const docId = window.location.pathname.split('/').pop().replace('.html', '');
+            
+            // Auto-grow textareas
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach(ta => {
+                const autoGrow = () => {
+                    ta.style.height = 'auto';
+                    ta.style.height = ta.scrollHeight + 'px';
+                };
+                ta.addEventListener('input', autoGrow);
+                // Initial size adjustment
+                setTimeout(autoGrow, 100);
+            });
+
+            // Load/Save inputs from LocalStorage
+            const inputs = document.querySelectorAll('.interactive-input, .inline-input, input[type="checkbox"]');
+            inputs.forEach((input, index) => {
+                const key = `ucr-caja-${docId}-input-${index}`;
+                const saved = localStorage.getItem(key);
+                if (saved !== null) {
+                    if (input.type === 'checkbox') {
+                        input.checked = saved === 'true';
+                    } else {
+                        input.value = saved;
+                        // Trigger input event to resize textarea
+                        if (input.tagName === 'TEXTAREA') {
+                            setTimeout(() => {
+                                input.style.height = 'auto';
+                                input.style.height = input.scrollHeight + 'px';
+                            }, 100);
+                        }
+                    }
+                }
+                
+                input.addEventListener('input', () => {
+                    const val = input.type === 'checkbox' ? input.checked : input.value;
+                    localStorage.setItem(key, val);
+                });
+            });
+
+            // Interactive Rubrics Selection
+            const rubricCells = document.querySelectorAll('.rubric-table td.rubric-cell');
+            rubricCells.forEach(cell => {
+                const rowIdx = cell.parentElement.rowIndex;
+                const key = `ucr-caja-${docId}-rubric-row-${rowIdx}`;
+                
+                // Load saved selection
+                const savedCol = localStorage.getItem(key);
+                if (savedCol !== null && parseInt(savedCol) === cell.cellIndex) {
+                    cell.classList.add('selected-level');
+                }
+
+                cell.addEventListener('click', () => {
+                    cell.parentElement.querySelectorAll('td.rubric-cell').forEach(c => {
+                        c.classList.remove('selected-level');
+                    });
+                    cell.classList.add('selected-level');
+                    localStorage.setItem(key, cell.cellIndex);
+                });
+            });
+
+            // Print Action
+            document.getElementById('print-btn').addEventListener('click', () => {
+                window.print();
+            });
+
+            // Reset Action
+            document.getElementById('reset-btn').addEventListener('click', () => {
+                if (confirm('¿Está seguro de que desea limpiar todas sus respuestas en este documento?')) {
+                    inputs.forEach((input, index) => {
+                        const key = `ucr-caja-${docId}-input-${index}`;
+                        localStorage.removeItem(key);
+                        if (input.type === 'checkbox') {
+                            input.checked = false;
+                        } else {
+                            input.value = '';
+                        }
+                        if (input.tagName === 'TEXTAREA') {
+                            input.style.height = 'auto';
+                        }
+                    });
+                    
+                    rubricCells.forEach(cell => {
+                        cell.classList.remove('selected-level');
+                    });
+                    const rowCount = document.querySelectorAll('.rubric-table tr').length;
+                    for(let i=0; i<rowCount; i++) {
+                        localStorage.removeItem(`ucr-caja-${docId}-rubric-row-${i}`);
+                    }
+                }
+            });
+
+            // Export to Markdown Action
+            const exportBtn = document.getElementById('export-btn');
+            if (exportBtn) {
+                exportBtn.addEventListener('click', () => {
+                    let title = document.querySelector('h1').innerText;
+                    let mdText = `# Trabajo Completado: ${title}\n\n`;
+                    
+                    // Simple export logic based on document type
+                    if (document.querySelector('.bmc-grid')) {
+                        // BMC Export
+                        const cells = document.querySelectorAll('.bmc-cell');
+                        cells.forEach(c => {
+                            const header = c.querySelector('h3').innerText;
+                            const val = c.querySelector('textarea').value || '(Vacío)';
+                            mdText += `## ${header}\n${val}\n\n`;
+                        });
+                    } else if (document.querySelector('.swot-grid')) {
+                        // SWOT Export
+                        const quadrants = document.querySelectorAll('.swot-quadrant');
+                        quadrants.forEach(q => {
+                            const header = q.querySelector('h3').innerText;
+                            const val = q.querySelector('textarea').value || '(Vacío)';
+                            mdText += `## ${header}\n${val}\n\n`;
+                        });
+                    } else {
+                        // General Template Export
+                        const elements = document.querySelectorAll('.doc-card > *');
+                        elements.forEach(el => {
+                            if (el.tagName === 'H2') {
+                                mdText += `## ${el.innerText}\n\n`;
+                            } else if (el.tagName === 'H3') {
+                                mdText += `### ${el.innerText}\n\n`;
+                            } else if (el.tagName === 'P') {
+                                // If paragraph contains inline inputs
+                                let text = el.innerHTML;
+                                const inputsInP = el.querySelectorAll('input, textarea');
+                                if (inputsInP.length > 0) {
+                                    inputsInP.forEach(inp => {
+                                        text = text.replace(inp.outerHTML, `**${inp.value || '___'}**`);
+                                    });
+                                    // Remove html tags
+                                    text = text.replace(/<[^>]*>/g, '');
+                                    mdText += `${text}\n\n`;
+                                } else {
+                                    mdText += `${el.innerText}\n\n`;
+                                }
+                            } else if (el.tagName === 'UL' || el.tagName === 'OL') {
+                                el.querySelectorAll('li').forEach(li => {
+                                    let text = li.innerHTML;
+                                    const inp = li.querySelector('input, textarea');
+                                    if (inp) {
+                                        if (inp.type === 'checkbox') {
+                                            text = text.replace(inp.outerHTML, inp.checked ? '[x]' : '[ ]');
+                                        } else {
+                                            text = text.replace(inp.outerHTML, `**${inp.value || '___'}**`);
+                                        }
+                                    }
+                                    text = text.replace(/<[^>]*>/g, '');
+                                    mdText += `* ${text}\n`;
+                                });
+                                mdText += '\n';
+                            }
+                        });
+                    }
+                    
+                    const blob = new Blob([mdText], { type: 'text/markdown;charset=utf-8;' });
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.setAttribute('download', `${docId}-completado.md`);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

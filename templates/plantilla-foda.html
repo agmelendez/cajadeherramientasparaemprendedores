@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla: FODA Dinámico para MiPYME - Caja de Herramientas IA</title>
+    <link rel="stylesheet" href="../document-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-navbar">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Volver al Inicio
+        </a>
+        <div class="navbar-brand">
+            <i class="fas fa-graduation-cap"></i> UCR | Caja de Herramientas de IA para MiPYMES
+        </div>
+    </nav>
+
+    <div class="doc-wrapper">
+        <div class="doc-card">
+            
+    <h1>Plantilla: FODA Dinámico para MiPYME con Criterios de Priorización</h1>
+    <p>El análisis FODA (Fortalezas, Oportunidades, Debilidades, Amenazas) te ayuda a entender la situación de tu negocio. Al utilizar IA para redactar o estructurar el FODA, clasifica cada punto para no confundir datos reales con meros supuestos.</p>
+    
+    <div class="info-box">
+        <div class="info-box-title"><i class="fas fa-info-circle"></i> Clasificación de Criterios (Utilice estas etiquetas al redactar):</div>
+        <ul>
+            <li><strong>[D] Dato observado:</strong> Hecho verificado con información real del negocio (ej. estados financieros, encuestas).</li>
+            <li><strong>[S] Supuesto:</strong> Hipótesis que parece lógica pero no ha sido validada.</li>
+            <li><strong>[R] Recomendación de IA:</strong> Sugerencia hecha por el modelo que requiere revisión.</li>
+        </ul>
+    </div>
+    
+    <hr>
+    
+    <h2>1. Matriz FODA Dinámica</h2>
+    <p>Rellene los cuadrantes clasificando sus observaciones internas (controlables) y externas (no controlables):</p>
+    
+    <div class="swot-grid">
+        <div class="swot-quadrant fortalezas">
+            <h3>💪 Fortalezas</h3>
+            <p class="bmc-hint">Puntos fuertes internos (ej. [D] 15 años de experiencia, [R] base de datos de clientes).</p>
+            <textarea class="interactive-input" placeholder="Escriba sus fortalezas aquí..." style="height: 150px;"></textarea>
+        </div>
+        <div class="swot-quadrant debilidades">
+            <h3>⚠️ Debilidades</h3>
+            <p class="bmc-hint">Puntos débiles internos a corregir (ej. [S] bajo alcance digital, [D] sin control de inventarios).</p>
+            <textarea class="interactive-input" placeholder="Escriba sus debilidades aquí..." style="height: 150px;"></textarea>
+        </div>
+        <div class="swot-quadrant oportunidades">
+            <h3>🚀 Oportunidades</h3>
+            <p class="bmc-hint">Tendencias externas a aprovechar (ej. [D] alta demanda de entrega a domicilio, [R] nicho sin explotar).</p>
+            <textarea class="interactive-input" placeholder="Escriba sus oportunidades aquí..." style="height: 150px;"></textarea>
+        </div>
+        <div class="swot-quadrant amenazas">
+            <h3>⚡ Amenazas</h3>
+            <p class="bmc-hint">Riesgos externos a mitigar (ej. [D] nuevo competidor local, [S] aumento de costos de servicios).</p>
+            <textarea class="interactive-input" placeholder="Escriba sus amenazas aquí..." style="height: 150px;"></textarea>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <h2>2. Plan de Acción Inicial</h2>
+    <p>Derivado de la matriz anterior, seleccione las 3 acciones más urgentes y justifíquelas:</p>
+    
+    <ol>
+        <li>
+            <strong>Acción 1:</strong>
+            <input type="text" class="interactive-input" placeholder="Acción concreta">
+            <textarea class="interactive-input" placeholder="¿Por qué? (Justificación basada en FODA)" style="height: 60px;"></textarea>
+        </li>
+        <li>
+            <strong>Acción 2:</strong>
+            <input type="text" class="interactive-input" placeholder="Acción concreta">
+            <textarea class="interactive-input" placeholder="¿Por qué? (Justificación basada en FODA)" style="height: 60px;"></textarea>
+        </li>
+        <li>
+            <strong>Acción 3:</strong>
+            <input type="text" class="interactive-input" placeholder="Acción concreta">
+            <textarea class="interactive-input" placeholder="¿Por qué? (Justificación basada en FODA)" style="height: 60px;"></textarea>
+        </li>
+    </ol>
+    
+        </div>
+    </div>
+
+    <div class="action-panel">
+        <button id="export-btn" class="btn btn-secondary"><i class="fas fa-file-download"></i> Exportar Trabajo (.md)</button>
+        <button id="print-btn" class="btn btn-primary"><i class="fas fa-print"></i> Guardar / Imprimir PDF</button>
+        <button id="reset-btn" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Limpiar Respuestas</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const docId = window.location.pathname.split('/').pop().replace('.html', '');
+            
+            // Auto-grow textareas
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach(ta => {
+                const autoGrow = () => {
+                    ta.style.height = 'auto';
+                    ta.style.height = ta.scrollHeight + 'px';
+                };
+                ta.addEventListener('input', autoGrow);
+                // Initial size adjustment
+                setTimeout(autoGrow, 100);
+            });
+
+            // Load/Save inputs from LocalStorage
+            const inputs = document.querySelectorAll('.interactive-input, .inline-input, input[type="checkbox"]');
+            inputs.forEach((input, index) => {
+                const key = `ucr-caja-${docId}-input-${index}`;
+                const saved = localStorage.getItem(key);
+                if (saved !== null) {
+                    if (input.type === 'checkbox') {
+                        input.checked = saved === 'true';
+                    } else {
+                        input.value = saved;
+                        // Trigger input event to resize textarea
+                        if (input.tagName === 'TEXTAREA') {
+                            setTimeout(() => {
+                                input.style.height = 'auto';
+                                input.style.height = input.scrollHeight + 'px';
+                            }, 100);
+                        }
+                    }
+                }
+                
+                input.addEventListener('input', () => {
+                    const val = input.type === 'checkbox' ? input.checked : input.value;
+                    localStorage.setItem(key, val);
+                });
+            });
+
+            // Interactive Rubrics Selection
+            const rubricCells = document.querySelectorAll('.rubric-table td.rubric-cell');
+            rubricCells.forEach(cell => {
+                const rowIdx = cell.parentElement.rowIndex;
+                const key = `ucr-caja-${docId}-rubric-row-${rowIdx}`;
+                
+                // Load saved selection
+                const savedCol = localStorage.getItem(key);
+                if (savedCol !== null && parseInt(savedCol) === cell.cellIndex) {
+                    cell.classList.add('selected-level');
+                }
+
+                cell.addEventListener('click', () => {
+                    cell.parentElement.querySelectorAll('td.rubric-cell').forEach(c => {
+                        c.classList.remove('selected-level');
+                    });
+                    cell.classList.add('selected-level');
+                    localStorage.setItem(key, cell.cellIndex);
+                });
+            });
+
+            // Print Action
+            document.getElementById('print-btn').addEventListener('click', () => {
+                window.print();
+            });
+
+            // Reset Action
+            document.getElementById('reset-btn').addEventListener('click', () => {
+                if (confirm('¿Está seguro de que desea limpiar todas sus respuestas en este documento?')) {
+                    inputs.forEach((input, index) => {
+                        const key = `ucr-caja-${docId}-input-${index}`;
+                        localStorage.removeItem(key);
+                        if (input.type === 'checkbox') {
+                            input.checked = false;
+                        } else {
+                            input.value = '';
+                        }
+                        if (input.tagName === 'TEXTAREA') {
+                            input.style.height = 'auto';
+                        }
+                    });
+                    
+                    rubricCells.forEach(cell => {
+                        cell.classList.remove('selected-level');
+                    });
+                    const rowCount = document.querySelectorAll('.rubric-table tr').length;
+                    for(let i=0; i<rowCount; i++) {
+                        localStorage.removeItem(`ucr-caja-${docId}-rubric-row-${i}`);
+                    }
+                }
+            });
+
+            // Export to Markdown Action
+            const exportBtn = document.getElementById('export-btn');
+            if (exportBtn) {
+                exportBtn.addEventListener('click', () => {
+                    let title = document.querySelector('h1').innerText;
+                    let mdText = `# Trabajo Completado: ${title}\n\n`;
+                    
+                    // Simple export logic based on document type
+                    if (document.querySelector('.bmc-grid')) {
+                        // BMC Export
+                        const cells = document.querySelectorAll('.bmc-cell');
+                        cells.forEach(c => {
+                            const header = c.querySelector('h3').innerText;
+                            const val = c.querySelector('textarea').value || '(Vacío)';
+                            mdText += `## ${header}\n${val}\n\n`;
+                        });
+                    } else if (document.querySelector('.swot-grid')) {
+                        // SWOT Export
+                        const quadrants = document.querySelectorAll('.swot-quadrant');
+                        quadrants.forEach(q => {
+                            const header = q.querySelector('h3').innerText;
+                            const val = q.querySelector('textarea').value || '(Vacío)';
+                            mdText += `## ${header}\n${val}\n\n`;
+                        });
+                    } else {
+                        // General Template Export
+                        const elements = document.querySelectorAll('.doc-card > *');
+                        elements.forEach(el => {
+                            if (el.tagName === 'H2') {
+                                mdText += `## ${el.innerText}\n\n`;
+                            } else if (el.tagName === 'H3') {
+                                mdText += `### ${el.innerText}\n\n`;
+                            } else if (el.tagName === 'P') {
+                                // If paragraph contains inline inputs
+                                let text = el.innerHTML;
+                                const inputsInP = el.querySelectorAll('input, textarea');
+                                if (inputsInP.length > 0) {
+                                    inputsInP.forEach(inp => {
+                                        text = text.replace(inp.outerHTML, `**${inp.value || '___'}**`);
+                                    });
+                                    // Remove html tags
+                                    text = text.replace(/<[^>]*>/g, '');
+                                    mdText += `${text}\n\n`;
+                                } else {
+                                    mdText += `${el.innerText}\n\n`;
+                                }
+                            } else if (el.tagName === 'UL' || el.tagName === 'OL') {
+                                el.querySelectorAll('li').forEach(li => {
+                                    let text = li.innerHTML;
+                                    const inp = li.querySelector('input, textarea');
+                                    if (inp) {
+                                        if (inp.type === 'checkbox') {
+                                            text = text.replace(inp.outerHTML, inp.checked ? '[x]' : '[ ]');
+                                        } else {
+                                            text = text.replace(inp.outerHTML, `**${inp.value || '___'}**`);
+                                        }
+                                    }
+                                    text = text.replace(/<[^>]*>/g, '');
+                                    mdText += `* ${text}\n`;
+                                });
+                                mdText += '\n';
+                            }
+                        });
+                    }
+                    
+                    const blob = new Blob([mdText], { type: 'text/markdown;charset=utf-8;' });
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.setAttribute('download', `${docId}-completado.md`);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

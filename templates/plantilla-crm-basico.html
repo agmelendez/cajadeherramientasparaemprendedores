@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla: Estructura de CRM Básico con Datos de Prueba - Caja de Herramientas IA</title>
+    <link rel="stylesheet" href="../document-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-navbar">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Volver al Inicio
+        </a>
+        <div class="navbar-brand">
+            <i class="fas fa-graduation-cap"></i> UCR | Caja de Herramientas de IA para MiPYMES
+        </div>
+    </nav>
+
+    <div class="doc-wrapper">
+        <div class="doc-card">
+            <h1>Plantilla: Estructura de CRM Básico con Datos de Prueba</h1>
+<p>Esta plantilla sirve para diseñar la estructura de tu CRM (Customer Relationship Management) utilizando datos de prueba ficticios. Recuerda <strong>nunca</strong> ingresar datos personales reales de clientes en herramientas de IA abiertas.</p>
+<hr>
+<h2>1. Estructura de Columnas Sugerida</h2>
+<div class="table-responsive"><table class="normal-table">
+<thead><tr>
+<th scope="col">ID de Cliente</th>
+<th scope="col">Nombre de Contacto (Ficticio)</th>
+<th scope="col">Empresa / Negocio (Ficticio)</th>
+<th scope="col">Correo Electrónico (Prueba)</th>
+<th scope="col">Estado del Lead</th>
+<th scope="col">Valor Estimado (₡)</th>
+<th scope="col">Notas de Seguimiento</th>
+</tr></thead><tbody>
+<tr>
+<td>CLI-001</td>
+<td>Cliente Ficticio 1</td>
+<td>Verdulería La Parcela</td>
+<td>cliente1@ejemplo.com</td>
+<td>Contactado</td>
+<td>15.000</td>
+<td>Interesado en cotizar cajas mixtas mensuales.</td>
+</tr>
+<tr>
+<td>CLI-002</td>
+<td>Cliente Ficticio 2</td>
+<td>Taller Mecánico Ruiz</td>
+<td>cliente2@ejemplo.com</td>
+<td>Propuesta Enviada</td>
+<td>85.000</td>
+<td>Esperando respuesta de presupuesto enviado el 10/06.</td>
+</tr>
+<tr>
+<td>CLI-003</td>
+<td>Cliente Ficticio 3</td>
+<td>Salón de Belleza Glamour</td>
+<td>cliente3@ejemplo.com</td>
+<td>Lead Nuevo</td>
+<td>0</td>
+<td>Asignar llamada de presentación.</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2>2. Definición de Estados del Pipeline (Embudo de Ventas)</h2>
+<p>Asigna un estado claro a cada contacto para saber qué acción tomar:</p>
+<ol>
+<li><strong>Lead Nuevo:</strong> El contacto mostró interés inicial (ej. llenó formulario) pero no hemos hablado.</li>
+<li><strong>Contactado:</strong> Primera conversación realizada para entender sus necesidades.</li>
+<li><strong>Propuesta Enviada:</strong> Le cotizamos un producto o servicio específico.</li>
+<li><strong>Ganado:</strong> Compra realizada de forma exitosa.</li>
+<li><strong>Perdido:</strong> El cliente declinó la oferta o no respondió tras seguimiento.</li>
+</ol>
+<hr>
+<h2>3. Protocolo de Privacidad del CRM</h2>
+<p>Antes de mover estos datos a una herramienta real en producción:</p>
+<ul>
+<li><strong>[ ] Consentimiento:</strong> Asegúrate de que los clientes reales hayan autorizado el almacenamiento de sus datos.</li>
+<li><strong>[ ] Seguridad:</strong> Si utilizas hojas de cálculo de Google o Excel, activa la autenticación de dos factores en tu cuenta.</li>
+<li><strong>[ ] Cero IA abierta:</strong> Nunca subas bases de datos reales completas a chats de IA gratuitos para análisis sin anonimizar los nombres e identificaciones primero.</li>
+</ul>
+        </div>
+    </div>
+
+    <div class="action-panel">
+        <button id="export-btn" class="btn btn-secondary"><i class="fas fa-file-download"></i> Exportar Trabajo (.md)</button>
+        <button id="print-btn" class="btn btn-primary"><i class="fas fa-print"></i> Guardar / Imprimir PDF</button>
+        <button id="reset-btn" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Limpiar Respuestas</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const docId = window.location.pathname.split('/').pop().replace('.html', '');
+            
+            // Auto-grow textareas
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach(ta => {
+                const autoGrow = () => {
+                    ta.style.height = 'auto';
+                    ta.style.height = ta.scrollHeight + 'px';
+                };
+                ta.addEventListener('input', autoGrow);
+                // Initial size adjustment
+                setTimeout(autoGrow, 100);
+            });
+
+            // Load/Save inputs from LocalStorage
+            const inputs = document.querySelectorAll('.interactive-input, .inline-input, input[type="checkbox"]');
+            inputs.forEach((input, index) => {
+                const key = `ucr-caja-${docId}-input-${index}`;
+                const saved = localStorage.getItem(key);
+                if (saved !== null) {
+                    if (input.type === 'checkbox') {
+                        input.checked = saved === 'true';
+                    } else {
+                        input.value = saved;
+                        // Trigger input event to resize textarea
+                        if (input.tagName === 'TEXTAREA') {
+                            setTimeout(() => {
+                                input.style.height = 'auto';
+                                input.style.height = input.scrollHeight + 'px';
+                            }, 100);
+                        }
+                    }
+                }
+                
+                input.addEventListener('input', () => {
+                    const val = input.type === 'checkbox' ? input.checked : input.value;
+                    localStorage.setItem(key, val);
+                });
+            });
+
+            // Interactive Rubrics Selection
+            const rubricCells = document.querySelectorAll('.rubric-table td.rubric-cell');
+            rubricCells.forEach(cell => {
+                const rowIdx = cell.parentElement.rowIndex;
+                const key = `ucr-caja-${docId}-rubric-row-${rowIdx}`;
+                
+                // Load saved selection
+                const savedCol = localStorage.getItem(key);
+                if (savedCol !== null && parseInt(savedCol) === cell.cellIndex) {
+                    cell.classList.add('selected-level');
+                }
+
+                cell.addEventListener('click', () => {
+                    cell.parentElement.querySelectorAll('td.rubric-cell').forEach(c => {
+                        c.classList.remove('selected-level');
+                    });
+                    cell.classList.add('selected-level');
+                    localStorage.setItem(key, cell.cellIndex);
+                });
+            });
+
+            // Print Action
+            document.getElementById('print-btn').addEventListener('click', () => {
+                window.print();
+            });
+
+            // Reset Action
+            document.getElementById('reset-btn').addEventListener('click', () => {
+                if (confirm('¿Está seguro de que desea limpiar todas sus respuestas en este documento?')) {
+                    inputs.forEach((input, index) => {
+                        const key = `ucr-caja-${docId}-input-${index}`;
+                        localStorage.removeItem(key);
+                        if (input.type === 'checkbox') {
+                            input.checked = false;
+                        } else {
+                            input.value = '';
+                        }
+                        if (input.tagName === 'TEXTAREA') {
+                            input.style.height = 'auto';
+                        }
+                    });
+                    
+                    rubricCells.forEach(cell => {
+                        cell.classList.remove('selected-level');
+                    });
+                    const rowCount = document.querySelectorAll('.rubric-table tr').length;
+                    for(let i=0; i<rowCount; i++) {
+                        localStorage.removeItem(`ucr-caja-${docId}-rubric-row-${i}`);
+                    }
+                }
+            });
+
+            // Export to Markdown Action
+            const exportBtn = document.getElementById('export-btn');
+            if (exportBtn) {
+                exportBtn.addEventListener('click', () => {
+                    let title = document.querySelector('h1').innerText;
+                    let mdText = `# Trabajo Completado: ${title}\n\n`;
+                    
+                    // Simple export logic based on document type
+                    if (document.querySelector('.bmc-grid')) {
+                        // BMC Export
+                        const cells = document.querySelectorAll('.bmc-cell');
+                        cells.forEach(c => {
+                            const header = c.querySelector('h3').innerText;
+                            const val = c.querySelector('textarea').value || '(Vacío)';
+                            mdText += `## ${header}\n${val}\n\n`;
+                        });
+                    } else if (document.querySelector('.swot-grid')) {
+                        // SWOT Export
+                        const quadrants = document.querySelectorAll('.swot-quadrant');
+                        quadrants.forEach(q => {
+                            const header = q.querySelector('h3').innerText;
+                            const val = q.querySelector('textarea').value || '(Vacío)';
+                            mdText += `## ${header}\n${val}\n\n`;
+                        });
+                    } else {
+                        // General Template Export
+                        const elements = document.querySelectorAll('.doc-card > *');
+                        elements.forEach(el => {
+                            if (el.tagName === 'H2') {
+                                mdText += `## ${el.innerText}\n\n`;
+                            } else if (el.tagName === 'H3') {
+                                mdText += `### ${el.innerText}\n\n`;
+                            } else if (el.tagName === 'P') {
+                                // If paragraph contains inline inputs
+                                let text = el.innerHTML;
+                                const inputsInP = el.querySelectorAll('input, textarea');
+                                if (inputsInP.length > 0) {
+                                    inputsInP.forEach(inp => {
+                                        text = text.replace(inp.outerHTML, `**${inp.value || '___'}**`);
+                                    });
+                                    // Remove html tags
+                                    text = text.replace(/<[^>]*>/g, '');
+                                    mdText += `${text}\n\n`;
+                                } else {
+                                    mdText += `${el.innerText}\n\n`;
+                                }
+                            } else if (el.tagName === 'UL' || el.tagName === 'OL') {
+                                el.querySelectorAll('li').forEach(li => {
+                                    let text = li.innerHTML;
+                                    const inp = li.querySelector('input, textarea');
+                                    if (inp) {
+                                        if (inp.type === 'checkbox') {
+                                            text = text.replace(inp.outerHTML, inp.checked ? '[x]' : '[ ]');
+                                        } else {
+                                            text = text.replace(inp.outerHTML, `**${inp.value || '___'}**`);
+                                        }
+                                    }
+                                    text = text.replace(/<[^>]*>/g, '');
+                                    mdText += `* ${text}\n`;
+                                });
+                                mdText += '\n';
+                            }
+                        });
+                    }
+                    
+                    const blob = new Blob([mdText], { type: 'text/markdown;charset=utf-8;' });
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.setAttribute('download', `${docId}-completado.md`);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

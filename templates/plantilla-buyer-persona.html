@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla: Buyer Persona y Mapa de Empatía - Caja de Herramientas IA</title>
+    <link rel="stylesheet" href="../document-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-navbar">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Volver al Inicio
+        </a>
+        <div class="navbar-brand">
+            <i class="fas fa-graduation-cap"></i> UCR | Caja de Herramientas de IA para MiPYMES
+        </div>
+    </nav>
+
+    <div class="doc-wrapper">
+        <div class="doc-card">
+            <h1>Plantilla: Buyer Persona y Mapa de Empatía</h1>
+<p>La IA puede ayudarte a estructurar esta plantilla, pero los datos principales deben basarse en evidencias y observaciones reales de clientes, no en perfiles inventados.</p>
+<hr>
+<h2>Parte 1: Perfil de Buyer Persona (Cliente Ideal)</h2>
+<h3>1. Datos Demográficos Básicos</h3>
+<ul>
+<li><strong>Nombre ficticio:</strong> (ej. Andrea la Panadera, Jorge el Distribuidor)</li>
+<li><strong>Edad aproximada:</strong> <div class="inline-input-container" style="min-width: 250px;"><input type="text" class="inline-input" placeholder="Escriba aquí..."></div></li>
+<li><strong>Ubicación y Entorno:</strong> <div class="inline-input-container" style="min-width: 250px;"><input type="text" class="inline-input" placeholder="Escriba aquí..."></div></li>
+<li><strong>Nivel educativo o laboral:</strong> <textarea class="interactive-input" placeholder="Escriba su respuesta aquí..."></textarea></li>
+</ul>
+<h3>2. Metas y Frustraciones</h3>
+<ul>
+<li><strong>¿Qué intenta lograr en su día a día?</strong> <textarea class="interactive-input" placeholder="Escriba su respuesta aquí..."></textarea></li>
+<li><strong>¿Cuáles son sus principales frustraciones u obstáculos?</strong> <textarea class="interactive-input" placeholder="Escriba su respuesta aquí..."></textarea></li>
+</ul>
+<h3>3. Comportamientos de Compra</h3>
+<ul>
+<li><strong>¿Cómo busca información sobre productos/servicios?</strong> <textarea class="interactive-input" placeholder="Escriba su respuesta aquí..."></textarea></li>
+<li><strong>¿Qué criterios valora más antes de pagar? (Precio, calidad, cercanía, rapidez)</strong> <textarea class="interactive-input" placeholder="Escriba su respuesta aquí..."></textarea></li>
+</ul>
+<hr>
+<h2>Parte 2: Mapa de Empatía</h2>
+<p>Completa los 6 cuadrantes de empatía basados en tus entrevistas u observaciones reales:</p>
+<ol>
+<li><strong>¿Qué piensa y siente?</strong></li>
+</ol>
+<ul>
+<li>¿Qué es lo que realmente le importa?</li>
+<li>¿Cuáles son sus preocupaciones principales y expectativas?</li>
+</ul>
+<ol>
+<li><strong>¿Qué ve?</strong></li>
+</ol>
+<ul>
+<li>¿Cómo es su entorno social y laboral?</li>
+<li>¿A qué tipo de ofertas está expuesto diariamente?</li>
+</ul>
+<ol>
+<li><strong>¿Qué oye?</strong></li>
+</ol>
+<ul>
+<li>¿Qué dicen las personas influyentes en su entorno (familiares, colegas)?</li>
+<li>¿Qué canales de comunicación prefiere?</li>
+</ul>
+<ol>
+<li><strong>¿Qué dice y hace?</strong></li>
+</ol>
+<ul>
+<li>¿Cómo se comporta en público?</li>
+<li>¿Qué actitud muestra y qué dice que le importa? (Contrasta esto con lo que hace).</li>
+</ul>
+<ol>
+<li><strong>Esfuerzos (Dolores):</strong></li>
+</ol>
+<ul>
+<li>¿Cuáles son sus frustraciones, miedos u obstáculos?</li>
+</ul>
+<ol>
+<li><strong>Resultados (Necesidades):</strong></li>
+</ol>
+<ul>
+<li>¿Qué desea lograr realmente? ¿Cómo mide el éxito?</li>
+</ul>
+<hr>
+<h2>Parte 3: Validación de Datos</h2>
+<ul>
+<li><strong>[ ] Evidencia real:</strong> Este perfil está basado en (N°) <div class="inline-input-container"><input type="text" class="inline-input" placeholder="..."></div> entrevistas o encuestas realizadas a clientes reales.</li>
+<li><strong>[ ] Supuesto:</strong> Esta información es una hipótesis inicial que validaremos en la semana T1-S3.</li>
+</ul>
+        </div>
+    </div>
+
+    <div class="action-panel">
+        <button id="export-btn" class="btn btn-secondary"><i class="fas fa-file-download"></i> Exportar Trabajo (.md)</button>
+        <button id="print-btn" class="btn btn-primary"><i class="fas fa-print"></i> Guardar / Imprimir PDF</button>
+        <button id="reset-btn" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Limpiar Respuestas</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const docId = window.location.pathname.split('/').pop().replace('.html', '');
+            
+            // Auto-grow textareas
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach(ta => {
+                const autoGrow = () => {
+                    ta.style.height = 'auto';
+                    ta.style.height = ta.scrollHeight + 'px';
+                };
+                ta.addEventListener('input', autoGrow);
+                // Initial size adjustment
+                setTimeout(autoGrow, 100);
+            });
+
+            // Load/Save inputs from LocalStorage
+            const inputs = document.querySelectorAll('.interactive-input, .inline-input, input[type="checkbox"]');
+            inputs.forEach((input, index) => {
+                const key = `ucr-caja-${docId}-input-${index}`;
+                const saved = localStorage.getItem(key);
+                if (saved !== null) {
+                    if (input.type === 'checkbox') {
+                        input.checked = saved === 'true';
+                    } else {
+                        input.value = saved;
+                        // Trigger input event to resize textarea
+                        if (input.tagName === 'TEXTAREA') {
+                            setTimeout(() => {
+                                input.style.height = 'auto';
+                                input.style.height = input.scrollHeight + 'px';
+                            }, 100);
+                        }
+                    }
+                }
+                
+                input.addEventListener('input', () => {
+                    const val = input.type === 'checkbox' ? input.checked : input.value;
+                    localStorage.setItem(key, val);
+                });
+            });
+
+            // Interactive Rubrics Selection
+            const rubricCells = document.querySelectorAll('.rubric-table td.rubric-cell');
+            rubricCells.forEach(cell => {
+                const rowIdx = cell.parentElement.rowIndex;
+                const key = `ucr-caja-${docId}-rubric-row-${rowIdx}`;
+                
+                // Load saved selection
+                const savedCol = localStorage.getItem(key);
+                if (savedCol !== null && parseInt(savedCol) === cell.cellIndex) {
+                    cell.classList.add('selected-level');
+                }
+
+                cell.addEventListener('click', () => {
+                    cell.parentElement.querySelectorAll('td.rubric-cell').forEach(c => {
+                        c.classList.remove('selected-level');
+                    });
+                    cell.classList.add('selected-level');
+                    localStorage.setItem(key, cell.cellIndex);
+                });
+            });
+
+            // Print Action
+            document.getElementById('print-btn').addEventListener('click', () => {
+                window.print();
+            });
+
+            // Reset Action
+            document.getElementById('reset-btn').addEventListener('click', () => {
+                if (confirm('¿Está seguro de que desea limpiar todas sus respuestas en este documento?')) {
+                    inputs.forEach((input, index) => {
+                        const key = `ucr-caja-${docId}-input-${index}`;
+                        localStorage.removeItem(key);
+                        if (input.type === 'checkbox') {
+                            input.checked = false;
+                        } else {
+                            input.value = '';
+                        }
+                        if (input.tagName === 'TEXTAREA') {
+                            input.style.height = 'auto';
+                        }
+                    });
+                    
+                    rubricCells.forEach(cell => {
+                        cell.classList.remove('selected-level');
+                    });
+                    const rowCount = document.querySelectorAll('.rubric-table tr').length;
+                    for(let i=0; i<rowCount; i++) {
+                        localStorage.removeItem(`ucr-caja-${docId}-rubric-row-${i}`);
+                    }
+                }
+            });
+
+            // Export to Markdown Action
+            const exportBtn = document.getElementById('export-btn');
+            if (exportBtn) {
+                exportBtn.addEventListener('click', () => {
+                    let title = document.querySelector('h1').innerText;
+                    let mdText = `# Trabajo Completado: ${title}\n\n`;
+                    
+                    // Simple export logic based on document type
+                    if (document.querySelector('.bmc-grid')) {
+                        // BMC Export
+                        const cells = document.querySelectorAll('.bmc-cell');
+                        cells.forEach(c => {
+                            const header = c.querySelector('h3').innerText;
+                            const val = c.querySelector('textarea').value || '(Vacío)';
+                            mdText += `## ${header}\n${val}\n\n`;
+                        });
+                    } else if (document.querySelector('.swot-grid')) {
+                        // SWOT Export
+                        const quadrants = document.querySelectorAll('.swot-quadrant');
+                        quadrants.forEach(q => {
+                            const header = q.querySelector('h3').innerText;
+                            const val = q.querySelector('textarea').value || '(Vacío)';
+                            mdText += `## ${header}\n${val}\n\n`;
+                        });
+                    } else {
+                        // General Template Export
+                        const elements = document.querySelectorAll('.doc-card > *');
+                        elements.forEach(el => {
+                            if (el.tagName === 'H2') {
+                                mdText += `## ${el.innerText}\n\n`;
+                            } else if (el.tagName === 'H3') {
+                                mdText += `### ${el.innerText}\n\n`;
+                            } else if (el.tagName === 'P') {
+                                // If paragraph contains inline inputs
+                                let text = el.innerHTML;
+                                const inputsInP = el.querySelectorAll('input, textarea');
+                                if (inputsInP.length > 0) {
+                                    inputsInP.forEach(inp => {
+                                        text = text.replace(inp.outerHTML, `**${inp.value || '___'}**`);
+                                    });
+                                    // Remove html tags
+                                    text = text.replace(/<[^>]*>/g, '');
+                                    mdText += `${text}\n\n`;
+                                } else {
+                                    mdText += `${el.innerText}\n\n`;
+                                }
+                            } else if (el.tagName === 'UL' || el.tagName === 'OL') {
+                                el.querySelectorAll('li').forEach(li => {
+                                    let text = li.innerHTML;
+                                    const inp = li.querySelector('input, textarea');
+                                    if (inp) {
+                                        if (inp.type === 'checkbox') {
+                                            text = text.replace(inp.outerHTML, inp.checked ? '[x]' : '[ ]');
+                                        } else {
+                                            text = text.replace(inp.outerHTML, `**${inp.value || '___'}**`);
+                                        }
+                                    }
+                                    text = text.replace(/<[^>]*>/g, '');
+                                    mdText += `* ${text}\n`;
+                                });
+                                mdText += '\n';
+                            }
+                        });
+                    }
+                    
+                    const blob = new Blob([mdText], { type: 'text/markdown;charset=utf-8;' });
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.setAttribute('download', `${docId}-completado.md`);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
