@@ -714,3 +714,62 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
     }
 });
+
+// --- LOGIC FOR COURSE ASSISTANT WIDGET ---
+document.addEventListener('DOMContentLoaded', () => {
+    const assistantWidget = document.getElementById('course-assistant-widget');
+    if (!assistantWidget) return;
+
+    const toggleBtn = document.getElementById('assistant-toggle-btn');
+    const chatContainer = document.getElementById('assistant-chat-container');
+    const closeBtn = document.getElementById('assistant-close-btn');
+    const iframe = document.getElementById('assistant-iframe');
+
+    // Toggle assistant panel
+    function toggleAssistant() {
+        const isActive = chatContainer.classList.toggle('active');
+        toggleBtn.setAttribute('aria-expanded', isActive);
+        chatContainer.setAttribute('aria-hidden', !isActive);
+
+        // Lazy load the iframe source when opened for the first time
+        if (isActive && iframe && !iframe.getAttribute('src')) {
+            const src = iframe.getAttribute('data-src');
+            if (src) {
+                iframe.setAttribute('src', src);
+            }
+        }
+    }
+
+    // Close assistant panel
+    function closeAssistant() {
+        chatContainer.classList.remove('active');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        chatContainer.setAttribute('aria-hidden', 'true');
+    }
+
+    toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleAssistant();
+    });
+
+    closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeAssistant();
+    });
+
+    // Close when clicking outside of the chat container or widget button
+    document.addEventListener('click', (e) => {
+        if (chatContainer.classList.contains('active') && 
+            !assistantWidget.contains(e.target)) {
+            closeAssistant();
+        }
+    });
+
+    // Handle escape key to close assistant
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && chatContainer.classList.contains('active')) {
+            closeAssistant();
+            toggleBtn.focus();
+        }
+    });
+});
