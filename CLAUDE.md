@@ -93,13 +93,13 @@
 ### Asistentes virtuales — estado actual (Jun 2025)
 | Asistente | Plataforma | Cuenta | Estado |
 |-----------|-----------|--------|--------|
-| GPT Emprendedores V2 | Gemini | Personal | Migración pendiente |
-| OMIPYMES UNED Territorial | ChatGPT | Personal/UNED | Migración pendiente |
-| OMIPYMES UNED Analista | ChatGPT | Personal/UNED | Migración pendiente |
-| GUESSSY | ChatGPT | Personal | Fuera de scope Auge |
-| Guía de Costeo | ChatGPT | Personal | Migración pendiente |
-| Marketing Digital | ChatGPT | Personal | Migración pendiente |
-| OBI | ChatGPT | Personal | Migración pendiente |
+| Asesor en IA para PYMES | ChatGPT | Personal | Migración pendiente |
+| Tu asesor empresarial crítico | ChatGPT | Personal | Migración pendiente |
+| Asistente para tu Marketing Digital | ChatGPT | Personal | Migración pendiente |
+| Ayudante para Costeo de productos para PYMES | ChatGPT | Personal | Migración pendiente |
+| Retorno de la Inversión por el uso de IA-PYMES | ChatGPT | Personal | Migración pendiente |
+| Espíritu emprendedor Costa Rica | ChatGPT | Personal | Migración pendiente |
+| Caja de herramientas para Pymes | ChatGPT | Personal | Migración pendiente |
 
 ### Contenidos del Toolkit 1 que aún requieren producción
 - T1-S1: guía Google Trends + Exploding Topics en español
