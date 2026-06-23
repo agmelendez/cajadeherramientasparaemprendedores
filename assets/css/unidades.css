@@ -1,0 +1,381 @@
+/* --- UNIDADES & CONTENIDO --- */
+
+/* Breadcrumbs and steps info */
+.unit-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.unit-meta .badge-tipo {
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--white);
+  background-color: var(--ucr-blue);
+}
+
+.unit-meta .badge-tipo.introduccion { background-color: var(--ucr-blue); }
+.unit-meta .badge-tipo.entender { background-color: #34495e; }
+.unit-meta .badge-tipo.reto { background-color: #9b59b6; }
+.unit-meta .badge-tipo.hacer { background-color: #e67e22; }
+.unit-meta .badge-tipo.compartir { background-color: #1abc9c; }
+.unit-meta .badge-tipo.rubrica { background-color: #27ae60; }
+.unit-meta .badge-tipo.interpretacion_critica { background-color: #d35400; }
+
+/* Unit content container */
+.unit-body-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 35px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 30px;
+}
+
+.unit-body-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  border-left: 5px solid var(--ucr-blue);
+  padding-left: 15px;
+}
+
+.unit-body-card p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.unit-body-card ul, .unit-body-card ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.unit-body-card li {
+  margin-bottom: 8px;
+}
+
+/* Steps and special boxes */
+.critical-note-view {
+  background-color: #fffdf5;
+  border-left: 4px solid var(--accent-yellow);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 25px;
+}
+
+.critical-note-view h4 {
+  color: var(--ucr-dark);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-box {
+  background-color: #f4f9fc;
+  border-left: 4px solid var(--ucr-celeste);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  margin: 20px 0;
+}
+
+.info-box-title {
+  font-weight: 700;
+  color: var(--ucr-dark);
+  margin-bottom: 5px;
+}
+
+/* Form interactive inputs */
+.interactive-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 10px 0 20px 0;
+  transition: var(--transition);
+  background-color: #fdfefe;
+}
+
+.interactive-input:focus {
+  outline: none;
+  border-color: var(--ucr-blue);
+  box-shadow: 0 0 0 3px rgba(0, 93, 164, 0.15);
+}
+
+textarea.interactive-input {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.inline-input-container {
+  display: inline-block;
+  min-width: 180px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.inline-input {
+  width: 100%;
+  padding: 4px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: #fdfefe;
+}
+
+.inline-input:focus {
+  outline: none;
+  border-color: var(--ucr-blue);
+}
+
+.checkbox-container {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-top: 5px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+/* Evidencia container block inside Reto/Hacer unit views */
+.evidence-field-box {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.evidence-field-box h4 {
+  font-size: 1.05rem;
+  color: var(--ucr-dark);
+  margin-bottom: 12px;
+}
+
+.evidence-status {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.evidence-status.saved { color: var(--accent-green); }
+.evidence-status.pending { color: var(--text-light); }
+
+/* Rubric table styling */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.rubric-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.rubric-table th, .rubric-table td {
+  padding: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.rubric-table th {
+  background-color: var(--bg-light);
+  color: var(--ucr-dark);
+  font-weight: 700;
+}
+
+.rubric-criterion {
+  font-weight: 700;
+  background-color: #fafbfc;
+  width: 180px;
+}
+
+.rubric-cell {
+  cursor: pointer;
+  transition: var(--transition);
+  vertical-align: top;
+}
+
+.rubric-cell:hover {
+  background-color: #f0f7fc;
+}
+
+.rubric-cell.selected-level {
+  background-color: #e8f8f5;
+  border: 2px solid var(--accent-green);
+  color: #117a65;
+  font-weight: 500;
+}
+
+/* Diagnostic secular layout */
+.diag-progress-bar {
+  height: 6px;
+  background-color: #eaeded;
+  border-radius: var(--radius-pill);
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.diag-progress-fill {
+  height: 100%;
+  background-color: var(--ucr-blue);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.diag-question-container {
+  margin-bottom: 30px;
+}
+
+.diag-question-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ucr-dark);
+  margin-bottom: 20px;
+}
+
+.diag-options-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.diag-option-btn {
+  text-align: left;
+  padding: 15px 20px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--white);
+  transition: var(--transition);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.diag-option-btn:hover {
+  border-color: var(--ucr-celeste);
+  background-color: #f7fcfe;
+}
+
+.diag-option-btn.selected {
+  border-color: var(--ucr-blue);
+  background-color: #eef7fc;
+  color: var(--ucr-blue);
+  font-weight: 700;
+}
+
+.diag-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Resources block links */
+.resources-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 15px;
+  background-color: #f0f4f8;
+  border-radius: var(--radius-sm);
+  color: var(--ucr-blue);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.resource-link:hover {
+  background-color: #e1eaf2;
+}
+
+/* Responsive tables for small screen */
+@media (max-width: 768px) {
+  .rubric-table, .rubric-table thead, .rubric-table tbody, .rubric-table th, .rubric-table td, .rubric-table tr {
+    display: block;
+  }
+  
+  .rubric-table thead {
+    display: none; /* Hide header on mobile cards view */
+  }
+  
+  .rubric-table tr {
+    border: 1px solid var(--border-color);
+    margin-bottom: 15px;
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+  
+  .rubric-criterion {
+    background-color: var(--bg-light);
+    width: 100%;
+    border-bottom: 2px solid var(--border-color);
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .rubric-cell {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 12px;
+    position: relative;
+    padding-left: 90px;
+  }
+  
+  .rubric-cell::before {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 70px;
+    font-weight: 700;
+    color: var(--text-light);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+  
+  .rubric-cell:nth-child(2)::before { content: "Inicial"; }
+  .rubric-cell:nth-child(3)::before { content: "Adecuado"; }
+  .rubric-cell:nth-child(4)::before { content: "Sólido"; }
+  
+  .rubric-cell.selected-level {
+    border: none;
+    background-color: #e8f8f5;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "m0",
+    "codigo": "Módulo 0",
+    "nombre": "Punto de partida: mi perfil y mi negocio",
+    "frase": "¿Dónde estoy y qué necesito?",
+    "descripcion": "Autodiagnóstico inicial para orientar la ruta de aprendizaje.",
+    "orden": 0,
+    "duracionSemanas": 0,
+    "tipo": "diagnostico",
+    "desbloqueadoPorDefecto": true
+  },
+  {
+    "id": "m1",
+    "codigo": "Módulo 1",
+    "nombre": "Validar antes de invertir",
+    "frase": "Antes de gastar, validemos",
+    "descripcion": "Validación inicial de ideas, tendencias y evidencia mínima antes de invertir.",
+    "orden": 1,
+    "duracionSemanas": 4,
+    "tipo": "aprendizaje",
+    "desbloqueadoPorDefecto": true
+  },
+  {
+    "id": "m2",
+    "codigo": "Módulo 2",
+    "nombre": "Radiografía del negocio con IA",
+    "frase": "Miremos el negocio con lupa",
+    "descripcion": "Estructurar el FODA dinámico, Buyer Persona, diagnóstico y plan de acción de la empresa.",
+    "orden": 2,
+    "duracionSemanas": 4,
+    "tipo": "aprendizaje",
+    "desbloqueadoPorDefecto": true
+  },
+  {
+    "id": "m3",
+    "codigo": "Módulo 3",
+    "nombre": "Ordenar y automatizar procesos",
+    "frase": "Ahorrar tiempo y ordenar mejor",
+    "descripcion": "Integrar Make, chatbots y automatización no-code en las tareas cotidianas.",
+    "orden": 3,
+    "duracionSemanas": 4,
+    "tipo": "aprendizaje",
+    "desbloqueadoPorDefecto": true
+  },
+  {
+    "id": "m4",
+    "codigo": "Módulo 4",
+    "nombre": "Comunicar, vender y decidir con datos",
+    "frase": "Vender mejor con evidencia",
+    "descripcion": "Identidad comercial, campañas con AIDA, finanzas y viabilidad de proyectos con IA.",
+    "orden": 4,
+    "duracionSemanas": 4,
+    "tipo": "aprendizaje",
+    "desbloqueadoPorDefecto": true
+  }
+]

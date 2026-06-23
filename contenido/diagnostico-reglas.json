@@ -1,0 +1,72 @@
+{
+  "version": "2.2.0",
+  "umbralesSenda": {
+    "guiada": {
+      "condiciones": [
+        { "eje": "CD", "operador": "less_than", "valor": 45 },
+        { "eje": "AIA", "operador": "less_than", "valor": 35 },
+        { "eje": "AT", "operador": "less_than", "valor": 40 }
+      ],
+      "combinador": "OR"
+    },
+    "profunda": {
+      "condiciones": [
+        { "eje": "CD", "operador": "greater_equal", "valor": 65 },
+        { "eje": "AIA", "operador": "greater_equal", "valor": 65 },
+        { "eje": "AT", "operador": "greater_equal", "valor": 60 }
+      ],
+      "combinador": "AND"
+    },
+    "acelerada": {
+      "condiciones": [],
+      "combinador": "DEFAULT"
+    }
+  },
+  "reglasModuloInicial": [
+    {
+      "modulo": "m0",
+      "condiciones": [
+        { "tipo": "eje", "eje": "CD", "operador": "less_than", "valor": 35 },
+        { "tipo": "eje", "eje": "AIA", "operador": "less_than", "valor": 25 }
+      ],
+      "combinador": "OR",
+      "justificacion": "Su nivel actual de competencia digital y familiaridad con IA requiere una etapa inicial de nivelación básica antes de operar con herramientas avanzadas."
+    },
+    {
+      "modulo": "m1",
+      "condiciones": [
+        { "tipo": "pregunta", "preguntaId": "q16", "operador": "in", "valores": [0, 1] },
+        { "tipo": "pregunta", "preguntaId": "q18", "operador": "less_equal", "valor": 2 }
+      ],
+      "combinador": "AND",
+      "justificacion": "Su proyecto está en etapa de idea o desarrollo y requiere validar la demanda de mercado de forma cuantitativa y cualitativa antes de invertir capital."
+    },
+    {
+      "modulo": "m2",
+      "condiciones": [
+        { "tipo": "pregunta", "preguntaId": "q16", "operador": "in", "valores": [2, 3, 4] },
+        { "tipo": "pregunta", "preguntaId": "q19", "operador": "less_equal", "valor": 2 }
+      ],
+      "combinador": "AND",
+      "justificacion": "Su empresa ya está en marcha o cuenta con ventas, pero es prioritario realizar un diagnóstico estratégico (FODA) y estructurar sus finanzas básicas de forma ordenada."
+    },
+    {
+      "modulo": "m3",
+      "condiciones": [
+        { "tipo": "pregunta", "preguntaId": "q13", "operador": "greater_equal", "valor": 3 },
+        { "tipo": "eje", "eje": "CD", "operador": "greater_equal", "valor": 50 },
+        { "tipo": "eje", "eje": "AT", "operador": "greater_equal", "valor": 50 }
+      ],
+      "combinador": "AND",
+      "justificacion": "Posee las competencias y el acceso tecnológico requeridos para implementar automatizaciones de procesos operativos repetitivos y flujos no-code mediante Make y chatbots."
+    },
+    {
+      "modulo": "m4",
+      "condiciones": [
+        { "tipo": "pregunta", "preguntaId": "q14", "operador": "greater_equal", "valor": 3 }
+      ],
+      "combinador": "AND",
+      "justificacion": "Su urgencia principal u oportunidad radica en potenciar sus ventas, redactar copys persuasivos con IA y analizar datos de comercialización."
+    }
+  ]
+}

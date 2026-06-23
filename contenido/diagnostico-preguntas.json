@@ -1,0 +1,334 @@
+[
+  {
+    "id": "q01",
+    "dimension": "CD",
+    "bloque": "competencias_digitales",
+    "texto": "¿Con qué frecuencia utiliza correo, formularios, hojas de cálculo o herramientas digitales para su negocio?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "Nunca o casi nunca" },
+      { "valor": 1, "etiqueta": "Pocas veces al mes" },
+      { "valor": 2, "etiqueta": "A veces por semana" },
+      { "valor": 3, "etiqueta": "Con frecuencia todos los días" },
+      { "valor": 4, "etiqueta": "Todos los días y dependen de ellas mis procesos" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q02",
+    "dimension": "CD",
+    "bloque": "competencias_digitales",
+    "texto": "¿Puede crear, guardar, buscar y compartir archivos digitales (PDF, imágenes, hojas de cálculo) sin ayuda?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No sé cómo hacerlo" },
+      { "valor": 1, "etiqueta": "Tengo serias dificultades y ocupo ayuda" },
+      { "valor": 2, "etiqueta": "Puedo hacerlo pero me toma mucho tiempo" },
+      { "valor": 3, "etiqueta": "Lo hago con facilidad e independencia" },
+      { "valor": 4, "etiqueta": "Lo hago diariamente y conozco buenas prácticas de organización" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q03",
+    "dimension": "CD",
+    "bloque": "competencias_digitales",
+    "texto": "¿Ha creado cuentas en plataformas digitales y activado mecanismos de seguridad como verificación en dos pasos (2FA)?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No sé qué es la verificación en dos pasos" },
+      { "valor": 1, "etiqueta": "Sé qué es, pero no sé cómo activarla" },
+      { "valor": 2, "etiqueta": "Tengo cuentas, pero ninguna tiene activada la seguridad doble" },
+      { "valor": 3, "etiqueta": "He activado seguridad doble en mis cuentas principales (banco, correo)" },
+      { "valor": 4, "etiqueta": "Tengo activada la seguridad doble en todas mis herramientas de negocio" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q04",
+    "dimension": "CD",
+    "bloque": "competencias_digitales",
+    "texto": "Cuando una herramienta digital cambia o falla, ¿puede resolverlo buscando instrucciones o tutoriales en internet?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No, siempre necesito que alguien me lo resuelva presencialmente" },
+      { "valor": 1, "etiqueta": "Busco ayuda pero casi nunca entiendo los tutoriales" },
+      { "valor": 2, "etiqueta": "A veces logro resolverlo con tutoriales si son sencillos" },
+      { "valor": 3, "etiqueta": "Normalmente busco guías y soluciono el problema de forma autónoma" },
+      { "valor": 4, "etiqueta": "Resuelvo problemas digitales con rapidez y ayudo a otros a hacerlo" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q05",
+    "dimension": "AIA",
+    "bloque": "alfabetizacion_ia",
+    "texto": "¿Ha utilizado herramientas de IA generativa como ChatGPT, Gemini, Copilot u otras similares?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "Nunca he escuchado de ellas o nunca las he abierto" },
+      { "valor": 1, "etiqueta": "Las he abierto una o dos veces por curiosidad" },
+      { "valor": 2, "etiqueta": "Las uso ocasionalmente para tareas sencillas" },
+      { "valor": 3, "etiqueta": "Las uso con frecuencia semanal para redactar o buscar ideas" },
+      { "valor": 4, "etiqueta": "Las uso diariamente como parte activa de mis flujos de trabajo" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q06",
+    "dimension": "AIA",
+    "bloque": "alfabetizacion_ia",
+    "texto": "¿Sabe formular instrucciones o prompts específicos para obtener respuestas realmente útiles de la IA?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No sé qué es un prompt o cómo escribirle a la IA" },
+      { "valor": 1, "etiqueta": "Le escribo preguntas simples como si fuera un buscador común" },
+      { "valor": 2, "etiqueta": "Le doy instrucciones básicas pero a veces las respuestas son genéricas" },
+      { "valor": 3, "etiqueta": "Utilizo estructuras claras (rol, contexto, restricción) y obtengo buenos resultados" },
+      { "valor": 4, "etiqueta": "Domino técnicas avanzadas y adapto mis prompts de forma iterativa y precisa" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q07",
+    "dimension": "AIA",
+    "bloque": "alfabetizacion_ia",
+    "texto": "¿Verifica la información o contenidos que le entrega una IA antes de usarlos en una decisión de su negocio?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "Nunca, asumo que todo lo que dice la IA es correcto" },
+      { "valor": 1, "etiqueta": "Casi nunca, solo si algo me parece muy extraño" },
+      { "valor": 2, "etiqueta": "A veces contrasto la información si es un tema importante" },
+      { "valor": 3, "etiqueta": "Siempre reviso y edito las respuestas de la IA antes de aplicarlas" },
+      { "valor": 4, "etiqueta": "Tengo un protocolo estricto para validar fuentes y datos generados por IA" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q08",
+    "dimension": "AIA",
+    "bloque": "alfabetizacion_ia",
+    "texto": "¿Reconoce los riesgos de usar IA, como errores (alucinaciones), sesgos, uso de datos personales o privacidad?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No conozco ningún riesgo de la IA" },
+      { "valor": 1, "etiqueta": "He oído que comete errores, pero no sé cómo me afecta" },
+      { "valor": 2, "etiqueta": "Entiendo los riesgos básicos pero no sé cómo prevenirlos con mis datos" },
+      { "valor": 3, "etiqueta": "Sé qué datos no debo compartir (datos personales, confidenciales) y cuido mi privacidad" },
+      { "valor": 4, "etiqueta": "Conozco las leyes de protección de datos (ej. Ley 8968) y aplico anonimización en mis prompts" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q09",
+    "dimension": "AT",
+    "bloque": "acceso_tecnologico",
+    "texto": "¿Cuenta con acceso estable a Internet para trabajar en este curso y probar herramientas externas?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No tengo acceso a Internet propio ni estable" },
+      { "valor": 1, "etiqueta": "Uso datos móviles limitados y la señal es intermitente" },
+      { "valor": 2, "etiqueta": "Tengo acceso parcial (por ejemplo, solo en sitios públicos o en casa de familiares)" },
+      { "valor": 3, "etiqueta": "Tengo Internet residencial o en oficina con buena velocidad y estabilidad" },
+      { "valor": 4, "etiqueta": "Conexión de alta velocidad excelente y constante en todos mis dispositivos" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q10",
+    "dimension": "AT",
+    "bloque": "acceso_tecnologico",
+    "texto": "¿Dispone de computadora o teléfono inteligente con rendimiento suficiente para usar herramientas web avanzadas, reproducir videos y completar formularios?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No tengo dispositivos propios" },
+      { "valor": 1, "etiqueta": "Tengo un teléfono inteligente muy básico o antiguo" },
+      { "valor": 2, "etiqueta": "Tengo computadora compartida o teléfono intermedio, pero fallan con herramientas pesadas" },
+      { "valor": 3, "etiqueta": "Tengo computadora o teléfono moderno propio que funciona perfectamente" },
+      { "valor": 4, "etiqueta": "Dispongo de múltiples dispositivos de excelente rendimiento para mi negocio" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q11",
+    "dimension": "AT",
+    "bloque": "acceso_tecnologico",
+    "texto": "¿Puede registrarse, ingresar o instalar herramientas externas y crear cuentas cuando el curso lo solicite?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No puedo hacerlo solo, requiero asistencia constante" },
+      { "valor": 1, "etiqueta": "Me da miedo o inseguridad registrarme en sitios nuevos" },
+      { "valor": 2, "etiqueta": "Puedo hacerlo si sigo una guía paso a paso muy detallada" },
+      { "valor": 3, "etiqueta": "Lo hago de forma independiente en la mayoría de los sitios web" },
+      { "valor": 4, "etiqueta": "Creo cuentas, administro contraseñas y vinculo herramientas con facilidad" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q12",
+    "dimension": "CUB",
+    "bloque": "uso_beneficios_ia",
+    "texto": "¿Tiene claro qué problema de su negocio o idea le gustaría resolver prioritariamente usando IA?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No tengo idea de cómo la IA podría ayudar a mi negocio" },
+      { "valor": 1, "etiqueta": "Sé que puede ayudar, pero no sé en qué áreas aplicarla" },
+      { "valor": 2, "etiqueta": "Tengo algunas ideas generales, pero no sé por dónde empezar" },
+      { "valor": 3, "etiqueta": "Tengo identificados uno o dos problemas específicos donde usaré IA" },
+      { "valor": 4, "etiqueta": "Tengo un mapa claro de oportunidades y prioridades de adopción para mi empresa" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q13",
+    "dimension": "CUB",
+    "bloque": "uso_beneficios_ia",
+    "texto": "¿Puede identificar tareas repetitivas o lentas en sus operaciones diarias que podrían automatizarse?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No identifico ninguna tarea repetitiva en mi rutina" },
+      { "valor": 1, "etiqueta": "Casi todo lo que hago es manual, pero no sé qué se puede automatizar" },
+      { "valor": 2, "etiqueta": "Identifico procesos lentos (ej. pasar datos a mano), pero no sé cómo conectarlos" },
+      { "valor": 3, "etiqueta": "Tengo identificadas tareas repetitivas claras que quiero automatizar (mensajes, facturas, etc.)" },
+      { "valor": 4, "etiqueta": "Tengo diagramados mis flujos operativos y sé exactamente qué integrar" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q14",
+    "dimension": "CUB",
+    "bloque": "uso_beneficios_ia",
+    "texto": "¿Tiene claro cómo la IA podría ayudarle a vender, comunicar, atender clientes o tomar decisiones financieras con datos?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No sé cómo me ayudaría en ventas o datos" },
+      { "valor": 1, "etiqueta": "Creo que solo sirve para escribir textos para redes sociales" },
+      { "valor": 2, "etiqueta": "Sé que puede ayudar a analizar ventas o hacer copy comercial de forma parcial" },
+      { "valor": 3, "etiqueta": "Tengo claridad del beneficio en redacción publicitaria, segmentación y análisis financiero básico" },
+      { "valor": 4, "etiqueta": "Uso la IA activamente para modelar escenarios financieros y optimizar mi comunicación comercial" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q15",
+    "dimension": "CUB",
+    "bloque": "uso_beneficios_ia",
+    "texto": "¿Sabe distinguir entre usar IA por moda y usarla para resolver un problema estratégico concreto de su negocio?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No veo la diferencia, quiero usarla porque todos lo hacen" },
+      { "valor": 1, "etiqueta": "Me cuesta saber si vale la pena o si es solo mercadeo" },
+      { "valor": 2, "etiqueta": "Entiendo que debe resolver problemas, pero a veces me desvío probando herramientas" },
+      { "valor": 3, "etiqueta": "Sé priorizar el proceso de mi negocio antes de decidir qué IA utilizar" },
+      { "valor": 4, "etiqueta": "Tengo un enfoque pragmático basado en la regla 70/30 (humano/IA) y retorno de inversión" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q16",
+    "dimension": "CME",
+    "bloque": "contexto_madurez",
+    "texto": "¿En qué etapa se encuentra actualmente su emprendimiento o empresa?",
+    "tipo": "seleccion_unica",
+    "opciones": [
+      { "valor": 0, "etiqueta": "Tengo una idea en mente, pero aún no he iniciado el desarrollo ni vendido" },
+      { "valor": 1, "etiqueta": "Tengo un prototipo o modelo de negocio y estoy definiendo el producto" },
+      { "valor": 3, "etiqueta": "Ya tengo ventas iniciales, aunque sean pocas e informales" },
+      { "valor": 4, "etiqueta": "Tengo un negocio funcionando con procesos definidos y estructura regular" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q17",
+    "dimension": "CME",
+    "bloque": "contexto_madurez",
+    "texto": "¿Tiene claramente definida su oferta comercial, cliente principal (Buyer Persona) y propuesta de valor única?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No, vendo lo que surja a cualquiera que pregunte" },
+      { "valor": 1, "etiqueta": "Tengo una idea vaga, pero no sé quién es mi cliente ideal" },
+      { "valor": 2, "etiqueta": "Tengo definida mi propuesta pero no he formalizado el perfil de mi cliente" },
+      { "valor": 3, "etiqueta": "Tengo definidos cliente ideal, valor y oferta de forma escrita" },
+      { "valor": 4, "etiqueta": "Tengo mi modelo de negocio estructurado y validado con segmentos específicos de mercado" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q18",
+    "dimension": "CME",
+    "bloque": "contexto_madurez",
+    "texto": "¿Ha validado su idea, producto o servicio con datos, ventas reales, entrevistas o evidencia real de mercado?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No he hecho ninguna validación ni tengo ventas" },
+      { "valor": 1, "etiqueta": "Solo le he preguntado a amigos o familiares cercanos" },
+      { "valor": 2, "etiqueta": "He hecho algunas encuestas básicas o vendido de forma muy inicial" },
+      { "valor": 3, "etiqueta": "He recopilado datos de clientes reales y ajustado mi producto según el mercado" },
+      { "valor": 4, "etiqueta": "Tengo un circuito continuo de retroalimentación de clientes y datos de tracción reales" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q19",
+    "dimension": "CME",
+    "bloque": "contexto_madurez",
+    "texto": "¿Registra la información de ventas, costos, clientes, inventario o procesos de forma ordenada y digital?",
+    "tipo": "likert_0_4",
+    "opciones": [
+      { "valor": 0, "etiqueta": "No registro nada de información" },
+      { "valor": 1, "etiqueta": "Anoto ventas e ingresos en cuadernos de forma manual e inconsistente" },
+      { "valor": 2, "etiqueta": "Registro ventas en cuadernos o un Excel muy básico, pero sin control de costos" },
+      { "valor": 3, "etiqueta": "Tengo un registro digital estructurado (Excel, sistema propio) de mis números principales" },
+      { "valor": 4, "etiqueta": "Tengo un sistema de información o CRM/ERP y analizo mis datos regularmente" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q20",
+    "dimension": "CME",
+    "bloque": "contexto_madurez",
+    "texto": "¿Cuál es la urgencia principal de su negocio para los próximos tres meses?",
+    "tipo": "seleccion_unica_ponderada",
+    "opciones": [
+      { "valor": 1, "etiqueta": "Validar si mi idea o producto nuevo tiene mercado antes de gastar dinero" },
+      { "valor": 2, "etiqueta": "Entender qué está fallando en mi negocio, hacer un FODA y ordenar mis números básicos" },
+      { "valor": 3, "etiqueta": "Ahorrar tiempo y automatizar tareas administrativas o de atención repetitivas" },
+      { "valor": 4, "etiqueta": "Aumentar mis ventas, mejorar mi copy comercial, contenido digital y decidir con datos" }
+    ],
+    "peso": 1.0,
+    "requerida": true
+  },
+  {
+    "id": "q21",
+    "dimension": "CME",
+    "bloque": "contexto_madurez",
+    "texto": "¿Cuánto tiempo real por semana puede dedicar al estudio y aplicación de este programa?",
+    "tipo": "seleccion_unica",
+    "opciones": [
+      { "valor": 1, "etiqueta": "Menos de 2 horas por semana (ritmo lento)" },
+      { "valor": 2, "etiqueta": "De 2 a 5 horas por semana (ritmo recomendado)" },
+      { "valor": 3, "etiqueta": "Más de 5 horas por semana (ritmo intensivo)" }
+    ],
+    "peso": 0.5,
+    "requerida": false
+  }
+]

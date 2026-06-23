@@ -1,0 +1,34 @@
+{
+  "id": "rubrica-semanal",
+  "titulo": "Antes de avanzar, revise su evidencia con estos criterios",
+  "criterios": [
+    {
+      "id": "pertinencia-empresarial",
+      "nombre": "Pertinencia empresarial",
+      "inicial": "El entregable es genérico o no se conecta claramente con el negocio.",
+      "adecuado": "El entregable se conecta con una necesidad real del negocio.",
+      "solido": "El entregable permite tomar una decisión o mejorar un proceso concreto."
+    },
+    {
+      "id": "uso-critico-de-ia",
+      "nombre": "Uso crítico de IA",
+      "inicial": "Se acepta la respuesta de IA sin revisión.",
+      "adecuado": "Se revisa la respuesta y se ajusta parcialmente.",
+      "solido": "Se contrastan supuestos, datos y recomendaciones antes de implementar."
+    },
+    {
+      "id": "evidencia-verificable",
+      "nombre": "Evidencia verificable",
+      "inicial": "No hay datos, capturas, cálculos o fuentes que respalden el resultado.",
+      "adecuado": "Hay alguna evidencia, pero incompleta.",
+      "solido": "La evidencia permite verificar cómo se llegó al resultado."
+    },
+    {
+      "id": "privacidad-y-etica",
+      "nombre": "Privacidad y ética",
+      "inicial": "Incluye datos personales o contenido sin permiso.",
+      "adecuado": "Reduce algunos datos sensibles, pero requiere revisión.",
+      "solido": "Usa datos anonimizados, consentimiento cuando aplica y transparencia en contenido generado."
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "r-google-trends",
+    "titulo": "Google Trends",
+    "url": "https://trends.google.com",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-exploding-topics",
+    "titulo": "Exploding Topics",
+    "url": "https://explodingtopics.com",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-descargar-plantilla-buyer-persona-y-mapa-de-empatia",
+    "titulo": "Descargar Plantilla Buyer Persona y Mapa de Empatía",
+    "url": "templates/plantilla-buyer-persona.html",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-protocolo-de-privacidad-y-anonimizacion",
+    "titulo": "Protocolo de Privacidad y Anonimización",
+    "url": "politicas/protocolo-privacidad-datos.html",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-plantilla-de-consentimiento-de-clientes",
+    "titulo": "Plantilla de Consentimiento de Clientes",
+    "url": "templates/plantilla-consentimiento-clientes.html",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-descargar-plantilla-business-model-canvas",
+    "titulo": "Descargar Plantilla Business Model Canvas",
+    "url": "templates/plantilla-business-model-canvas.html",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-que-es-la-ia",
+    "titulo": "¿Qué es la IA?",
+    "url": "https://gemini.google.com/share/93280f9e37b4",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-ia-generativa",
+    "titulo": "IA Generativa",
+    "url": "https://gemini.google.com/share/8e00aa29a4c6",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-principios-eticos",
+    "titulo": "Principios Éticos",
+    "url": "https://youtu.be/Ijgaubyqioc",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-tendencias-de-ia",
+    "titulo": "Tendencias de IA",
+    "url": "https://youtu.be/I1TqHfRUn3w",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-recurso-prompting",
+    "titulo": "Recurso: Prompting",
+    "url": "https://gemini.google.com/share/9189e1c05cd1",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-peticiones",
+    "titulo": "Peticiones",
+    "url": "https://youtu.be/7b3EdBVsV58",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-alucinaciones",
+    "titulo": "Alucinaciones",
+    "url": "https://youtu.be/49Yv4qNovyo",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-descargar-plantilla-foda-dinamico",
+    "titulo": "Descargar Plantilla FODA Dinámico",
+    "url": "templates/plantilla-foda.html",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-la-ia-al-negocio",
+    "titulo": "La IA al Negocio",
+    "url": "https://youtu.be/5Y_WAYQnO3c",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-tendencias-ia--ia-impact-summit-",
+    "titulo": "Tendencias IA -IA Impact Summit-",
+    "url": "https://youtu.be/Hzm54zyMkTs",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-mitigar-peligros",
+    "titulo": "Mitigar peligros",
+    "url": "https://youtu.be/ir0d0bFBkJU",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-descargar-plantilla-matriz-ivu",
+    "titulo": "Descargar Plantilla Matriz IVU",
+    "url": "templates/plantilla-ivu.html",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-perder-miedo",
+    "titulo": "Perder miedo",
+    "url": "https://youtu.be/SPNNtEQE808",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-automatizacion-pymes",
+    "titulo": "Automatización pymes",
+    "url": "https://youtu.be/ElsjejoXNoA",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-automatizacion-con-make",
+    "titulo": "Automatización con Make",
+    "url": "https://youtu.be/ElhJ5GFQDgE",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-automatiza-tu-negocio-parte-1",
+    "titulo": "Automatiza tu negocio parte 1",
+    "url": "https://youtu.be/xPMt25CZRTk",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-automatiza-tu-negocio-parte-2",
+    "titulo": "Automatiza tu negocio parte 2",
+    "url": "https://youtu.be/VWwglL0L0Mw",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-automatiza-con-n8n",
+    "titulo": "Automatiza con n8n",
+    "url": "https://youtu.be/08jm_ojPL0U",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-problemas-con-ia",
+    "titulo": "Problemas con IA",
+    "url": "https://youtu.be/kR7Sa15RM2s",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-automatizar-con-whastapp",
+    "titulo": "Automatizar con Whastapp",
+    "url": "https://youtu.be/DsoHiwfA_Ls",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-automatizar-procesos",
+    "titulo": "Automatizar procesos",
+    "url": "https://youtu.be/2cYBIfUvS74",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-manual-para-automatizar--------------------------------whatsapp-con-n8n-o-make",
+    "titulo": "Manual para automatizar\n                                whatsapp con n8n o make",
+    "url": "https://gemini.google.com/share/43bc6db51c13",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-uso-de-ia-grok",
+    "titulo": "Uso de IA Grok",
+    "url": "https://youtu.be/P06Vcw35-5s",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-descargar-plantilla-crm-basico",
+    "titulo": "Descargar Plantilla CRM Básico",
+    "url": "templates/plantilla-crm-basico.html",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-sandbox-regulatorios-para-pymes",
+    "titulo": "Sandbox Regulatorios para Pymes",
+    "url": "https://youtu.be/AjG0NghxXzQ",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-crm-y-automatizacion",
+    "titulo": "CRM y automatización",
+    "url": "https://youtu.be/qZQqBWZ8n90",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-guia-de--------------------------------automatizacion",
+    "titulo": "Guía de\n                                automatización",
+    "url": "https://gemini.google.com/share/acec911d240f",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-retorno--------------------------------del-roi",
+    "titulo": "Retorno\n                                del ROI",
+    "url": "https://chat.qwen.ai/s/deploy/t_5cf0fca5-193a-427d-9bcf-ceaa2968d0fa",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-ventajas-de-pagar",
+    "titulo": "Ventajas de pagar",
+    "url": "https://youtu.be/OIFytSp36hM",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-canva-para-emprendedores",
+    "titulo": "Canva para emprendedores",
+    "url": "https://youtu.be/-nmNBOtHNig",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-usar-canva",
+    "titulo": "Usar Canva",
+    "url": "https://youtu.be/D6GVQEElphE",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-generacion-de-video-y-audio",
+    "titulo": "Generación de video y audio",
+    "url": "https://youtu.be/ReHGaWrwBfw",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-descargar-plantilla-de-prefactibilidad-financiera",
+    "titulo": "Descargar Plantilla de Prefactibilidad Financiera",
+    "url": "templates/plantilla-prefactibilidad.html",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-estudios-de-prefactibilidad",
+    "titulo": "Estudios de prefactibilidad",
+    "url": "https://youtu.be/ZJqs8XXVNJk",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-descargar-plantilla-de-campaa-aida",
+    "titulo": "Descargar Plantilla de Campaña AIDA",
+    "url": "templates/plantilla-campana-aida.html",
+    "tipo": "herramienta"
+  },
+  {
+    "id": "r-como-gestionar-mis-productos-con-ia--------------------------------y-mi-campaa-de-lanzamiento",
+    "titulo": "Como gestionar mis productos con IA\n                                y mi campaña de lanzamiento",
+    "url": "https://youtu.be/Bg6eHTM8VTs",
+    "tipo": "herramienta"
+  }
+]

@@ -1,0 +1,476 @@
+[
+  {
+    "id": "t1-s1",
+    "moduloId": "m1",
+    "ordenModulo": 1,
+    "semanaGlobal": 1,
+    "codigoAnterior": "T1-S1",
+    "titulo": "Validación de idea y tendencias de mercado",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de comparar señales básicas de interés de mercado usando Google Trends, Exploding Topics u otras fuentes abiertas, y explicar si su idea muestra señales iniciales de oportunidad o alerta.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de comparar señales básicas de interés de mercado usando Go...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": null,
+    "unidadInicial": "t1-s1-u01",
+    "recursos": [
+      "r-google-trends",
+      "r-exploding-topics"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": []
+  },
+  {
+    "id": "t1-s2",
+    "moduloId": "m1",
+    "ordenModulo": 2,
+    "semanaGlobal": 2,
+    "codigoAnterior": "T1-S2",
+    "titulo": "Análisis de mercado y perfil de cliente",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de construir una ficha de buyer persona y un mapa de empatía, verificando que sus supuestos estén conectados con problemas reales de clientes potenciales.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de construir una ficha de buyer persona y un mapa de empatí...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "t1-s1",
+    "unidadInicial": "t1-s2-u01",
+    "recursos": [
+      "r-descargar-plantilla-buyer-persona-y-mapa-de-empatia"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": []
+  },
+  {
+    "id": "t1-s3",
+    "moduloId": "m1",
+    "ordenModulo": 3,
+    "semanaGlobal": 3,
+    "codigoAnterior": "T1-S3",
+    "titulo": "Diseño y análisis de encuesta de validación primaria",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de diseñar, aplicar y analizar una encuesta de validación primaria, anonimizando las respuestas antes de procesarlas con IA.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de diseñar, aplicar y analizar una encuesta de validación p...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "t1-s2",
+    "unidadInicial": "t1-s3-u01",
+    "recursos": [
+      "r-protocolo-de-privacidad-y-anonimizacion",
+      "r-plantilla-de-consentimiento-de-clientes"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": []
+  },
+  {
+    "id": "t1-s4",
+    "moduloId": "m1",
+    "ordenModulo": 4,
+    "semanaGlobal": 4,
+    "codigoAnterior": "T1-S4",
+    "titulo": "Estructura básica de modelo de negocio",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de estructurar un Business Model Canvas preliminar y justificar los principales supuestos de valor, cliente, ingresos y costos.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de estructurar un Business Model Canvas preliminar y justif...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "t1-s3",
+    "unidadInicial": "t1-s4-u01",
+    "recursos": [
+      "r-descargar-plantilla-business-model-canvas"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": []
+  },
+  {
+    "id": "m1-s1",
+    "moduloId": "m2",
+    "ordenModulo": 1,
+    "semanaGlobal": 5,
+    "codigoAnterior": "M1-S1",
+    "titulo": "Configuración y Primer Contacto",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de configurar una herramienta de IA generativa con medidas básicas de seguridad, control de datos y criterios de uso responsable.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de configurar una herramienta de IA generativa con medidas ...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": null,
+    "unidadInicial": "m1-s1-u01",
+    "recursos": [
+      "r-que-es-la-ia",
+      "r-ia-generativa",
+      "r-principios-eticos",
+      "r-tendencias-de-ia"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 1. Historia de la IA.png",
+        "alt": "Infografía Semana 1: Historia y evolución de la Inteligencia Artificial. Muestra la línea del tiempo desde los inicios de la IA, el aprendizaje automático hasta la IA generativa moderna."
+      }
+    ]
+  },
+  {
+    "id": "m1-s2",
+    "moduloId": "m2",
+    "ordenModulo": 2,
+    "semanaGlobal": 6,
+    "codigoAnterior": "M1-S2",
+    "titulo": "Ingeniería de Prompts (CIFRCE)",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de redactar prompts empresariales usando el modelo CIFRCE y evaluar la utilidad de las respuestas mediante criterios verificables.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de redactar prompts empresariales usando el modelo CIFRCE y...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "m1-s1",
+    "unidadInicial": "m1-s2-u01",
+    "recursos": [
+      "r-recurso-prompting",
+      "r-peticiones",
+      "r-alucinaciones"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 2. Guía Maestra de Prompt Engineering.png",
+        "alt": "Infografía Semana 2: Guía Maestra de Ingeniería de Prompts (CIFRCE). Detalla las partes de un prompt efectivo: Contexto, Instrucción, Formato, Restricciones y Criterios de Éxito."
+      }
+    ]
+  },
+  {
+    "id": "m1-s3",
+    "moduloId": "m2",
+    "ordenModulo": 3,
+    "semanaGlobal": 7,
+    "codigoAnterior": "M1-S3",
+    "titulo": "Diagnóstico y FODA Dinámico",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de elaborar un FODA dinámico con apoyo de IA, diferenciando hechos, supuestos y recomendaciones accionables.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de elaborar un FODA dinámico con apoyo de IA, diferenciando...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "m1-s2",
+    "unidadInicial": "m1-s3-u01",
+    "recursos": [
+      "r-descargar-plantilla-foda-dinamico",
+      "r-la-ia-al-negocio",
+      "r-tendencias-ia--ia-impact-summit-",
+      "r-mitigar-peligros"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 3. Tendencias IA.png",
+        "alt": "Infografía Semana 3: Tendencias tecnológicas de Inteligencia Artificial para Pymes. Ilustra las principales tendencias de adopción de IA en diversos sectores y cómo benefician a los pequeños negocios."
+      }
+    ]
+  },
+  {
+    "id": "m1-s4",
+    "moduloId": "m2",
+    "ordenModulo": 4,
+    "semanaGlobal": 8,
+    "codigoAnterior": "M1-S4",
+    "titulo": "Plan de Acción Estratégico",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de priorizar al menos tres iniciativas de mejora mediante una matriz de impacto, viabilidad y urgencia.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de priorizar al menos tres iniciativas de mejora mediante u...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "m1-s3",
+    "unidadInicial": "m1-s4-u01",
+    "recursos": [
+      "r-descargar-plantilla-matriz-ivu",
+      "r-perder-miedo"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 4. Plan de Acción.png",
+        "alt": "Infografía Semana 4: Plan de Acción Estratégico para Integración de IA. Muestra la matriz de priorización y la hoja de ruta para planificar la adopción tecnológica en la empresa."
+      }
+    ]
+  },
+  {
+    "id": "m2-s5",
+    "moduloId": "m3",
+    "ordenModulo": 1,
+    "semanaGlobal": 9,
+    "codigoAnterior": "M2-S5",
+    "titulo": "Automatización No-code",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de diseñar y configurar un escenario de automatización básico sin código en Make.com que conecte dos aplicaciones y maneje posibles errores operacionales de forma lógica.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de diseñar y configurar un escenario de automatización bási...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": null,
+    "unidadInicial": "m2-s5-u01",
+    "recursos": [
+      "r-automatizacion-pymes",
+      "r-automatizacion-con-make",
+      "r-automatiza-tu-negocio-parte-1",
+      "r-automatiza-tu-negocio-parte-2",
+      "r-automatiza-con-n8n",
+      "r-problemas-con-ia",
+      "r-automatizar-con-whastapp",
+      "r-automatizar-procesos"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 5. Automatización de procesos .png",
+        "alt": "Infografía Semana 5: Automatización de procesos y optimización empresarial. Explica los fundamentos del no-code y cómo estructurar flujos lógicos con disparadores y acciones."
+      }
+    ]
+  },
+  {
+    "id": "m2-s6",
+    "moduloId": "m3",
+    "ordenModulo": 2,
+    "semanaGlobal": 10,
+    "codigoAnterior": "M2-S6",
+    "titulo": "Chatbots y Atención al Cliente",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de diseñar un chatbot de atención al cliente básico que guíe al usuario a través de un árbol de decisión y establezca un protocolo claro de escalación a un agente humano.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de diseñar un chatbot de atención al cliente básico que guí...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "m2-s5",
+    "unidadInicial": "m2-s6-u01",
+    "recursos": [
+      "r-manual-para-automatizar--------------------------------whatsapp-con-n8n-o-make",
+      "r-uso-de-ia-grok"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 6. Guía de Asistentes Virtuales Inteligentes.png",
+        "alt": "Infografía Semana 6: Guía de Asistentes Virtuales Inteligentes en la Empresa. Describe el funcionamiento de agentes conversacionales y su configuración para servicio al cliente."
+      }
+    ]
+  },
+  {
+    "id": "m2-s7",
+    "moduloId": "m3",
+    "ordenModulo": 3,
+    "semanaGlobal": 11,
+    "codigoAnterior": "M2-S7",
+    "titulo": "CRM y Sistematización",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de estructurar un CRM básico y configurar una automatización que clasifique y registre leads de manera ordenada y segura, resguardando la privacidad de los clientes.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de estructurar un CRM básico y configurar una automatizació...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "m2-s6",
+    "unidadInicial": "m2-s7-u01",
+    "recursos": [
+      "r-descargar-plantilla-crm-basico",
+      "r-sandbox-regulatorios-para-pymes",
+      "r-crm-y-automatizacion",
+      "r-guia-de--------------------------------automatizacion"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 7. CRM y Automatización.png",
+        "alt": "Infografía Semana 7: CRM y automatización de relaciones con clientes. Muestra cómo integrar la base de datos de clientes con canales de comunicación automática."
+      },
+      {
+        "src": "Infografias/Semana 7. SandBox Regulatorios.png",
+        "alt": "Infografía Semana 7: Sandboxes regulatorios y aspectos legales en IA. Explica las regulaciones vigentes y políticas de protección de datos aplicadas a la IA en Costa Rica."
+      }
+    ]
+  },
+  {
+    "id": "m2-s8",
+    "moduloId": "m3",
+    "ordenModulo": 4,
+    "semanaGlobal": 12,
+    "codigoAnterior": "M2-S8",
+    "titulo": "ROI de la Automatización",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de calcular el retorno de inversión (ROI) estimado de sus automatizaciones y documentar el flujo técnico con un control de errores funcional.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de calcular el retorno de inversión (ROI) estimado de sus a...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "m2-s7",
+    "unidadInicial": "m2-s8-u01",
+    "recursos": [
+      "r-retorno--------------------------------del-roi",
+      "r-ventajas-de-pagar"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 8. Valor de la automatización empresarial.png",
+        "alt": "Infografía Semana 8: El valor de la automatización de flujos de negocio. Detalla el cálculo del retorno de inversión (ROI), ahorros de tiempo y reducción de errores."
+      }
+    ]
+  },
+  {
+    "id": "m3-s9",
+    "moduloId": "m4",
+    "ordenModulo": 1,
+    "semanaGlobal": 13,
+    "codigoAnterior": "M3-S9",
+    "titulo": "Identidad Visual y Diseño",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de definir el Brand Kit (paleta de colores, tipografías y tono de comunicación) de su negocio en Canva y diseñar un set de 5 plantillas para redes sociales aplicando directrices de consistencia e identidad visual de marca.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de definir el Brand Kit (paleta de colores, tipografías y t...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": null,
+    "unidadInicial": "m3-s9-u01",
+    "recursos": [
+      "r-canva-para-emprendedores",
+      "r-usar-canva"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 9. Canva para PYMES.png",
+        "alt": "Infografía Semana 9: Canva para PYMES e Identidad Visual. Explica el diseño de marca, consistencia visual y uso de herramientas de diseño asistidas por IA."
+      }
+    ]
+  },
+  {
+    "id": "m3-s10",
+    "moduloId": "m4",
+    "ordenModulo": 2,
+    "semanaGlobal": 14,
+    "codigoAnterior": "M3-S10",
+    "titulo": "Producción Audiovisual",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de redactar un guion publicitario de 30-60 segundos estructurado con el modelo AIDA, generar locución de audio sintético y editar un video promocional en CapCut integrando subtítulos automáticos y marcas de transparencia.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de redactar un guion publicitario de 30-60 segundos estruct...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "m3-s9",
+    "unidadInicial": "m3-s10-u01",
+    "recursos": [
+      "r-generacion-de-video-y-audio"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 10. Creación Videos y avatares.png",
+        "alt": "Infografía Semana 10: Creación de contenidos audiovisuales y avatares con IA. Muestra el proceso de redacción de guion, síntesis de voz, subtitulado y generación de video promocional."
+      }
+    ]
+  },
+  {
+    "id": "m3-s11",
+    "moduloId": "m4",
+    "ordenModulo": 3,
+    "semanaGlobal": 15,
+    "codigoAnterior": "M3-S11",
+    "titulo": "Estudios de Prefactibilidad",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de realizar un análisis de prefactibilidad para un nuevo producto, canal comercial o servicio de su negocio, simulando flujos de caja y determinando puntos de equilibrio financiero con asistencia crítica de IA.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de realizar un análisis de prefactibilidad para un nuevo pr...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "m3-s10",
+    "unidadInicial": "m3-s11-u01",
+    "recursos": [
+      "r-descargar-plantilla-de-prefactibilidad-financiera",
+      "r-estudios-de-prefactibilidad"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 11. Guía de Viabilidad de IA.png",
+        "alt": "Infografía Semana 11: Guía de Viabilidad y Prefactibilidad Técnica de Proyectos de IA. Detalla la matriz de viabilidad estratégica y análisis de costos/beneficios."
+      }
+    ]
+  },
+  {
+    "id": "m3-s12",
+    "moduloId": "m4",
+    "ordenModulo": 4,
+    "semanaGlobal": 16,
+    "codigoAnterior": "M3-S12",
+    "titulo": "Campaña de Lanzamiento",
+    "objetivo": "Al finalizar esta semana, la persona participante será capaz de integrar los insumos del módulo (identidad visual, video y análisis financiero) en una campaña publicitaria de lanzamiento comercial estructurada bajo el framework AIDA, definiendo indicadores mínimos de desempeño antes de su publicación.",
+    "descripcionBreve": "Al finalizar esta semana, la persona participante será capaz de integrar los insumos del módulo (identidad visual, video...",
+    "entregable": "Entregable semanal",
+    "tiempoEstimadoMin": 120,
+    "prerequisito": "m3-s11",
+    "unidadInicial": "m3-s12-u01",
+    "recursos": [
+      "r-descargar-plantilla-de-campaa-aida",
+      "r-como-gestionar-mis-productos-con-ia--------------------------------y-mi-campaa-de-lanzamiento"
+    ],
+    "rubricaRef": "rubrica-semanal",
+    "sendas": [
+      "guiada",
+      "acelerada",
+      "profunda"
+    ],
+    "infografias": [
+      {
+        "src": "Infografias/Semana 12. Estrategia IA para Pequeños Empresarios.png",
+        "alt": "Infografía Semana 12: Estrategia de IA integrada para Pequeños Empresarios (AIDA). Detalla el embudo de ventas digital optimizado con herramientas inteligentes."
+      }
+    ]
+  }
+]

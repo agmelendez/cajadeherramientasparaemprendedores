@@ -1,0 +1,1114 @@
+[
+  {
+    "id": "t1-s1-u01",
+    "semanaId": "t1-s1",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de comparar señales básicas de interés de mercado usando Google Trends, Exploding Topics u otras fuentes abiertas, y explicar si su idea muestra señales iniciales de oportunidad o alerta.</p><div class='intro-description'><p>Analice tendencias y valide su idea de negocio usando herramientas de IA.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "t1-s1-u02",
+    "semanaId": "t1-s1",
+    "orden": 2,
+    "tipo": "interpretacion_critica",
+    "titulo": "Interpretación crítica",
+    "html": "<div class='critical-note-view'><p>Una tendencia de búsqueda no demuestra por sí sola que exista demanda suficiente para un negocio. Usala como señal inicial y combinala con entrevistas, encuestas y observación del mercado local.</p></div>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "t1-s1-u03",
+    "semanaId": "t1-s1",
+    "orden": 3,
+    "tipo": "reto",
+    "titulo": "Mi primera validación de tendencia",
+    "html": "<p>Identifique un sector de negocio en Costa Rica que le interese e investigue si el interés del público está subiendo o bajando.</p>\n<p><strong>Entregable:</strong> Captura de pantalla de Google Trends y Exploding Topics comparando 3 términos del sector elegido.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Captura de pantalla de Google Trends y Exploding Topics comparando 3 términos del sector elegido.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "t1-s1-u04",
+    "semanaId": "t1-s1",
+    "orden": 4,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Ingrese a <strong>Google Trends</strong> y busque 3 términos clave relacionados con su idea de negocio en la región de Costa Rica durante los últimos 12 meses.</li>\n<li>Identifique patrones estacionales (ej. ¿se busca más en época lluviosa o en verano?).</li>\n<li>Use <strong>Exploding Topics</strong> para buscar subsectores relacionados que estén explotando en popularidad.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "t1-s1-u05",
+    "semanaId": "t1-s1",
+    "orden": 5,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>La validación inicial consiste en reducir la incertidumbre. Investigar la demanda en buscadores le permite entender si las personas realmente buscan su producto antes de invertir recursos en producción o inventarios.</p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "t1-s1-u06",
+    "semanaId": "t1-s1",
+    "orden": 6,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a> una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "t1-s1-u07",
+    "semanaId": "t1-s1",
+    "orden": 7,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "t1-s2-u01",
+    "semanaId": "t1-s2",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de construir una ficha de buyer persona y un mapa de empatía, verificando que sus supuestos estén conectados con problemas reales de clientes potenciales.</p><div class='intro-description'><p>Diseña el perfil detallado de tu cliente ideal utilizando metodologías de segmentación asistidas por IA.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "t1-s2-u02",
+    "semanaId": "t1-s2",
+    "orden": 2,
+    "tipo": "interpretacion_critica",
+    "titulo": "Interpretación crítica",
+    "html": "<div class='critical-note-view'><p>La IA puede ayudarte a estructurar un perfil, pero no debe inventar al cliente. Marcá cuáles datos vienen de tu experiencia, cuáles son supuestos y cuáles deben validarse con personas reales.</p></div>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "t1-s2-u03",
+    "semanaId": "t1-s2",
+    "orden": 3,
+    "tipo": "reto",
+    "titulo": "Mi cliente ideal a fondo",
+    "html": "<p>Cree una ficha detallada de Buyer Persona y un mapa de empatía utilizando un LLM como entrevistador.</p>\n<p><strong>Entregable:</strong> Documento en PDF con la ficha del Buyer Persona y el Mapa de Empatía generado y verificado.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Documento en PDF con la ficha del Buyer Persona y el Mapa de Empatía generado y verificado.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "t1-s2-u04",
+    "semanaId": "t1-s2",
+    "orden": 4,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Abra ChatGPT o Claude y escriba el prompt: <em>\"Actúa como un experto en mercadeo. Entrevístame haciendo 5 preguntas una a una para definir mi cliente ideal para [idea de negocio].\"</em></li>\n<li>Responda las preguntas de forma honesta basadas en su idea.</li>\n<li>Pida al modelo: <em>\"Con estas respuestas, estructura una ficha de Buyer Persona y un Mapa de Empatía (Qué ve, qué oye, qué piensa, qué frustraciones tiene).\"</em></li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "t1-s2-u05",
+    "semanaId": "t1-s2",
+    "orden": 5,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>Un producto para todos es un producto para nadie. La segmentación permite enfocar los recursos de marketing de su pyme en los usuarios con mayor probabilidad de compra, resolviendo sus frustraciones reales.</p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "t1-s2-u06",
+    "semanaId": "t1-s2",
+    "orden": 6,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta una versión resumida y anonimizada del Buyer Persona en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a>. No incluya nombres reales, teléfonos, correos, ubicaciones exactas ni información que permita identificar a una persona.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "t1-s2-u07",
+    "semanaId": "t1-s2",
+    "orden": 7,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "t1-s3-u01",
+    "semanaId": "t1-s3",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de diseñar, aplicar y analizar una encuesta de validación primaria, anonimizando las respuestas antes de procesarlas con IA.</p><div class='intro-description'><p>Estructura encuestas efectivas y utiliza la IA para analizar las respuestas de tus clientes potenciales.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "t1-s3-u02",
+    "semanaId": "t1-s3",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Escuchar al mercado real",
+    "html": "<p>Diseñe un cuestionario de 5 preguntas orientadas al problema del cliente, aplíquelo a 10 personas, y use la IA para consolidar los aprendizajes.</p>\n<p><strong>Entregable:</strong> Enlace al formulario y reporte sintético del análisis cualitativo generado por Claude.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Enlace al formulario y reporte sintético del análisis cualitativo generado por Claude.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "t1-s3-u03",
+    "semanaId": "t1-s3",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Cree un formulario en <strong>Google Forms</strong> con 5 preguntas que investiguen los hábitos y problemas de su cliente ideal (evite preguntas sesgadas como \"¿Te gusta mi idea?\").</li>\n<li>Envíe la encuesta a al menos 10 clientes potenciales.</li>\n<li>Descargue las respuestas, elimine cualquier dato identificable y luego pida al modelo: “Clasificá estas respuestas anonimizadas en 3 temas clave, identificá el problema más común y señalá qué datos serían insuficientes para tomar una decisión”.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "t1-s3-u04",
+    "semanaId": "t1-s3",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>El sesgo del fundador nos hace creer que nuestra idea no tiene fallas. La investigación primaria cualitativa nos obliga a confrontar los supuestos iniciales con datos crudos y opiniones reales del mercado.</p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "t1-s3-u05",
+    "semanaId": "t1-s3",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a> una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "t1-s3-u06",
+    "semanaId": "t1-s3",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "t1-s4-u01",
+    "semanaId": "t1-s4",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de estructurar un Business Model Canvas preliminar y justificar los principales supuestos de valor, cliente, ingresos y costos.</p><div class='intro-description'><p>Crea tu primer Business Model Canvas interactuando con la IA en modo de consultoría socrática.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "t1-s4-u02",
+    "semanaId": "t1-s4",
+    "orden": 2,
+    "tipo": "interpretacion_critica",
+    "titulo": "Interpretación crítica",
+    "html": "<div class='critical-note-view'><p>Cada bloque del Canvas debe marcarse como dato validado, supuesto razonable o hipótesis pendiente. No tratés como hecho una afirmación generada por IA.</p></div>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "t1-s4-u03",
+    "semanaId": "t1-s4",
+    "orden": 3,
+    "tipo": "reto",
+    "titulo": "Mi negocio en un solo lienzo",
+    "html": "<p>Desarrolle los 9 bloques de su Business Model Canvas con el apoyo de la IA en rol de consultor crítico.</p>\n<p><strong>Entregable:</strong> Documento del Business Model Canvas preliminar estructurado.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Documento del Business Model Canvas preliminar estructurado.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "t1-s4-u04",
+    "semanaId": "t1-s4",
+    "orden": 4,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Use un LLM con el prompt: <em>\"Actúa como un mentor de negocios socrático. Ayúdame a construir mi Business Model Canvas para [idea]. Hazme una pregunta a la vez para cada uno de los 9 bloques. Analiza mi respuesta y reta mis supuestos.\"</em></li>\n<li>Responda uno a uno los bloques del Canvas (Propuesta de valor, Segmentos, Canales, Relación con clientes, Fuentes de ingresos, Recursos clave, Actividades clave, Socios clave, Estructura de costos).</li>\n<li>Solicite a la IA compilar el canvas definitivo en una tabla limpia.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "t1-s4-u05",
+    "semanaId": "t1-s4",
+    "orden": 5,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>El Business Model Canvas es una herramienta dinámica y visual que reemplaza a los pesados planes de negocios tradicionales en etapas iniciales. Su propósito es ver de un vistazo cómo se interconectan el valor, el mercado, la infraestructura y la viabilidad financiera.</p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "t1-s4-u06",
+    "semanaId": "t1-s4",
+    "orden": 6,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a> una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "t1-s4-u07",
+    "semanaId": "t1-s4",
+    "orden": 7,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m1-s1-u01",
+    "semanaId": "m1-s1",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de configurar una herramienta de IA generativa con medidas básicas de seguridad, control de datos y criterios de uso responsable.</p><div class='intro-description'><p>Configure su ecosistema de herramientas de forma segura y realice sus primeras consultas.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m1-s1-u02",
+    "semanaId": "m1-s1",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Mi primera conversación productiva",
+    "html": "<p>Abra ChatGPT (o Claude, o Gemini) y mantenga una conversación sobre su negocio. Pida al modelo que le ayude a describir qué hace su empresa, quiénes son sus clientes y cuál es su principal desafío actual. Guarde la conversación completa.</p>\n<p><strong>Entregable:</strong> Captura de pantalla de la conversación con el LLM resumiendo estructuradamente su negocio.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Captura de pantalla de la conversación con el LLM resumiendo estructuradamente su negocio.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m1-s1-u03",
+    "semanaId": "m1-s1",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Cree sus cuentas en ChatGPT (chatgpt.com), Claude (claude.ai) y Gemini (gemini.google.com).</li>\n<li>Asegure sus cuentas activando la <strong>Autenticación de dos factores (2FA)</strong> en los menús de configuración de seguridad de cada herramienta.</li>\n<li>En Data Controls de ChatGPT, revise y decida apagar el entrenamiento del modelo si va a usar datos sensibles.</li>\n<li>Escriba una descripción de su pyme (tipo de negocio, cantidad de trabajadores, ventas aproximadas, canal de ventas principal) a la IA y pregunte: <em>\"Con base en esto, ¿cuáles son los 3 problemas operativos que ves?\"</em></li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m1-s1-u04",
+    "semanaId": "m1-s1",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>La IA no es magia, es programación avanzada. La IA generativa o LLM (Large Language Model) predice la palabra estadísticamente más probable a partir del texto ingresado. Esto significa que puede inventar hechos (\"alucinaciones\").</p>\n<p><strong>Seguridad Digital:</strong> Nunca ingrese datos privados de clientes, secretos industriales ni cuentas bancarias reales en las versiones gratuitas de las IAs.</p>\n<p style=\"margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;\"><strong>Alucinaciones: qué son y cómo detectarlas</strong></p>\n<p>Una \"alucinación\" ocurre cuando la IA genera información que suena convincente pero es falsa. No es un error técnico ni una mentira intencional: es el resultado de cómo funciona el modelo estadísticamente. Para el microempresario, esto tiene consecuencias prácticas concretas:</p>\n<p><strong>Señales de alerta:</strong> la IA inventa fechas, estadísticas, precios de herramientas, leyes vigentes o nombres de proveedores. Cualquier dato específico que no pueda verificar en otra fuente debe tratarse con cautela.</p>\n<p><strong>Tres reglas para mitigar alucinaciones en contexto empresarial:</strong></p>\n<ol style=\"margin-left: 20px; margin-top: 5px;\">\n<li style=\"margin-bottom: 5px;\"><strong>Nunca use una cifra financiera de la IA sin verificarla:</strong> Precios, tasas, impuestos y costos cambian constantemente. La IA no tiene acceso a datos en tiempo real.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Pida fuentes:</strong> Si la IA cita una estadística, pregúntele: <em>\"¿De dónde viene ese dato? ¿Podés darme la fuente exacta?\"</em> Si la fuente no existe o no es verificable, descarte el dato.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Use la IA para estructurar, no para informar:</strong> Es extraordinaria para organizar sus propios datos en formatos útiles. Es poco confiable para proveer datos que usted no conoce.</li>\n</ol>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m1-s1-u05",
+    "semanaId": "m1-s1",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a> una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m1-s1-u06",
+    "semanaId": "m1-s1",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m1-s2-u01",
+    "semanaId": "m1-s2",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de redactar prompts empresariales usando el modelo CIFRCE y evaluar la utilidad de las respuestas mediante criterios verificables.</p><div class='intro-description'><p>Domine el arte de \"hablar\" con la IA para obtener resultados empresariales útiles.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m1-s2-u02",
+    "semanaId": "m1-s2",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "De prompt mediocre a prompt poderoso",
+    "html": "<p>Tome el prompt informal de la semana pasada y reescríbalo aplicando el modelo estructural CIFRCE completo.</p>\n<p><strong>Entregable:</strong> Documento con 5 prompts optimizados para su negocio bajo la estructura CIFRCE, mostrando la directiva y la respuesta obtenida.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Documento con 5 prompts optimizados para su negocio bajo la estructura CIFRCE, mostrando la directiva y la respuesta obtenida.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m1-s2-u03",
+    "semanaId": "m1-s2",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<p>Escriba un prompt redactando explícitamente sus 5 partes:</p>\n<ul>\n<li><strong>C (Contexto):</strong> Quién es usted y qué hace su negocio (ej: soda en Heredia).</li>\n<li><strong>I (Instrucción):</strong> Qué debe hacer el modelo (ej: listar 5 ideas de promociones).</li>\n<li><strong>F (Formato):</strong> Cómo quiere la salida (ej: tabla con columnas Idea y Costo).</li>\n<li><strong>R (Restricciones):</strong> Lo que NO debe hacer (ej: sin usar redes de pago).</li>\n<li><strong>CE (Criterio de Éxito):</strong> El estándar de calidad (ej: que cueste menos de ₡10.000).</li>\n</ul>\n<p>Aplique <strong>Few-shot prompting</strong> dando 2 ejemplos del formato esperado. Luego pedí al modelo que entregue: supuestos utilizados, criterios de decisión, riesgos de error, datos faltantes y una versión final verificable. No aceptés la respuesta sin contrastarla con tu conocimiento del negocio.</p>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m1-s2-u04",
+    "semanaId": "m1-s2",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>La ingeniería de prompts no es truco lingüístico, es reducir la dispersión de probabilidad estadística del LLM. Dar contexto y restricciones limita las respuestas genéricas o inútiles. La técnica de \"role-play\" (ej: <em>\"Actúa como consultor de costos...\"</em>) activa la red de patrones profesionales del entrenamiento del modelo.</p>\n<p style=\"margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;\"><strong>Las cuatro propiedades del Modelo CIFRCE:</strong></p>\n<p>Una vez que dominás los 5 componentes, el modelo tiene cuatro propiedades que lo hacen especialmente útil para el trabajo diario:</p>\n<ol style=\"margin-left: 20px; margin-top: 5px;\">\n<li style=\"margin-bottom: 5px;\"><strong>Completitud gradual:</strong> no necesitás los 5 componentes desde el primer día. C + I ya producen resultados útiles. F, R y CE se agregan conforme ganás práctica con la herramienta.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Composicionalidad:</strong> podés escribir los componentes en cualquier orden. El modelo define QUÉ incluir, no CÓMO redactarlo. Cada persona puede adaptarlo a su propio estilo comunicativo.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Iterabilidad:</strong> CIFRCE no es solo para el primer mensaje. En cada respuesta que querás refinar, podés ajustar uno o más componentes sin reescribir el prompt completo.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Doble función pedagógica:</strong> construir el prompt CIFRCE te obliga a articular con precisión qué necesitás de tu negocio. Eso tiene valor independientemente de la calidad de la respuesta de la IA.</li>\n</ol>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m1-s2-u05",
+    "semanaId": "m1-s2",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a> una versión breve de su prompt CIFRCE más exitoso de la semana, sin datos sensibles ni información identificable de clientes.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m1-s2-u06",
+    "semanaId": "m1-s2",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m1-s3-u01",
+    "semanaId": "m1-s3",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de elaborar un FODA dinámico con apoyo de IA, diferenciando hechos, supuestos y recomendaciones accionables.</p><div class='intro-description'><p>Utilice la IA para radiografiar su empresa y analizar a la competencia.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m1-s3-u02",
+    "semanaId": "m1-s3",
+    "orden": 2,
+    "tipo": "interpretacion_critica",
+    "titulo": "Interpretación crítica",
+    "html": "<div class='critical-note-view'><p>En el FODA, clasificá cada elemento como dato observado, supuesto del negocio o recomendación de IA. Esta separación evita tomar decisiones estratégicas con base en afirmaciones no verificadas.</p></div>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m1-s3-u03",
+    "semanaId": "m1-s3",
+    "orden": 3,
+    "tipo": "reto",
+    "titulo": "La radiografía de mi negocio",
+    "html": "<p>Complete un análisis diagnóstico estratégico de su negocio que incluya FODA dinámico estructurado, estado financiero simplificado, y mapa de sus principales competidores.</p>\n<p><strong>Entregable:</strong> Borrador del diagnóstico en las plantillas provistas con el FODA interactivo priorizado y punto de equilibrio calculado.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Borrador del diagnóstico en las plantillas provistas con el FODA interactivo priorizado y punto de equilibrio calculado.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m1-s3-u04",
+    "semanaId": "m1-s3",
+    "orden": 4,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Escriba un prompt pidiendo a la IA: <em>\"Actúa como consultor de pymes en Costa Rica. Hazme un análisis FODA dinámico. No me des respuestas fijas. Hazme 3 preguntas difíciles de mi operación antes de armar la matriz.\"</em> Responda honestamente.</li>\n<li>Describa sus costos fijos y variables en lenguaje natural a la IA y solicite un Estado de Resultados simplificado y el cálculo de su Punto de Equilibrio mensual.</li>\n<li>Use Gemini para buscar qué están cobrando o publicando al menos 3 competidores en su zona y haga una tabla comparativa.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m1-s3-u05",
+    "semanaId": "m1-s3",
+    "orden": 5,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>Un diagnóstico es el espejo del negocio.</p>\n<p style=\"margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;\"><strong>El FODA socrático vs el FODA estático: por qué son distintos</strong></p>\n<p>El FODA tradicional produce listas genéricas porque el participante responde a categorías abstractas (\"Fortalezas\", \"Debilidades\") sin presión de evidencia. El resultado suele ser: Fortaleza = \"buen servicio al cliente\"; Debilidad = \"falta de publicidad\". Esos diagnósticos existen en todos los planes de negocio y no sirven para tomar decisiones.</p>\n<p>El FODA socrático funciona diferente: la IA hace preguntas difíciles antes de permitirle completar la matriz. Esas preguntas obligan a confrontar datos reales:</p>\n<ul style=\"margin-left: 20px; margin-top: 5px; list-style-type: none;\">\n<li style=\"margin-bottom: 5px;\"><em>\"¿Cuántos clientes perdiste el último trimestre y por qué razón?\"</em></li>\n<li style=\"margin-bottom: 5px;\"><em>\"¿En qué tarea operativa gastás más tiempo del que debería tomar?\"</em></li>\n<li style=\"margin-bottom: 5px;\"><em>\"¿Qué hace tu competidor más cercano que vos no podés hacer todavía?\"</em></li>\n</ul>\n<p>La diferencia no es estilística: es estructural. El FODA socrático produce hallazgos que el emprendedor no había verbalizado antes, mientras que el FODA estático confirma lo que ya creía saber. Por eso el reto de esta semana pide que la IA formule 3 preguntas difíciles antes de armar la matriz.</p>\n<p style=\"margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;\"><strong>Las finanzas básicas introducen 3 números indispensables:</strong></p>\n<ul style=\"margin-left: 20px; margin-top: 5px;\">\n<li style=\"margin-bottom: 5px;\"><strong>Margen Bruto:</strong> Ingresos menos costos directos.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Margen Neto:</strong> Ganancia real quitando alquileres, salarios e impuestos.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Punto de Equilibrio:</strong> Ventas mínimas para no perder dinero.</li>\n</ul>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m1-s3-u06",
+    "semanaId": "m1-s3",
+    "orden": 6,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a> una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m1-s3-u07",
+    "semanaId": "m1-s3",
+    "orden": 7,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m1-s4-u01",
+    "semanaId": "m1-s4",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de priorizar al menos tres iniciativas de mejora mediante una matriz de impacto, viabilidad y urgencia.</p><div class='intro-description'><p>Integre todo lo aprendido en un plan de acción real para su MiPYME.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m1-s4-u02",
+    "semanaId": "m1-s4",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Mi plan de acción de 90 días",
+    "html": "<p>Compile todo su diagnóstico y proponga un plan de implementación a 3 meses priorizando un máximo de 3 herramientas de IA en las áreas críticas encontradas.</p>\n<p><strong>Entregable:</strong> Documento final del Módulo I: \"Informe de Diagnóstico Empresarial y Plan de Acción IA\" en PDF (5-8 páginas).</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Documento final del Módulo I: \"Informe de Diagnóstico Empresarial y Plan de Acción IA\" en PDF (5-8 páginas).",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m1-s4-u03",
+    "semanaId": "m1-s4",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Copie sus matrices de FODA y análisis financiero, y pida a la IA: <em>\"Escribe un resumen ejecutivo formal de 300 palabras dirigido a un evaluador de proyectos que resuma los riesgos y el plan de mi negocio.\"</em></li>\n<li>Clasifique sus ideas de mejora usando la <strong>Matriz de Priorización IVU</strong> (Impacto, Viabilidad, Urgencia).</li>\n<li>Establezca metas trimestrales con cronograma y asigne métricas claras de éxito.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m1-s4-u04",
+    "semanaId": "m1-s4",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p><strong>Estrategia es decidir qué NO hacer: la Matriz IVU</strong></p>\n<p>Al final del Módulo I tiene un diagnóstico completo y posiblemente una lista de 10 o 15 cosas que \"habría que mejorar\". El problema es que un negocio pequeño no puede ejecutar 15 iniciativas en paralelo. La estrategia real es seleccionar las 3 que producen el mayor impacto con los recursos disponibles.</p>\n<p>La Matriz IVU es la herramienta para hacer esa selección. Evalúa cada iniciativa en tres dimensiones:</p>\n<ul style=\"margin-left: 20px; margin-top: 5px;\">\n<li style=\"margin-bottom: 5px;\"><strong>I — Impacto:</strong> si esta iniciativa funciona bien, ¿qué tan grande es el beneficio para el negocio? (escala 1 a 5)</li>\n<li style=\"margin-bottom: 5px;\"><strong>V — Viabilidad:</strong> ¿con los recursos y capacidades que ya tiene, qué tan factible es ejecutar esto en los próximos 90 días? (escala 1 a 5)</li>\n<li style=\"margin-bottom: 5px;\"><strong>U — Urgencia:</strong> si no lo hace ahora, ¿qué tan grave es el costo de esperar? (escala 1 a 5)</li>\n</ul>\n<p>Sume los tres puntajes para cada iniciativa. Las que tengan mayor puntaje total son las que van al Plan de Acción. Las que tengan alto impacto pero baja viabilidad se agendan para más adelante. Las que tengan bajo impacto en cualquier dimensión se descartan.</p>\n<p>La IA puede ayudar a calificar cada iniciativa si le da suficiente contexto: <em>\"Tengo este recurso disponible, este tiempo y este presupuesto. Calificá estas 8 iniciativas en la Matriz IVU y explicá el razonamiento.\"</em></p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m1-s4-u05",
+    "semanaId": "m1-s4",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a> una versión breve de su hallazgo, sin datos sensibles ni información identificable de clientes.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m1-s4-u06",
+    "semanaId": "m1-s4",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m2-s5-u01",
+    "semanaId": "m2-s5",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de diseñar y configurar un escenario de automatización básico sin código en Make.com que conecte dos aplicaciones y maneje posibles errores operacionales de forma lógica.</p><div class='intro-description'><p>Conecte aplicaciones y automatice tareas sin saber programar.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m2-s5-u02",
+    "semanaId": "m2-s5",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Mi primer flujo automático",
+    "html": "<div class=\"prerrequisito-box\">\n<i class=\"fas fa-link\"></i>\n<span><strong>Prerrequisito operacional:</strong> antes de construir este flujo, identificá en tu Plan de Acción del Módulo I al menos un proceso repetitivo que valga la pena automatizar. Si no tenés ese plan, completá primero la Semana 4 antes de continuar.</span>\n</div>\n<p>Cree un escenario que automatice una tarea de comunicación: cuando alguien llena un Google Form, el sistema debe enviarle un correo automático personalizado por Gmail.</p>\n<p><strong>Entregable:</strong> Captura de pantalla de su escenario de Make ejecutado con éxito y marcando sus esferas verdes de operation sin errores.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Captura de pantalla de su escenario de Make ejecutado con éxito y marcando sus esferas verdes de operation sin errores.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m2-s5-u03",
+    "semanaId": "m2-s5",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Regístrese en Make.com. Cree un nuevo escenario.</li>\n<li>Agregue el disparador (<strong>Trigger</strong>): módulo de Google Sheets \"Watch New Rows\". Conecte su cuenta de Google y su hoja de respuestas del formulario.</li>\n<li>Agregue la acción: módulo de Gmail \"Send an Email\". Conecte su cuenta.</li>\n<li>Mapee los campos arrastrando las variables del formulario (correo del cliente, nombre) al cuerpo y destinatario del correo.</li>\n<li>Haga clic derecho en el módulo de Gmail y elija <strong>\"Add error handler\"</strong> para configurar un correo de aviso a usted mismo si falla.</li>\n<li>Ejecute \"Run Once\" y pruebe con datos de ejemplo.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m2-s5-u04",
+    "semanaId": "m2-s5",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>Automatizar es hacer que la información fluya sin intervención manual. La lógica no-code se basa en:</p>\n<ul>\n<li><strong>Trigger:</strong> El evento iniciador (ej. nueva respuesta en Excel).</li>\n<li><strong>Acción:</strong> Lo que se realiza en respuesta (ej. enviar correo).</li>\n<li><strong>Operaciones de Make:</strong> El plan gratuito le da 1.000 operaciones mensuales. Reduzca la frecuencia de chequeo (de 5 minutos a 1 hora) para optimizar su plan.</li>\n</ul>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m2-s5-u05",
+    "semanaId": "m2-s5",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta su captura de pantalla y responda en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a>: ¿qué error o dificultad encontró al mapear las variables en Gmail y cómo lo solucionó?</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m2-s5-u06",
+    "semanaId": "m2-s5",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m2-s6-u01",
+    "semanaId": "m2-s6",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de diseñar un chatbot de atención al cliente básico que guíe al usuario a través de un árbol de decisión y establezca un protocolo claro de escalación a un agente humano.</p><div class='intro-description'><p>Cree asistentes virtuales para responder WhatsApp y correos.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m2-s6-u02",
+    "semanaId": "m2-s6",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Mi chatbot de respuestas frecuentes",
+    "html": "<div class=\"prerrequisito-box\">\n<i class=\"fas fa-link\"></i>\n<span><strong>Prerrequisito operacional:</strong> para esta semana necesitás tener identificadas las 10 preguntas más frecuentes que hacen tus clientes. Si aún no las tenés, tomate 15 minutos para listarlas antes de empezar.</span>\n</div>\n<p>Identifique las 10 dudas principales de sus clientes. Diseñe e implemente un árbol de decisiones automatizado para responder al menos 5 de ellas.</p>\n<p><strong>Entregable:</strong> Diagrama de su árbol de decisión y enlace de prueba de su chatbot funcionando.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Diagrama de su árbol de decisión y enlace de prueba de su chatbot funcionando.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m2-s6-u03",
+    "semanaId": "m2-s6",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Diseñe el diagrama de flujo en papel o en Canva (ej: Opción 1: Horario → bot responde horario. Opción 2: Precios → bot responde precios).</li>\n<li>Use Make para configurar un bot que reciba mensajes por Telegram/WhatsApp.</li>\n<li>Cree un filtro en Make: si el mensaje contiene \"precio\", se activa la respuesta con el catálogo de precios.</li>\n<li>Configure la <strong>escalación humana</strong>: si el mensaje no cumple las condiciones del bot, Make le envía una alerta a su WhatsApp personal con el contacto del cliente para que usted responda.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m2-s6-u04",
+    "semanaId": "m2-s6",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>El valor de un bot reside en liberar tiempo. Responder preguntas de \"dónde están ubicados\" consume horas operativas valiosas. El principio clave es el balance humano-bot: la IA gestiona el volumen inicial repetitivo y el humano atiende los cierres de venta complejos.</p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m2-s6-u05",
+    "semanaId": "m2-s6",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta su respuesta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a>: ¿qué protocolo diseñó para que el cliente sepa que está hablando con un bot sin perder la empatía ni el tono de su marca?</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m2-s6-u06",
+    "semanaId": "m2-s6",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m2-s7-u01",
+    "semanaId": "m2-s7",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de estructurar un CRM básico y configurar una automatización que clasifique y registre leads de manera ordenada y segura, resguardando la privacidad de los clientes.</p><div class='intro-description'><p>Organice sus clientes y seguimientos de forma automática.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m2-s7-u02",
+    "semanaId": "m2-s7",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Mi mini-CRM automático",
+    "html": "<div class=\"prerrequisito-box\">\n<i class=\"fas fa-link\"></i>\n<span><strong>Prerrequisito operacional:</strong> para estructurar tu CRM necesitás tener al menos 10 contactos o prospectos reales de tu negocio. Si aún no los tenés, recopilá los datos de tus últimos clientes antes de iniciar.</span>\n</div>\n<p>Configure una base de datos de leads conectada a su flujo. Cada nuevo prospecto debe caer clasificado automáticamente según su potencial o prioridad de compra.</p>\n<p><strong>Entregable:</strong> Captura de pantalla de su pipeline de ventas en Google Sheets llenado automáticamente por su automatización.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Captura de pantalla de su pipeline de ventas en Google Sheets llenado automáticamente por su automatización.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m2-s7-u03",
+    "semanaId": "m2-s7",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Cree un Excel o Google Sheet con columnas: Nombre, Correo, Consulta, Estado (Nuevo, Cotizado, Cerrado) e IA-Clasificación.</li>\n<li>En Make, inserte un módulo intermedio con la API de OpenAI o Gemini entre el disparador y el registro del Excel.</li>\n<li>Use el prompt del módulo de IA en Make: <em>\"Analiza la consulta del cliente: '[Consulta]'. Clasifica su intención en: ALTA, MEDIA o BAJA prioridad de compra y devuélveme solo la palabra.\"</em></li>\n<li>Mapee la salida de la IA a la columna 'IA-Clasificación' del Excel.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m2-s7-u04",
+    "semanaId": "m2-s7",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p><strong>CRM (Customer Relationship Management):</strong> Es el corazón de las ventas. La automatización evita la pérdida de datos y permite dar seguimiento oportuno. Incorporar IA en el flujo de automatización (como N8N o Make) para analizar textos cualitativos nos permite pre-calificar prospectos antes de que un agente los atienda.</p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m2-s7-u05",
+    "semanaId": "m2-s7",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta su respuesta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a>: ¿qué criterios de clasificación de IA le resultaron más útiles para priorizar el tiempo de atención diaria en su negocio?</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m2-s7-u06",
+    "semanaId": "m2-s7",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m2-s8-u01",
+    "semanaId": "m2-s8",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de calcular el retorno de inversión (ROI) estimado de sus automatizaciones y documentar el flujo técnico con un control de errores funcional.</p><div class='intro-description'><p>Calcule cuánto dinero y tiempo ahorra con sus implementaciones.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m2-s8-u02",
+    "semanaId": "m2-s8",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Mi automatización en producción",
+    "html": "<div class=\"prerrequisito-box\">\n<i class=\"fas fa-link\"></i>\n<span><strong>Prerrequisito operacional:</strong> el cálculo de ROI requiere que tu flujo de automatización de las semanas anteriores esté operativo y con al menos 5 ejecuciones de prueba documentadas.</span>\n</div>\n<p>Pruebe exhaustivamente el flujo construido, documéntelo y calcule el ROI financiero real de su automatización.</p>\n<p><strong>Entregable:</strong> Documento del proyecto del Módulo II: Flujo en producción documentado con diagrama, control de errores y análisis de ROI.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Documento del proyecto del Módulo II: Flujo en producción documentado con diagrama, control de errores y análisis de ROI.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m2-s8-u03",
+    "semanaId": "m2-s8",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Realice al menos 5 pruebas de ejecución forzando datos erróneos (ej: correo incompleto) para verificar que el sistema maneja el error correctamente sin detenerse.</li>\n<li>Cree una ficha técnica del flujo explicando qué hace cada nodo para que un tercero pueda mantenerlo.</li>\n<li>Use la calculadora de ROI: <em>ROI = ((Horas mensuales ahorradas * Costo/hora personal) - Costo herramientas)</em>.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m2-s8-u04",
+    "semanaId": "m2-s8",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>La automatización debe justificarse económicamente. Si el desarrollo y mantenimiento del flujo consume más horas del propietario que el beneficio, debe rediseñarse. El cálculo del ROI demuestra que invertir $9/mes en licencias de automatización se paga solo al ahorrar un par de horas semanales.</p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m2-s8-u05",
+    "semanaId": "m2-s8",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta su respuesta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a>: ¿cuál es el ROI resultante de su proyecto y cuántas horas semanales estimadas le devuelve esta automatización?</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m2-s8-u06",
+    "semanaId": "m2-s8",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m3-s9-u01",
+    "semanaId": "m3-s9",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de definir el Brand Kit (paleta de colores, tipografías y tono de comunicación) de su negocio en Canva y diseñar un set de 5 plantillas para redes sociales aplicando directrices de consistencia e identidad visual de marca.</p><div class='intro-description'><p>Cree la imagen de su marca usando IA generativa de imágenes.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m3-s9-u02",
+    "semanaId": "m3-s9",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Mi kit visual de marca",
+    "html": "<p>Defina la paleta de colores y tipografía de su negocio y diseñe un set de 5 plantillas para redes sociales aplicando su identidad de marca en Canva.</p>\n<p><strong>Entregable:</strong> Enlace al Brand Kit de Canva + set de 5 plantillas personalizadas listas para publicar.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Enlace al Brand Kit de Canva + set de 5 plantillas personalizadas listas para publicar.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m3-s9-u03",
+    "semanaId": "m3-s9",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Use ChatGPT con el prompt: <em>\"Sugiere una paleta de colores hexadecimales y tipografías para una [soda/tienda] que quiere transmitir [valores como familiaridad, frescura].\"</em></li>\n<li>Configure estas pautas en el <strong>Brand Hub de Canva</strong>.</li>\n<li>Use la función <strong>Canva Magic Design</strong> subiendo una foto de sus productos. Deje que la IA proponga 5 piezas para redes y edítelas con sus colores y tipografía corporativos.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m3-s9-u04",
+    "semanaId": "m3-s9",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>Consistencia visual es confianza. Un negocio que publica con colores tipografías desordenadas genera desconfianza. La paleta de colores activa emociones subconscientes (ej: azul = confianza; verde = orgánico; amarillo = rapidez). La IA acelera la maquetación inicial, pero su control de calidad final asegura la coherencia.</p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m3-s9-u05",
+    "semanaId": "m3-s9",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta una imagen de su paleta y explique en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a> por qué esos colores representan el valor principal que ofrece su pyme.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m3-s9-u06",
+    "semanaId": "m3-s9",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m3-s10-u01",
+    "semanaId": "m3-s10",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de redactar un guion publicitario de 30-60 segundos estructurado con el modelo AIDA, generar locución de audio sintético y editar un video promocional en CapCut integrando subtítulos automáticos y marcas de transparencia.</p><div class='intro-description'><p>Generación de video, voz y avatares para marketing.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m3-s10-u02",
+    "semanaId": "m3-s10",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Mi primer video promocional con IA",
+    "html": "<p>Produzca un video de 30-60 segundos para su negocio usando CapCut, con subtítulos automáticos y edición asistida por IA.</p>\n<p><strong>Entregable:</strong> Archivo o enlace del video publicable de su producto o servicio.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Archivo o enlace del video publicable de su producto o servicio.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m3-s10-u03",
+    "semanaId": "m3-s10",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Use un LLM para escribir el guion de 40 segundos del video con base en la estructura AIDA (Atención, Interés, Deseo, Acción).</li>\n<li>Use la voz sintética de <strong>Eleven Labs</strong> para generar el audio de la narración a partir del guion.</li>\n<li>Cargue el audio y las tomas de video en <strong>CapCut</strong>. Use los subtítulos automáticos y sincronice el ritmo del video.</li>\n<li>(Opcional) Integre un avatar virtual con Synthesia o HeyGen si requiere un presentador digital.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m3-s10-u04",
+    "semanaId": "m3-s10",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p><strong>Ética y transparencia en contenido generado por IA</strong></p>\n<p>Al producir contenido con IA generativa de medios, hay cuatro obligaciones que no son opcionales:</p>\n<ol style=\"margin-left: 20px; margin-top: 5px;\">\n<li style=\"margin-bottom: 5px;\"><strong>Declaración de transparencia:</strong> si el presentador de tu video es un avatar virtual o la voz es sintética, declaralo en el contenido. Podés agregar 'Presentado por un avatar generado con IA' al inicio o en los créditos.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Respeto a la propiedad intelectual:</strong> no uses música, imágenes ni videos de terceros sin licencia. Canva, Pixabay y Freepik ofrecen recursos con licencia de uso libre comercial.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Protección de datos de clientes (Ley 8968, Costa Rica):</strong> si el contenido menciona o muestra clientes reales, necesitás su consentimiento expreso y por escrito antes de publicar.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Autenticidad de marca:</strong> los consumidores distinguen entre contenido sobreproducido y contenido auténtico. El objetivo de usar IA es reducir la fricción de producción, no reemplazar tu voz y personalidad de marca.</li>\n</ol>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m3-s10-u05",
+    "semanaId": "m3-s10",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta el video creado y reflexione en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a>: ¿cuál es la mayor limitación que encontró al generar audio sintético o avatares?</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m3-s10-u06",
+    "semanaId": "m3-s10",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m3-s11-u01",
+    "semanaId": "m3-s11",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de realizar un análisis de prefactibilidad para un nuevo producto, canal comercial o servicio de su negocio, simulando flujos de caja y determinando puntos de equilibrio financiero con asistencia crítica de IA.</p><div class='intro-description'><p>Analice la viabilidad de nuevos productos antes de invertir.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m3-s11-u02",
+    "semanaId": "m3-s11",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Vale la pena invertir?",
+    "html": "<p>Analice la viabilidad de un nuevo producto, servicio o canal comercial para su negocio mediante simulación de costos y proyección financiera con IA.</p>\n<p><strong>Entregable:</strong> Documento de Prefactibilidad de 2-3 páginas con cálculo de retorno, punto de equilibrio y decisión justificada de ir/no-ir.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Documento de Prefactibilidad de 2-3 páginas con cálculo de retorno, punto de equilibrio y decisión justificada de ir/no-ir.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m3-s11-u03",
+    "semanaId": "m3-s11",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Use Gemini para investigar estimaciones de mercado de su nuevo sector y recopile los precios cobrados por la competencia.</li>\n<li>Proporcione los datos a un LLM y pida: <em>\"Proyecta un flujo de caja simple a 6 meses para este nuevo producto, detallando por separado los supuestos utilizados, los riesgos de error, los criterios de decisión clave y los datos faltantes en una tabla final revisable.\"</em></li>\n<li>Calcule el punto de equilibrio y evalúe la conveniencia del canal (redes vs web propia).</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m3-s11-u04",
+    "semanaId": "m3-s11",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p><strong>Prefactibilidad: el filtro que salva capital</strong></p>\n<p>Un estudio de prefactibilidad responde una sola pregunta antes de invertir: ¿tiene sentido seguir adelante con esta idea? Para responderla, se analizan tres dimensiones independientes:</p>\n<ol style=\"margin-left: 20px; margin-top: 5px;\">\n<li style=\"margin-bottom: 5px;\"><strong>Viabilidad técnica:</strong> ¿puede producir este producto o servicio con la infraestructura, herramientas y conocimiento que ya tiene o puede adquirir razonablemente? Si necesita equipos que cuestan el doble de su capital disponible, la idea no es técnicamente viable hoy.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Viabilidad comercial:</strong> ¿existe demanda real y suficiente para este producto al precio que necesita cobrar para que sea rentable? No basta con que la idea sea buena; necesita clientes dispuestos a pagar el precio correcto en el mercado que puede atender.</li>\n<li style=\"margin-bottom: 5px;\"><strong>Viabilidad económica:</strong> ¿los ingresos proyectados superan los costos en un plazo razonable? Esto es lo que el flujo de caja a 6 meses permite ver. Si el punto de equilibrio se alcanza en el mes 18, la idea puede ser buena pero requiere una estrategia de financiamiento que aún no existe.</li>\n</ol>\n<p>La IA puede acelerar el análisis de las tres dimensiones si usted le provee los datos de su negocio. El juicio final —ir o no ir— siempre es suyo: ese es el principio Human-in-the-Loop aplicado a las finanzas.</p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m3-s11-u05",
+    "semanaId": "m3-s11",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Comparta su respuesta en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a>: ¿qué decisión tomó tras modelar los flujos de su nueva idea y por qué decidió implementarla, cambiarla o desecharla?</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m3-s11-u06",
+    "semanaId": "m3-s11",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  },
+  {
+    "id": "m3-s12-u01",
+    "semanaId": "m3-s12",
+    "orden": 1,
+    "tipo": "introduccion",
+    "titulo": "Objetivos de la semana",
+    "html": "<div class='learning-objectives-view'><h3>Objetivo de esta semana</h3><p>Al finalizar esta semana, la persona participante será capaz de integrar los insumos del módulo (identidad visual, video y análisis financiero) en una campaña publicitaria de lanzamiento comercial estructurada bajo el framework AIDA, definiendo indicadores mínimos de desempeño antes de su publicación.</p><div class='intro-description'><p>Proyecto final integrador: Lanzamiento de producto con IA.</p></div></div>",
+    "requiereAccion": false,
+    "boton": "Comenzar"
+  },
+  {
+    "id": "m3-s12-u02",
+    "semanaId": "m3-s12",
+    "orden": 2,
+    "tipo": "reto",
+    "titulo": "Mi campaña de lanzamiento completa",
+    "html": "<p>Diseñe y ensamble la campaña completa para su producto combinando el kit de marca, el video editado, el plan de prefactibilidad y una automatización de captación.</p>\n<p><strong>Entregable:</strong> Proyecto final del Módulo III: Plan de campaña AIDA documentado más enlaces a los activos digitales multimedia producidos.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como completado y continuar",
+    "entregable": "Proyecto final del Módulo III: Plan de campaña AIDA documentado más enlaces a los activos digitales multimedia producidos.",
+    "evidencia": {
+      "aceptaUrl": true,
+      "aceptaNota": true,
+      "aceptaArchivoLocal": true,
+      "persistencia": "local"
+    }
+  },
+  {
+    "id": "m3-s12-u03",
+    "semanaId": "m3-s12",
+    "orden": 3,
+    "tipo": "hacer",
+    "titulo": "Práctica Guiada",
+    "html": "<ol>\n<li>Redacte la secuencia de copys publicitarios y correos siguiendo el framework <strong>AIDA</strong> (Atención: gancho inicial, Interés: problema, Deseo: propuesta de valor, Acción: enlace de compra).</li>\n<li>Defina la ruta: anuncio en redes sociales → Google Forms → registro automático en CRM → correo de bienvenida.</li>\n<li>Cree el plan de lanzamiento de 7 días indicando qué publicar cada día y defina las metas clave de ventas y leads.</li>\n</ol>",
+    "requiereAccion": true,
+    "boton": "Guardar evidencia y continuar"
+  },
+  {
+    "id": "m3-s12-u04",
+    "semanaId": "m3-s12",
+    "orden": 4,
+    "tipo": "entender",
+    "titulo": "Conceptos Clave",
+    "html": "<p>El embudo AIDA es el camino psicológico que recorre el cliente. La IA ayuda a redactar y estructurar, pero es la correcta integración de la campaña (mensajería automatizada, visuales consistentes, precio precalculado) lo que asegura la efectividad del embudo comercial.</p>",
+    "requiereAccion": false,
+    "boton": "Siguiente"
+  },
+  {
+    "id": "m3-s12-u05",
+    "semanaId": "m3-s12",
+    "orden": 5,
+    "tipo": "compartir",
+    "titulo": "Compartir y Reflexionar",
+    "html": "<p>Suba su video (pitch comercial final de 5 minutos) a su cuenta personal de YouTube (como público o no listado), copie el enlace y comente en la herramienta de pizarra colaborativa en el <a class=\"padlet-link-highlight\" href=\"https://padlet.com/ciodd/compartir-y-reflexionar-actividad-ia-pymes-kgb84p46faqw7zhr\" rel=\"noopener noreferrer\" target=\"_blank\">siguiente enlace de Padlet</a>. Además, retroalimente el pitch de al menos uno de sus compañeros en la misma plataforma.</p>",
+    "requiereAccion": true,
+    "boton": "Marcar como compartido"
+  },
+  {
+    "id": "m3-s12-u06",
+    "semanaId": "m3-s12",
+    "orden": 6,
+    "tipo": "rubrica",
+    "titulo": "Rúbrica de la semana",
+    "html": "<div class='rubric-eval-view'></div>",
+    "requiereAccion": true,
+    "boton": "Declarar semana completada"
+  }
+]

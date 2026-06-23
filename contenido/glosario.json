@@ -1,0 +1,86 @@
+[
+  {
+    "termino": "IA",
+    "definicion": "Inteligencia Artificial: Campo de la informática dedicado a la creación de sistemas capaces de realizar tareas que normalmente requieren inteligencia humana."
+  },
+  {
+    "termino": "IA generativa",
+    "definicion": "Tipo de inteligencia artificial capaz de generar nuevo contenido (texto, imágenes, música, código) a partir de datos de entrenamiento y las instrucciones del usuario."
+  },
+  {
+    "termino": "LLM",
+    "definicion": "Large Language Model (Modelo de Lenguaje Grande): Modelo de IA entrenado con grandes volúmenes de texto para comprender, resumir, traducir y generar texto coherente en lenguaje natural."
+  },
+  {
+    "termino": "prompt",
+    "definicion": "Instrucción o texto de entrada que el usuario le da a un modelo de IA para indicarle qué tarea realizar y cómo estructurar la respuesta."
+  },
+  {
+    "termino": "CIFRCE",
+    "definicion": "Framework de prompting (Contexto, Instrucción, Formato, Restricciones, Conexión, Ejemplos) utilizado para estructurar instrucciones precisas para la IA."
+  },
+  {
+    "termino": "RHEC",
+    "definicion": "Ciclo metodológico del programa de aprendizaje: Reto (exploración), Hacer (práctica principal), Entender (teoría y conceptos) y Compartir (colaboración)."
+  },
+  {
+    "termino": "Human-in-the-Loop",
+    "definicion": "Principio ético y metodológico que exige que un ser humano supervise, valide, corrija y apruebe las decisiones o contenidos generados por la IA antes de aplicarlos."
+  },
+  {
+    "termino": "2FA",
+    "definicion": "Autenticación de Dos Factores: Método de seguridad que requiere dos formas independientes de verificación para acceder a una cuenta digital."
+  },
+  {
+    "termino": "API",
+    "definicion": "Interfaz de Programación de Aplicaciones: Conjunto de reglas y especificaciones que permite a diferentes aplicaciones comunicarse y compartir datos entre sí."
+  },
+  {
+    "termino": "no-code",
+    "definicion": "Enfoque de desarrollo de software que permite crear aplicaciones, integraciones y automatizaciones mediante interfaces visuales, sin escribir código de programación."
+  },
+  {
+    "termino": "Make",
+    "definicion": "Plataforma visual de integración y automatización no-code que permite conectar múltiples aplicaciones y servicios web mediante flujos lógicos."
+  },
+  {
+    "termino": "n8n",
+    "definicion": "Herramienta de automatización de flujos de trabajo de código abierto y autoalojable, similar a Make."
+  },
+  {
+    "termino": "trigger",
+    "definicion": "Disparador: Evento inicial que inicia la ejecución de un flujo de trabajo o automatización (ej. la recepción de un correo o un nuevo formulario)."
+  },
+  {
+    "termino": "webhook",
+    "definicion": "Mecanismo que permite a una aplicación enviar datos en tiempo real a otra tan pronto como ocurre un evento."
+  },
+  {
+    "termino": "router",
+    "definicion": "Enrutador en Make o n8n: Módulo que permite bifurcar el flujo de trabajo en múltiples caminos basados en filtros y condiciones específicas."
+  },
+  {
+    "termino": "CRM",
+    "definicion": "Customer Relationship Management: Software para gestionar todas las relaciones e interacciones de la empresa con sus clientes y clientes potenciales."
+  },
+  {
+    "termino": "ROI",
+    "definicion": "Retorno de la Inversión: Medida financiera que evalúa el rendimiento o la utilidad de una inversión en comparación con su costo."
+  },
+  {
+    "termino": "prefactibilidad",
+    "definicion": "Análisis preliminar de la viabilidad técnica, financiera y operativa de un proyecto antes de invertir recursos significativos."
+  },
+  {
+    "termino": "anonimización",
+    "definicion": "Proceso de modificar datos personales para eliminar cualquier información que identifique directamente a un individuo, asegurando su privacidad."
+  },
+  {
+    "termino": "dato sensible",
+    "definicion": "Información personal de especial protección legal (ej. salud, opiniones políticas, orientación sexual, ingresos detallados) que no debe ser expuesta ni compartida sin consentimiento expreso."
+  },
+  {
+    "termino": "Ley 8968",
+    "definicion": "Ley de Protección de la Persona frente al Tratamiento de sus Datos Personales en Costa Rica, orientada a proteger la autodeterminación informativa."
+  }
+]
